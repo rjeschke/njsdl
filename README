@@ -1,4 +1,30 @@
 njsdl - libSDL Java bindings
 ----------------------------
 
-Initial commit, checking out git.
+'njsdl' is a Java wrapper for the well known libSDL with pure
+OpenGL3.x (without deprecated API) bindings and some additional
+classes for easier OpenGL development.
+
+Currently Win32(64) and Linux32 binaries are included.
+
+This is a WIP release, stuff on the TODO list:
+- Code cleanups (as usual)
+- Complete JavaDoc (and generated JavaDoc)
+- Implementation of some more SDL functions
+- ...
+
+Build instructions:
+-------------------
+To build the Jar simply use 'ant'. You'll find 'njsdl.jar'
+inside of 'build/jar'.
+
+To rebuild the biaries use:
+- On Linux 32 bit:
+   'ant linux32_clean' to clean the native target
+   'ant linux32'
+- On Windows 32 bit:
+   'ant win32_clean' to clean the native target
+   'ant win32'
+
+---
+Project link: https://github.com/rjeschke/njsdl
