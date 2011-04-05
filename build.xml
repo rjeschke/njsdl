@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="njsdl" default="dist">
+ 
+ <target name="clean">
+  <delete dir="build"/>
+ </target>
+ 
+ <target name="compile">
+  <mkdir dir="build/classes"/>
+  <javac srcdir="src/java" destdir="build/classes" target="1.6" includeAntRuntime="false"/>
+ </target>
+
+ <target name="jar">
+  <mkdir dir="build/jar"/>
+  <copy toDir="build/classes">
+   <fileset dir="lib"/>
+  </copy>
+  <jar destfile="build/jar/njsdl.jar" basedir="build/classes"/>
+ </target>
+
+ <target name="dist" depends="clean,compile,jar"/>
+
+ <target name="win32">
+  <exec executable="nmake.exe" dir="src\native\win32">
+   <arg value="-f"/>
+   <arg value="makefile.mak"/>
+  </exec>
+  <delete>
+   <fileset dir="lib/njsdl/win32" excludes="*.dll"/>
+  </delete>
+ </target>
+
+ <target name="win32_clean">
+  <delete>
+   <fileset dir="lib/njsdl/win32" excludes="SDL.dll"/>
+   <fileset dir="src/native/win32" excludes="makefile.mak"/>
+  </delete>
+ </target>
+
+</project>
