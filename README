@@ -8,7 +8,7 @@ classes for easier OpenGL development.
 Currently Win32(64) and Linux32 binaries are included.
 
 This is a WIP release, stuff on the TODO list:
-- Code cleanups (as usual)
+- Code clean ups (as usual)
 - Complete JavaDoc (and generated JavaDoc)
 - Implementation of some more SDL functions
 - ...
@@ -18,7 +18,7 @@ Build instructions:
 To build the Jar simply use 'ant'. You'll find 'njsdl.jar'
 inside of 'build/jar'.
 
-To rebuild the biaries use:
+To rebuild the binaries:
 - On Linux 32 bit:
    'ant linux32_clean' to clean the native target
    'ant linux32'
