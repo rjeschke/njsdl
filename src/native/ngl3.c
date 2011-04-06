@@ -1,3 +1,7 @@
+/*
+* Copyright (C) 2011 René Jeschke <rene_jeschke@yahoo.de>
+* See LICENSE.txt for licensing information.
+*/
 #include "gl3.h"
 
 void *ngl3Funcs[435];

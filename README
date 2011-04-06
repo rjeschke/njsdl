@@ -1,5 +1,7 @@
 njsdl - libSDL Java bindings
-----------------------------
+Copyright (C) 2011 René Jeschke <rene_jeschke@yahoo.de>
+See LICENSE.txt for licensing information.
+-------------------------------------------------------
 
 'njsdl' is a Java wrapper for the well known libSDL with pure
 OpenGL3.x (without deprecated API) bindings and some additional

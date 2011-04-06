@@ -1,3 +1,7 @@
+/*
+* Copyright (C) 2011 René Jeschke <rene_jeschke@yahoo.de>
+* See LICENSE.txt for licensing information.
+*/
 package njsdl;
 
 import java.nio.Buffer;
@@ -348,6 +352,7 @@ public final class SDL
 
     public final static int DEFAULT_REPEAT_DELAY    = 500;
     public final static int DEFAULT_REPEAT_INTERVAL = 30;
+    
     // Main
     public static native int wasInit(final int flags);
     /** This function loads the SDL dynamically linked library and initializes 
@@ -666,7 +671,7 @@ public final class SDL
      * If 'mask' is NULL, the entire icon surface will be used as the icon.
      * 
      * @param icon The icon.
-     * @param masm The mask
+     * @param mask The mask
      */
     public static void wmSetIcon(final SDLSurface icon, final byte[] mask)
     {
@@ -679,7 +684,7 @@ public final class SDL
      * If 'mask' is NULL, the entire icon surface will be used as the icon.
      * 
      * @param icon The icon.
-     * @param masm The mask
+     * @param mask The mask
      */
     public static void wmSetIcon(final SDLSurface icon, final ByteBuffer mask)
     {
@@ -702,7 +707,7 @@ public final class SDL
      * <p>Developers should track the values they pass into SDL_GL_SetAttribute
      * themselves if they want to retrieve these values.</p>
      * 
-     * @param Attribute to get.
+     * @param attr Attribute to get.
      * @return Value.
      */
     public static int glGetAttribute(final GLattr attr)

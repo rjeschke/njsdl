@@ -1,3 +1,7 @@
+/*
+* Copyright (C) 2011 René Jeschke <rene_jeschke@yahoo.de>
+* See LICENSE.txt for licensing information.
+*/
 package njsdl.gl;
 
 import java.nio.Buffer;
@@ -18,6 +22,8 @@ public class GL
         LibraryLoader.load("njsdl", "njsdl");
     }
 
+    private GL() { /* */ }
+    
     public final static int GL_ACTIVE_ATTRIBUTES                                 = 0x00008B89;
     public final static int GL_ACTIVE_ATTRIBUTE_MAX_LENGTH                       = 0x00008B8A;
     public final static int GL_ACTIVE_PROGRAM                                    = 0x00008259;

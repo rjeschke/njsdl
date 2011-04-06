@@ -1,7 +1,13 @@
+/*
+* Copyright (C) 2011 René Jeschke <rene_jeschke@yahoo.de>
+* See LICENSE.txt for licensing information.
+*/
 package njsdl.gl;
 
 public class Util
 {
+    private Util() { /* */ }
+    
 	public static float[] gaussian(int size, double sigma)
 	{
 		final float[] g = new float[size];

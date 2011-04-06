@@ -1,7 +1,13 @@
+/*
+* Copyright (C) 2011 René Jeschke <rene_jeschke@yahoo.de>
+* See LICENSE.txt for licensing information.
+*/
 package njsdl.gl;
 
 public class SOR
 {
+    private SOR() { /* */ }
+    
 	public static Point2[] catmullRomSpline(Point2[] points, int steps, final boolean hasExtraPoints)
 	{
 		double len = 0;

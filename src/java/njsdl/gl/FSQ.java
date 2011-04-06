@@ -1,3 +1,7 @@
+/*
+* Copyright (C) 2011 René Jeschke <rene_jeschke@yahoo.de>
+* See LICENSE.txt for licensing information.
+*/
 package njsdl.gl;
 
 import java.nio.FloatBuffer;
@@ -7,6 +11,8 @@ import njsdl.Buffers;
 public class FSQ
 {
 	private static int vArray = -1;
+	
+	private FSQ() { /* */ }
 	
 	public static void init()
 	{

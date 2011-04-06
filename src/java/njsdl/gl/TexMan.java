@@ -1,3 +1,7 @@
+/*
+* Copyright (C) 2011 René Jeschke <rene_jeschke@yahoo.de>
+* See LICENSE.txt for licensing information.
+*/
 package njsdl.gl;
 
 import java.util.HashMap;
@@ -7,6 +11,8 @@ public class TexMan
 	private final static String TAG = "TexMan";
 	private static HashMap<String, Integer> texMapping = new HashMap<String, Integer>();
 
+	private TexMan() { /* */ }
+	
 	public static int generate(String texture)
 	{
 		if(texMapping.containsKey(texture))

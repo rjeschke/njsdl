@@ -1,4 +1,6 @@
 build/
+release/
+doc/
 *.o
 *.obj
 *.idb
@@ -6,3 +8,7 @@ build/
 *.exp
 *.manifest
 *.lib
+.settings
+.classpath
+.project
+.cproject

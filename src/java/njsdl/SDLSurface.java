@@ -1,3 +1,7 @@
+/*
+* Copyright (C) 2011 René Jeschke <rene_jeschke@yahoo.de>
+* See LICENSE.txt for licensing information.
+*/
 package njsdl;
 
 import java.awt.image.BufferedImage;
@@ -166,7 +170,7 @@ public final class SDLSurface
      * @param sx Source X.
      * @param sy Source Y.
      * @param sw Width.
-     * @param sw Height.
+     * @param sh Height.
      * @param dst Destination surface.
      * @param dx Destination X.
      * @param dy Destination Y.

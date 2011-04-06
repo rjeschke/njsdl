@@ -1,3 +1,7 @@
+/*
+* Copyright (C) 2011 René Jeschke <rene_jeschke@yahoo.de>
+* See LICENSE.txt for licensing information.
+*/
 package njsdl.gl;
 
 import java.util.HashMap;
@@ -6,6 +10,8 @@ public class ShaderMan
 {
 	private final static String TAG = "ShaderMan"; 
 	private static HashMap<String, Shader> shaders = new HashMap<String, Shader>();
+	
+	private ShaderMan() { /* */ }
 	
 	public static Shader get(String name)
 	{

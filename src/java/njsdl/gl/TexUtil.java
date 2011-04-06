@@ -1,3 +1,7 @@
+/*
+* Copyright (C) 2011 René Jeschke <rene_jeschke@yahoo.de>
+* See LICENSE.txt for licensing information.
+*/
 package njsdl.gl;
 
 import java.awt.image.BufferedImage;
@@ -39,6 +43,8 @@ public class TexUtil
 		{ 1, 1, 0}, { 1,-1, 0}, {-1, 1, 0}, {-1,-1, 0},
 		{ 1, 0,-1}, {-1, 0,-1}, { 0,-1, 1}, { 0, 1, 1}};
 
+	private TexUtil() { /* */ }
+	
 	public static ByteBuffer genPerlin()
 	{
 		final ByteBuffer ret = Buffers.newByte(256 * 256 * 4);
