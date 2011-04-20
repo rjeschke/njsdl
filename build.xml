@@ -74,4 +74,17 @@
     </delete>
   </target>
 
+  <target name="linux64" description="Builds linux64 binaries">
+    <exec executable="make" dir="src\native\linux64">
+      <arg value="all"/>
+    </exec>
+  </target>
+
+  <target name="linux64_clean" description="Cleans linux64 binaries">
+    <delete>
+      <fileset dir="lib/njsdl/linux64"/>
+      <fileset dir="src/native/linux64" excludes="makefile"/>
+    </delete>
+  </target>
+
 </project>
