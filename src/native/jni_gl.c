@@ -92,7 +92,7 @@ static void* long2Ptr(jlong ptr)
 
 // void glBlendFunc(GLenum sfactor, GLenum dfactor);
 // public static native void glBlendFunc(int sfactor, int dfactor);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendFunc(JNIEnv* env, jclass clazz, jint sfactor, jint dfactor)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBlendFunc(JNIEnv* env, jclass clazz, jint sfactor, jint dfactor)
 {
     glBlendFunc(
         (GLenum)sfactor,
@@ -101,7 +101,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendFunc(JNIEnv* env, jclass clazz, j
 
 // void glClear(GLbitfield mask);
 // public static native void glClear(int mask);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClear(JNIEnv* env, jclass clazz, jint mask)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glClear(JNIEnv* env, jclass clazz, jint mask)
 {
     glClear(
         (GLbitfield)mask);
@@ -109,7 +109,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClear(JNIEnv* env, jclass clazz, jint 
 
 // void glClearColor(GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha);
 // public static native void glClearColor(float red, float green, float blue, float alpha);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearColor(JNIEnv* env, jclass clazz, jfloat red, jfloat green, jfloat blue, jfloat alpha)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glClearColor(JNIEnv* env, jclass clazz, jfloat red, jfloat green, jfloat blue, jfloat alpha)
 {
     glClearColor(
         (GLclampf)red,
@@ -120,7 +120,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearColor(JNIEnv* env, jclass clazz, 
 
 // void glClearDepth(GLclampd depth);
 // public static native void glClearDepth(double depth);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearDepth(JNIEnv* env, jclass clazz, jdouble depth)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glClearDepth(JNIEnv* env, jclass clazz, jdouble depth)
 {
     glClearDepth(
         (GLclampd)depth);
@@ -128,7 +128,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearDepth(JNIEnv* env, jclass clazz, 
 
 // void glClearStencil(GLint s);
 // public static native void glClearStencil(int s);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearStencil(JNIEnv* env, jclass clazz, jint s)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glClearStencil(JNIEnv* env, jclass clazz, jint s)
 {
     glClearStencil(
         (GLint)s);
@@ -136,7 +136,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearStencil(JNIEnv* env, jclass clazz
 
 // void glColorMask(GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha);
 // public static native void glColorMask(boolean red, boolean green, boolean blue, boolean alpha);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glColorMask(JNIEnv* env, jclass clazz, jboolean red, jboolean green, jboolean blue, jboolean alpha)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glColorMask(JNIEnv* env, jclass clazz, jboolean red, jboolean green, jboolean blue, jboolean alpha)
 {
     glColorMask(
         (GLboolean)(red == JNI_TRUE ? GL_TRUE : GL_FALSE),
@@ -147,7 +147,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glColorMask(JNIEnv* env, jclass clazz, j
 
 // void glCullFace(GLenum mode);
 // public static native void glCullFace(int mode);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCullFace(JNIEnv* env, jclass clazz, jint mode)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCullFace(JNIEnv* env, jclass clazz, jint mode)
 {
     glCullFace(
         (GLenum)mode);
@@ -155,7 +155,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCullFace(JNIEnv* env, jclass clazz, ji
 
 // void glDepthFunc(GLenum func);
 // public static native void glDepthFunc(int func);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDepthFunc(JNIEnv* env, jclass clazz, jint func)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDepthFunc(JNIEnv* env, jclass clazz, jint func)
 {
     glDepthFunc(
         (GLenum)func);
@@ -163,7 +163,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDepthFunc(JNIEnv* env, jclass clazz, j
 
 // void glDepthMask(GLboolean flag);
 // public static native void glDepthMask(boolean flag);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDepthMask(JNIEnv* env, jclass clazz, jboolean flag)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDepthMask(JNIEnv* env, jclass clazz, jboolean flag)
 {
     glDepthMask(
         (GLboolean)(flag == JNI_TRUE ? GL_TRUE : GL_FALSE));
@@ -171,7 +171,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDepthMask(JNIEnv* env, jclass clazz, j
 
 // void glDepthRange(GLclampd near, GLclampd far);
 // public static native void glDepthRange(double near, double far);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDepthRange(JNIEnv* env, jclass clazz, jdouble p_near, jdouble p_far)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDepthRange(JNIEnv* env, jclass clazz, jdouble p_near, jdouble p_far)
 {
     glDepthRange(
         (GLclampd)p_near,
@@ -180,7 +180,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDepthRange(JNIEnv* env, jclass clazz, 
 
 // void glDisable(GLenum cap);
 // public static native void glDisable(int cap);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDisable(JNIEnv* env, jclass clazz, jint cap)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDisable(JNIEnv* env, jclass clazz, jint cap)
 {
     glDisable(
         (GLenum)cap);
@@ -188,7 +188,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDisable(JNIEnv* env, jclass clazz, jin
 
 // void glDrawBuffer(GLenum mode);
 // public static native void glDrawBuffer(int mode);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawBuffer(JNIEnv* env, jclass clazz, jint mode)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawBuffer(JNIEnv* env, jclass clazz, jint mode)
 {
     glDrawBuffer(
         (GLenum)mode);
@@ -196,7 +196,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawBuffer(JNIEnv* env, jclass clazz, 
 
 // void glEnable(GLenum cap);
 // public static native void glEnable(int cap);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glEnable(JNIEnv* env, jclass clazz, jint cap)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glEnable(JNIEnv* env, jclass clazz, jint cap)
 {
     glEnable(
         (GLenum)cap);
@@ -204,21 +204,21 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glEnable(JNIEnv* env, jclass clazz, jint
 
 // void glFinish();
 // public static native void glFinish();
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glFinish(JNIEnv* env, jclass clazz)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glFinish(JNIEnv* env, jclass clazz)
 {
     glFinish();
 }
 
 // void glFlush();
 // public static native void glFlush();
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glFlush(JNIEnv* env, jclass clazz)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glFlush(JNIEnv* env, jclass clazz)
 {
     glFlush();
 }
 
 // void glFrontFace(GLenum mode);
 // public static native void glFrontFace(int mode);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glFrontFace(JNIEnv* env, jclass clazz, jint mode)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glFrontFace(JNIEnv* env, jclass clazz, jint mode)
 {
     glFrontFace(
         (GLenum)mode);
@@ -226,7 +226,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glFrontFace(JNIEnv* env, jclass clazz, j
 
 // void glGetBooleanv(GLenum pname, GLboolean* params);
 // public static native void glGetBooleanv(int pname, ByteBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBooleanv__ILjava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetBooleanv__ILjava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint pname, jobject params)
 {
     glGetBooleanv(
         (GLenum)pname,
@@ -235,7 +235,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBooleanv__ILjava_nio_ByteBuffer_2(J
 
 // void glGetBooleanv(GLenum pname, GLboolean* params);
 // public static native void glGetBooleanv(int pname, byte[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBooleanv__I_3BI(JNIEnv* env, jclass clazz, jint pname, jbyteArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetBooleanv__I_3BI(JNIEnv* env, jclass clazz, jint pname, jbyteArray params, jint paramsOffset)
 {
     jbyte* j_params = params ? (jbyte*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetBooleanv(
@@ -246,7 +246,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBooleanv__I_3BI(JNIEnv* env, jclass
 
 // void glGetDoublev(GLenum pname, GLdouble* params);
 // public static native void glGetDoublev(int pname, DoubleBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetDoublev__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetDoublev__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint pname, jobject params)
 {
     glGetDoublev(
         (GLenum)pname,
@@ -255,7 +255,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetDoublev__ILjava_nio_DoubleBuffer_2(
 
 // void glGetDoublev(GLenum pname, GLdouble* params);
 // public static native void glGetDoublev(int pname, double[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetDoublev__I_3DI(JNIEnv* env, jclass clazz, jint pname, jdoubleArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetDoublev__I_3DI(JNIEnv* env, jclass clazz, jint pname, jdoubleArray params, jint paramsOffset)
 {
     jdouble* j_params = params ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetDoublev(
@@ -266,7 +266,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetDoublev__I_3DI(JNIEnv* env, jclass 
 
 // GLenum glGetError();
 // public static native int glGetError();
-JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glGetError(JNIEnv* env, jclass clazz)
+JNIEXPORT jint JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetError(JNIEnv* env, jclass clazz)
 {
     return (jint)
         glGetError();
@@ -274,7 +274,7 @@ JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glGetError(JNIEnv* env, jclass clazz)
 
 // void glGetFloatv(GLenum pname, GLfloat* params);
 // public static native void glGetFloatv(int pname, FloatBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetFloatv__ILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetFloatv__ILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint pname, jobject params)
 {
     glGetFloatv(
         (GLenum)pname,
@@ -283,7 +283,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetFloatv__ILjava_nio_FloatBuffer_2(JN
 
 // void glGetFloatv(GLenum pname, GLfloat* params);
 // public static native void glGetFloatv(int pname, float[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetFloatv__I_3FI(JNIEnv* env, jclass clazz, jint pname, jfloatArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetFloatv__I_3FI(JNIEnv* env, jclass clazz, jint pname, jfloatArray params, jint paramsOffset)
 {
     jfloat* j_params = params ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetFloatv(
@@ -294,7 +294,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetFloatv__I_3FI(JNIEnv* env, jclass c
 
 // void glGetIntegerv(GLenum pname, GLint* params);
 // public static native void glGetIntegerv(int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetIntegerv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetIntegerv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint pname, jobject params)
 {
     glGetIntegerv(
         (GLenum)pname,
@@ -303,7 +303,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetIntegerv__ILjava_nio_IntBuffer_2(JN
 
 // void glGetIntegerv(GLenum pname, GLint* params);
 // public static native void glGetIntegerv(int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetIntegerv__I_3II(JNIEnv* env, jclass clazz, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetIntegerv__I_3II(JNIEnv* env, jclass clazz, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetIntegerv(
@@ -314,7 +314,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetIntegerv__I_3II(JNIEnv* env, jclass
 
 // GLubyte* glGetString(GLenum name);
 // public static native String glGetString(int name);
-JNIEXPORT jstring JNICALL Java_njsdl_gl_GL_glGetString(JNIEnv* env, jclass clazz, jint name)
+JNIEXPORT jstring JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetString(JNIEnv* env, jclass clazz, jint name)
 {
     GLubyte* ret = (GLubyte*)
         glGetString(
@@ -324,7 +324,7 @@ JNIEXPORT jstring JNICALL Java_njsdl_gl_GL_glGetString(JNIEnv* env, jclass clazz
 
 // void glGetTexImage(GLenum target, GLint level, GLenum format, GLenum type, GLvoid* pixels);
 // public static native void glGetTexImage(int target, int level, int format, int type, Buffer pixels);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexImage__IIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint format, jint type, jobject pixels)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetTexImage__IIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint format, jint type, jobject pixels)
 {
     glGetTexImage(
         (GLenum)target,
@@ -336,7 +336,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexImage__IIIILjava_nio_Buffer_2(JN
 
 // void glGetTexImage(GLenum target, GLint level, GLenum format, GLenum type, GLvoid* pixels);
 // public static native void glGetTexImage(int target, int level, int format, int type, long pixels);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexImage__IIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint format, jint type, jlong pixels)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetTexImage__IIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint format, jint type, jlong pixels)
 {
     glGetTexImage(
         (GLenum)target,
@@ -348,7 +348,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexImage__IIIIJ(JNIEnv* env, jclass
 
 // void glGetTexLevelParameterfv(GLenum target, GLint level, GLenum pname, GLfloat* params);
 // public static native void glGetTexLevelParameterfv(int target, int level, int pname, FloatBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexLevelParameterfv__IIILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetTexLevelParameterfv__IIILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint pname, jobject params)
 {
     glGetTexLevelParameterfv(
         (GLenum)target,
@@ -359,7 +359,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexLevelParameterfv__IIILjava_nio_F
 
 // void glGetTexLevelParameterfv(GLenum target, GLint level, GLenum pname, GLfloat* params);
 // public static native void glGetTexLevelParameterfv(int target, int level, int pname, float[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexLevelParameterfv__III_3FI(JNIEnv* env, jclass clazz, jint target, jint level, jint pname, jfloatArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetTexLevelParameterfv__III_3FI(JNIEnv* env, jclass clazz, jint target, jint level, jint pname, jfloatArray params, jint paramsOffset)
 {
     jfloat* j_params = params ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetTexLevelParameterfv(
@@ -372,7 +372,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexLevelParameterfv__III_3FI(JNIEnv
 
 // void glGetTexLevelParameteriv(GLenum target, GLint level, GLenum pname, GLint* params);
 // public static native void glGetTexLevelParameteriv(int target, int level, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexLevelParameteriv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetTexLevelParameteriv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint pname, jobject params)
 {
     glGetTexLevelParameteriv(
         (GLenum)target,
@@ -383,7 +383,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexLevelParameteriv__IIILjava_nio_I
 
 // void glGetTexLevelParameteriv(GLenum target, GLint level, GLenum pname, GLint* params);
 // public static native void glGetTexLevelParameteriv(int target, int level, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexLevelParameteriv__III_3II(JNIEnv* env, jclass clazz, jint target, jint level, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetTexLevelParameteriv__III_3II(JNIEnv* env, jclass clazz, jint target, jint level, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetTexLevelParameteriv(
@@ -396,7 +396,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexLevelParameteriv__III_3II(JNIEnv
 
 // void glGetTexParameterfv(GLenum target, GLenum pname, GLfloat* params);
 // public static native void glGetTexParameterfv(int target, int pname, FloatBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexParameterfv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetTexParameterfv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
 {
     glGetTexParameterfv(
         (GLenum)target,
@@ -406,7 +406,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexParameterfv__IILjava_nio_FloatBu
 
 // void glGetTexParameterfv(GLenum target, GLenum pname, GLfloat* params);
 // public static native void glGetTexParameterfv(int target, int pname, float[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexParameterfv__II_3FI(JNIEnv* env, jclass clazz, jint target, jint pname, jfloatArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetTexParameterfv__II_3FI(JNIEnv* env, jclass clazz, jint target, jint pname, jfloatArray params, jint paramsOffset)
 {
     jfloat* j_params = params ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetTexParameterfv(
@@ -418,7 +418,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexParameterfv__II_3FI(JNIEnv* env,
 
 // void glGetTexParameteriv(GLenum target, GLenum pname, GLint* params);
 // public static native void glGetTexParameteriv(int target, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexParameteriv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetTexParameteriv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
 {
     glGetTexParameteriv(
         (GLenum)target,
@@ -428,7 +428,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexParameteriv__IILjava_nio_IntBuff
 
 // void glGetTexParameteriv(GLenum target, GLenum pname, GLint* params);
 // public static native void glGetTexParameteriv(int target, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexParameteriv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetTexParameteriv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetTexParameteriv(
@@ -440,7 +440,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexParameteriv__II_3II(JNIEnv* env,
 
 // void glHint(GLenum target, GLenum mode);
 // public static native void glHint(int target, int mode);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glHint(JNIEnv* env, jclass clazz, jint target, jint mode)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glHint(JNIEnv* env, jclass clazz, jint target, jint mode)
 {
     glHint(
         (GLenum)target,
@@ -449,7 +449,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glHint(JNIEnv* env, jclass clazz, jint t
 
 // GLboolean glIsEnabled(GLenum cap);
 // public static native boolean glIsEnabled(int cap);
-JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsEnabled(JNIEnv* env, jclass clazz, jint cap)
+JNIEXPORT jboolean JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glIsEnabled(JNIEnv* env, jclass clazz, jint cap)
 {
     GLboolean ret = (GLboolean)
         glIsEnabled(
@@ -459,7 +459,7 @@ JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsEnabled(JNIEnv* env, jclass claz
 
 // void glLineWidth(GLfloat width);
 // public static native void glLineWidth(float width);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glLineWidth(JNIEnv* env, jclass clazz, jfloat width)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glLineWidth(JNIEnv* env, jclass clazz, jfloat width)
 {
     glLineWidth(
         (GLfloat)width);
@@ -467,7 +467,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glLineWidth(JNIEnv* env, jclass clazz, j
 
 // void glLogicOp(GLenum opcode);
 // public static native void glLogicOp(int opcode);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glLogicOp(JNIEnv* env, jclass clazz, jint opcode)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glLogicOp(JNIEnv* env, jclass clazz, jint opcode)
 {
     glLogicOp(
         (GLenum)opcode);
@@ -475,7 +475,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glLogicOp(JNIEnv* env, jclass clazz, jin
 
 // void glPixelStoref(GLenum pname, GLfloat param);
 // public static native void glPixelStoref(int pname, float param);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPixelStoref(JNIEnv* env, jclass clazz, jint pname, jfloat param)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glPixelStoref(JNIEnv* env, jclass clazz, jint pname, jfloat param)
 {
     glPixelStoref(
         (GLenum)pname,
@@ -484,7 +484,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPixelStoref(JNIEnv* env, jclass clazz,
 
 // void glPixelStorei(GLenum pname, GLint param);
 // public static native void glPixelStorei(int pname, int param);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPixelStorei(JNIEnv* env, jclass clazz, jint pname, jint param)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glPixelStorei(JNIEnv* env, jclass clazz, jint pname, jint param)
 {
     glPixelStorei(
         (GLenum)pname,
@@ -493,7 +493,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPixelStorei(JNIEnv* env, jclass clazz,
 
 // void glPointSize(GLfloat size);
 // public static native void glPointSize(float size);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPointSize(JNIEnv* env, jclass clazz, jfloat size)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glPointSize(JNIEnv* env, jclass clazz, jfloat size)
 {
     glPointSize(
         (GLfloat)size);
@@ -501,7 +501,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPointSize(JNIEnv* env, jclass clazz, j
 
 // void glPolygonMode(GLenum face, GLenum mode);
 // public static native void glPolygonMode(int face, int mode);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPolygonMode(JNIEnv* env, jclass clazz, jint face, jint mode)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glPolygonMode(JNIEnv* env, jclass clazz, jint face, jint mode)
 {
     glPolygonMode(
         (GLenum)face,
@@ -510,7 +510,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPolygonMode(JNIEnv* env, jclass clazz,
 
 // void glReadBuffer(GLenum mode);
 // public static native void glReadBuffer(int mode);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glReadBuffer(JNIEnv* env, jclass clazz, jint mode)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glReadBuffer(JNIEnv* env, jclass clazz, jint mode)
 {
     glReadBuffer(
         (GLenum)mode);
@@ -518,7 +518,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glReadBuffer(JNIEnv* env, jclass clazz, 
 
 // void glReadPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLvoid* pixels);
 // public static native void glReadPixels(int x, int y, int width, int height, int format, int type, Buffer pixels);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glReadPixels__IIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint x, jint y, jint width, jint height, jint format, jint type, jobject pixels)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glReadPixels__IIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint x, jint y, jint width, jint height, jint format, jint type, jobject pixels)
 {
     glReadPixels(
         (GLint)x,
@@ -532,7 +532,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glReadPixels__IIIIIILjava_nio_Buffer_2(J
 
 // void glReadPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLvoid* pixels);
 // public static native void glReadPixels(int x, int y, int width, int height, int format, int type, long pixels);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glReadPixels__IIIIIIJ(JNIEnv* env, jclass clazz, jint x, jint y, jint width, jint height, jint format, jint type, jlong pixels)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glReadPixels__IIIIIIJ(JNIEnv* env, jclass clazz, jint x, jint y, jint width, jint height, jint format, jint type, jlong pixels)
 {
     glReadPixels(
         (GLint)x,
@@ -546,7 +546,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glReadPixels__IIIIIIJ(JNIEnv* env, jclas
 
 // void glScissor(GLint x, GLint y, GLsizei width, GLsizei height);
 // public static native void glScissor(int x, int y, int width, int height);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glScissor(JNIEnv* env, jclass clazz, jint x, jint y, jint width, jint height)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glScissor(JNIEnv* env, jclass clazz, jint x, jint y, jint width, jint height)
 {
     glScissor(
         (GLint)x,
@@ -557,7 +557,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glScissor(JNIEnv* env, jclass clazz, jin
 
 // void glStencilFunc(GLenum func, GLint ref, GLuint mask);
 // public static native void glStencilFunc(int func, int ref, int mask);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glStencilFunc(JNIEnv* env, jclass clazz, jint func, jint ref, jint mask)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glStencilFunc(JNIEnv* env, jclass clazz, jint func, jint ref, jint mask)
 {
     glStencilFunc(
         (GLenum)func,
@@ -567,7 +567,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glStencilFunc(JNIEnv* env, jclass clazz,
 
 // void glStencilMask(GLuint mask);
 // public static native void glStencilMask(int mask);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glStencilMask(JNIEnv* env, jclass clazz, jint mask)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glStencilMask(JNIEnv* env, jclass clazz, jint mask)
 {
     glStencilMask(
         (GLuint)mask);
@@ -575,7 +575,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glStencilMask(JNIEnv* env, jclass clazz,
 
 // void glStencilOp(GLenum fail, GLenum zfail, GLenum zpass);
 // public static native void glStencilOp(int fail, int zfail, int zpass);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glStencilOp(JNIEnv* env, jclass clazz, jint fail, jint zfail, jint zpass)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glStencilOp(JNIEnv* env, jclass clazz, jint fail, jint zfail, jint zpass)
 {
     glStencilOp(
         (GLenum)fail,
@@ -585,7 +585,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glStencilOp(JNIEnv* env, jclass clazz, j
 
 // void glTexImage1D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLint border, GLenum format, GLenum type, GLvoid* pixels);
 // public static native void glTexImage1D(int target, int level, int internalformat, int width, int border, int format, int type, Buffer pixels);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexImage1D__IIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint border, jint format, jint type, jobject pixels)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexImage1D__IIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint border, jint format, jint type, jobject pixels)
 {
     glTexImage1D(
         (GLenum)target,
@@ -600,7 +600,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexImage1D__IIIIIIILjava_nio_Buffer_2(
 
 // void glTexImage1D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLint border, GLenum format, GLenum type, GLvoid* pixels);
 // public static native void glTexImage1D(int target, int level, int internalformat, int width, int border, int format, int type, long pixels);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexImage1D__IIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint border, jint format, jint type, jlong pixels)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexImage1D__IIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint border, jint format, jint type, jlong pixels)
 {
     glTexImage1D(
         (GLenum)target,
@@ -615,7 +615,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexImage1D__IIIIIIIJ(JNIEnv* env, jcla
 
 // void glTexImage2D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, GLvoid* pixels);
 // public static native void glTexImage2D(int target, int level, int internalformat, int width, int height, int border, int format, int type, Buffer pixels);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexImage2D__IIIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint height, jint border, jint format, jint type, jobject pixels)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexImage2D__IIIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint height, jint border, jint format, jint type, jobject pixels)
 {
     glTexImage2D(
         (GLenum)target,
@@ -631,7 +631,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexImage2D__IIIIIIIILjava_nio_Buffer_2
 
 // void glTexImage2D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, GLvoid* pixels);
 // public static native void glTexImage2D(int target, int level, int internalformat, int width, int height, int border, int format, int type, long pixels);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexImage2D__IIIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint height, jint border, jint format, jint type, jlong pixels)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexImage2D__IIIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint height, jint border, jint format, jint type, jlong pixels)
 {
     glTexImage2D(
         (GLenum)target,
@@ -647,7 +647,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexImage2D__IIIIIIIIJ(JNIEnv* env, jcl
 
 // void glTexParameterf(GLenum target, GLenum pname, GLfloat param);
 // public static native void glTexParameterf(int target, int pname, float param);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameterf(JNIEnv* env, jclass clazz, jint target, jint pname, jfloat param)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexParameterf(JNIEnv* env, jclass clazz, jint target, jint pname, jfloat param)
 {
     glTexParameterf(
         (GLenum)target,
@@ -657,7 +657,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameterf(JNIEnv* env, jclass claz
 
 // void glTexParameterfv(GLenum target, GLenum pname, GLfloat* params);
 // public static native void glTexParameterfv(int target, int pname, FloatBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameterfv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexParameterfv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
 {
     glTexParameterfv(
         (GLenum)target,
@@ -667,7 +667,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameterfv__IILjava_nio_FloatBuffe
 
 // void glTexParameterfv(GLenum target, GLenum pname, GLfloat* params);
 // public static native void glTexParameterfv(int target, int pname, float[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameterfv__II_3FI(JNIEnv* env, jclass clazz, jint target, jint pname, jfloatArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexParameterfv__II_3FI(JNIEnv* env, jclass clazz, jint target, jint pname, jfloatArray params, jint paramsOffset)
 {
     jfloat* j_params = params ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glTexParameterfv(
@@ -679,7 +679,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameterfv__II_3FI(JNIEnv* env, jc
 
 // void glTexParameteri(GLenum target, GLenum pname, GLint param);
 // public static native void glTexParameteri(int target, int pname, int param);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameteri(JNIEnv* env, jclass clazz, jint target, jint pname, jint param)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexParameteri(JNIEnv* env, jclass clazz, jint target, jint pname, jint param)
 {
     glTexParameteri(
         (GLenum)target,
@@ -689,7 +689,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameteri(JNIEnv* env, jclass claz
 
 // void glTexParameteriv(GLenum target, GLenum pname, GLint* params);
 // public static native void glTexParameteriv(int target, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameteriv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexParameteriv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
 {
     glTexParameteriv(
         (GLenum)target,
@@ -699,7 +699,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameteriv__IILjava_nio_IntBuffer_
 
 // void glTexParameteriv(GLenum target, GLenum pname, GLint* params);
 // public static native void glTexParameteriv(int target, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameteriv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexParameteriv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glTexParameteriv(
@@ -711,7 +711,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameteriv__II_3II(JNIEnv* env, jc
 
 // void glViewport(GLint x, GLint y, GLsizei width, GLsizei height);
 // public static native void glViewport(int x, int y, int width, int height);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glViewport(JNIEnv* env, jclass clazz, jint x, jint y, jint width, jint height)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glViewport(JNIEnv* env, jclass clazz, jint x, jint y, jint width, jint height)
 {
     glViewport(
         (GLint)x,
@@ -722,7 +722,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glViewport(JNIEnv* env, jclass clazz, ji
 
 // void glBindTexture(GLenum target, GLuint texture);
 // public static native void glBindTexture(int target, int texture);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindTexture(JNIEnv* env, jclass clazz, jint target, jint texture)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBindTexture(JNIEnv* env, jclass clazz, jint target, jint texture)
 {
     glBindTexture(
         (GLenum)target,
@@ -731,7 +731,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindTexture(JNIEnv* env, jclass clazz,
 
 // void glCopyTexImage1D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border);
 // public static native void glCopyTexImage1D(int target, int level, int internalformat, int x, int y, int width, int border);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCopyTexImage1D(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint x, jint y, jint width, jint border)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCopyTexImage1D(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint x, jint y, jint width, jint border)
 {
     glCopyTexImage1D(
         (GLenum)target,
@@ -745,7 +745,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCopyTexImage1D(JNIEnv* env, jclass cla
 
 // void glCopyTexImage2D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border);
 // public static native void glCopyTexImage2D(int target, int level, int internalformat, int x, int y, int width, int height, int border);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCopyTexImage2D(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint x, jint y, jint width, jint height, jint border)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCopyTexImage2D(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint x, jint y, jint width, jint height, jint border)
 {
     glCopyTexImage2D(
         (GLenum)target,
@@ -760,7 +760,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCopyTexImage2D(JNIEnv* env, jclass cla
 
 // void glCopyTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width);
 // public static native void glCopyTexSubImage1D(int target, int level, int xoffset, int x, int y, int width);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCopyTexSubImage1D(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint x, jint y, jint width)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCopyTexSubImage1D(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint x, jint y, jint width)
 {
     glCopyTexSubImage1D(
         (GLenum)target,
@@ -773,7 +773,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCopyTexSubImage1D(JNIEnv* env, jclass 
 
 // void glCopyTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height);
 // public static native void glCopyTexSubImage2D(int target, int level, int xoffset, int yoffset, int x, int y, int width, int height);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCopyTexSubImage2D(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint x, jint y, jint width, jint height)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCopyTexSubImage2D(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint x, jint y, jint width, jint height)
 {
     glCopyTexSubImage2D(
         (GLenum)target,
@@ -788,7 +788,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCopyTexSubImage2D(JNIEnv* env, jclass 
 
 // void glDeleteTextures(GLsizei n, GLuint* textures);
 // public static native void glDeleteTextures(int n, IntBuffer textures);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteTextures__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject textures)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteTextures__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject textures)
 {
     glDeleteTextures(
         (GLsizei)n,
@@ -797,7 +797,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteTextures__ILjava_nio_IntBuffer_2
 
 // void glDeleteTextures(GLsizei n, GLuint* textures);
 // public static native void glDeleteTextures(int n, int[] textures, int texturesOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteTextures__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray textures, jint texturesOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteTextures__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray textures, jint texturesOffset)
 {
     jint* j_textures = textures ? (jint*)((*env)->GetPrimitiveArrayCritical(env, textures, 0)) : 0;
     glDeleteTextures(
@@ -808,7 +808,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteTextures__I_3II(JNIEnv* env, jcl
 
 // void glDrawArrays(GLenum mode, GLint first, GLsizei count);
 // public static native void glDrawArrays(int mode, int first, int count);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawArrays(JNIEnv* env, jclass clazz, jint mode, jint first, jint count)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawArrays(JNIEnv* env, jclass clazz, jint mode, jint first, jint count)
 {
     glDrawArrays(
         (GLenum)mode,
@@ -818,7 +818,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawArrays(JNIEnv* env, jclass clazz, 
 
 // void glDrawElements(GLenum mode, GLsizei count, GLenum type, GLvoid* indices);
 // public static native void glDrawElements(int mode, int count, int type, Buffer indices);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElements__IIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint mode, jint count, jint type, jobject indices)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawElements__IIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint mode, jint count, jint type, jobject indices)
 {
     glDrawElements(
         (GLenum)mode,
@@ -829,7 +829,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElements__IIILjava_nio_Buffer_2(JN
 
 // void glDrawElements(GLenum mode, GLsizei count, GLenum type, GLvoid* indices);
 // public static native void glDrawElements(int mode, int count, int type, long indices);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElements__IIIJ(JNIEnv* env, jclass clazz, jint mode, jint count, jint type, jlong indices)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawElements__IIIJ(JNIEnv* env, jclass clazz, jint mode, jint count, jint type, jlong indices)
 {
     glDrawElements(
         (GLenum)mode,
@@ -840,7 +840,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElements__IIIJ(JNIEnv* env, jclass
 
 // void glGenTextures(GLsizei n, GLuint* textures);
 // public static native void glGenTextures(int n, IntBuffer textures);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenTextures__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject textures)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenTextures__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject textures)
 {
     glGenTextures(
         (GLsizei)n,
@@ -849,7 +849,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenTextures__ILjava_nio_IntBuffer_2(JN
 
 // void glGenTextures(GLsizei n, GLuint* textures);
 // public static native void glGenTextures(int n, int[] textures, int texturesOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenTextures__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray textures, jint texturesOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenTextures__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray textures, jint texturesOffset)
 {
     jint* j_textures = textures ? (jint*)((*env)->GetPrimitiveArrayCritical(env, textures, 0)) : 0;
     glGenTextures(
@@ -860,7 +860,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenTextures__I_3II(JNIEnv* env, jclass
 
 // GLboolean glIsTexture(GLuint texture);
 // public static native boolean glIsTexture(int texture);
-JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsTexture(JNIEnv* env, jclass clazz, jint texture)
+JNIEXPORT jboolean JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glIsTexture(JNIEnv* env, jclass clazz, jint texture)
 {
     GLboolean ret = (GLboolean)
         glIsTexture(
@@ -870,7 +870,7 @@ JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsTexture(JNIEnv* env, jclass claz
 
 // void glPolygonOffset(GLfloat factor, GLfloat units);
 // public static native void glPolygonOffset(float factor, float units);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPolygonOffset(JNIEnv* env, jclass clazz, jfloat factor, jfloat units)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glPolygonOffset(JNIEnv* env, jclass clazz, jfloat factor, jfloat units)
 {
     glPolygonOffset(
         (GLfloat)factor,
@@ -879,7 +879,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPolygonOffset(JNIEnv* env, jclass claz
 
 // void glTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, GLvoid* pixels);
 // public static native void glTexSubImage1D(int target, int level, int xoffset, int width, int format, int type, Buffer pixels);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexSubImage1D__IIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint width, jint format, jint type, jobject pixels)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexSubImage1D__IIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint width, jint format, jint type, jobject pixels)
 {
     glTexSubImage1D(
         (GLenum)target,
@@ -893,7 +893,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexSubImage1D__IIIIIILjava_nio_Buffer_
 
 // void glTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, GLvoid* pixels);
 // public static native void glTexSubImage1D(int target, int level, int xoffset, int width, int format, int type, long pixels);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexSubImage1D__IIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint width, jint format, jint type, jlong pixels)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexSubImage1D__IIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint width, jint format, jint type, jlong pixels)
 {
     glTexSubImage1D(
         (GLenum)target,
@@ -907,7 +907,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexSubImage1D__IIIIIIJ(JNIEnv* env, jc
 
 // void glTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, GLvoid* pixels);
 // public static native void glTexSubImage2D(int target, int level, int xoffset, int yoffset, int width, int height, int format, int type, Buffer pixels);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexSubImage2D__IIIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint width, jint height, jint format, jint type, jobject pixels)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexSubImage2D__IIIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint width, jint height, jint format, jint type, jobject pixels)
 {
     glTexSubImage2D(
         (GLenum)target,
@@ -923,7 +923,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexSubImage2D__IIIIIIIILjava_nio_Buffe
 
 // void glTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, GLvoid* pixels);
 // public static native void glTexSubImage2D(int target, int level, int xoffset, int yoffset, int width, int height, int format, int type, long pixels);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexSubImage2D__IIIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint width, jint height, jint format, jint type, jlong pixels)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexSubImage2D__IIIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint width, jint height, jint format, jint type, jlong pixels)
 {
     glTexSubImage2D(
         (GLenum)target,
@@ -939,7 +939,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexSubImage2D__IIIIIIIIJ(JNIEnv* env, 
 
 // void glBlendColor(GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha);
 // public static native void glBlendColor(float red, float green, float blue, float alpha);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendColor(JNIEnv* env, jclass clazz, jfloat red, jfloat green, jfloat blue, jfloat alpha)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBlendColor(JNIEnv* env, jclass clazz, jfloat red, jfloat green, jfloat blue, jfloat alpha)
 {
     glBlendColor(
         (GLclampf)red,
@@ -950,7 +950,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendColor(JNIEnv* env, jclass clazz, 
 
 // void glBlendEquation(GLenum mode);
 // public static native void glBlendEquation(int mode);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendEquation(JNIEnv* env, jclass clazz, jint mode)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBlendEquation(JNIEnv* env, jclass clazz, jint mode)
 {
     glBlendEquation(
         (GLenum)mode);
@@ -958,7 +958,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendEquation(JNIEnv* env, jclass claz
 
 // void glCopyTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height);
 // public static native void glCopyTexSubImage3D(int target, int level, int xoffset, int yoffset, int zoffset, int x, int y, int width, int height);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCopyTexSubImage3D(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint zoffset, jint x, jint y, jint width, jint height)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCopyTexSubImage3D(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint zoffset, jint x, jint y, jint width, jint height)
 {
     glCopyTexSubImage3D(
         (GLenum)target,
@@ -974,7 +974,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCopyTexSubImage3D(JNIEnv* env, jclass 
 
 // void glDrawRangeElements(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, GLvoid* indices);
 // public static native void glDrawRangeElements(int mode, int start, int end, int count, int type, Buffer indices);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawRangeElements__IIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint mode, jint start, jint end, jint count, jint type, jobject indices)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawRangeElements__IIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint mode, jint start, jint end, jint count, jint type, jobject indices)
 {
     glDrawRangeElements(
         (GLenum)mode,
@@ -987,7 +987,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawRangeElements__IIIIILjava_nio_Buff
 
 // void glDrawRangeElements(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, GLvoid* indices);
 // public static native void glDrawRangeElements(int mode, int start, int end, int count, int type, long indices);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawRangeElements__IIIIIJ(JNIEnv* env, jclass clazz, jint mode, jint start, jint end, jint count, jint type, jlong indices)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawRangeElements__IIIIIJ(JNIEnv* env, jclass clazz, jint mode, jint start, jint end, jint count, jint type, jlong indices)
 {
     glDrawRangeElements(
         (GLenum)mode,
@@ -1000,7 +1000,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawRangeElements__IIIIIJ(JNIEnv* env,
 
 // void glTexImage3D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, GLvoid* pixels);
 // public static native void glTexImage3D(int target, int level, int internalformat, int width, int height, int depth, int border, int format, int type, Buffer pixels);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexImage3D__IIIIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint height, jint depth, jint border, jint format, jint type, jobject pixels)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexImage3D__IIIIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint height, jint depth, jint border, jint format, jint type, jobject pixels)
 {
     glTexImage3D(
         (GLenum)target,
@@ -1017,7 +1017,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexImage3D__IIIIIIIIILjava_nio_Buffer_
 
 // void glTexImage3D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, GLvoid* pixels);
 // public static native void glTexImage3D(int target, int level, int internalformat, int width, int height, int depth, int border, int format, int type, long pixels);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexImage3D__IIIIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint height, jint depth, jint border, jint format, jint type, jlong pixels)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexImage3D__IIIIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint height, jint depth, jint border, jint format, jint type, jlong pixels)
 {
     glTexImage3D(
         (GLenum)target,
@@ -1034,7 +1034,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexImage3D__IIIIIIIIIJ(JNIEnv* env, jc
 
 // void glTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, GLvoid* pixels);
 // public static native void glTexSubImage3D(int target, int level, int xoffset, int yoffset, int zoffset, int width, int height, int depth, int format, int type, Buffer pixels);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexSubImage3D__IIIIIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint zoffset, jint width, jint height, jint depth, jint format, jint type, jobject pixels)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexSubImage3D__IIIIIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint zoffset, jint width, jint height, jint depth, jint format, jint type, jobject pixels)
 {
     glTexSubImage3D(
         (GLenum)target,
@@ -1052,7 +1052,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexSubImage3D__IIIIIIIIIILjava_nio_Buf
 
 // void glTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, GLvoid* pixels);
 // public static native void glTexSubImage3D(int target, int level, int xoffset, int yoffset, int zoffset, int width, int height, int depth, int format, int type, long pixels);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexSubImage3D__IIIIIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint zoffset, jint width, jint height, jint depth, jint format, jint type, jlong pixels)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexSubImage3D__IIIIIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint zoffset, jint width, jint height, jint depth, jint format, jint type, jlong pixels)
 {
     glTexSubImage3D(
         (GLenum)target,
@@ -1070,7 +1070,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexSubImage3D__IIIIIIIIIIJ(JNIEnv* env
 
 // void glActiveTexture(GLenum texture);
 // public static native void glActiveTexture(int texture);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glActiveTexture(JNIEnv* env, jclass clazz, jint texture)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glActiveTexture(JNIEnv* env, jclass clazz, jint texture)
 {
     glActiveTexture(
         (GLenum)texture);
@@ -1078,7 +1078,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glActiveTexture(JNIEnv* env, jclass claz
 
 // void glCompressedTexImage1D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, GLvoid* data);
 // public static native void glCompressedTexImage1D(int target, int level, int internalformat, int width, int border, int imageSize, Buffer data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexImage1D__IIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint border, jint imageSize, jobject data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCompressedTexImage1D__IIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint border, jint imageSize, jobject data)
 {
     glCompressedTexImage1D(
         (GLenum)target,
@@ -1092,7 +1092,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexImage1D__IIIIIILjava_nio_
 
 // void glCompressedTexImage1D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, GLvoid* data);
 // public static native void glCompressedTexImage1D(int target, int level, int internalformat, int width, int border, int imageSize, long data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexImage1D__IIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint border, jint imageSize, jlong data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCompressedTexImage1D__IIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint border, jint imageSize, jlong data)
 {
     glCompressedTexImage1D(
         (GLenum)target,
@@ -1106,7 +1106,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexImage1D__IIIIIIJ(JNIEnv* 
 
 // void glCompressedTexImage2D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, GLvoid* data);
 // public static native void glCompressedTexImage2D(int target, int level, int internalformat, int width, int height, int border, int imageSize, Buffer data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexImage2D__IIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint height, jint border, jint imageSize, jobject data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCompressedTexImage2D__IIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint height, jint border, jint imageSize, jobject data)
 {
     glCompressedTexImage2D(
         (GLenum)target,
@@ -1121,7 +1121,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexImage2D__IIIIIIILjava_nio
 
 // void glCompressedTexImage2D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, GLvoid* data);
 // public static native void glCompressedTexImage2D(int target, int level, int internalformat, int width, int height, int border, int imageSize, long data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexImage2D__IIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint height, jint border, jint imageSize, jlong data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCompressedTexImage2D__IIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint height, jint border, jint imageSize, jlong data)
 {
     glCompressedTexImage2D(
         (GLenum)target,
@@ -1136,7 +1136,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexImage2D__IIIIIIIJ(JNIEnv*
 
 // void glCompressedTexImage3D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, GLvoid* data);
 // public static native void glCompressedTexImage3D(int target, int level, int internalformat, int width, int height, int depth, int border, int imageSize, Buffer data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexImage3D__IIIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint height, jint depth, jint border, jint imageSize, jobject data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCompressedTexImage3D__IIIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint height, jint depth, jint border, jint imageSize, jobject data)
 {
     glCompressedTexImage3D(
         (GLenum)target,
@@ -1152,7 +1152,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexImage3D__IIIIIIIILjava_ni
 
 // void glCompressedTexImage3D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, GLvoid* data);
 // public static native void glCompressedTexImage3D(int target, int level, int internalformat, int width, int height, int depth, int border, int imageSize, long data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexImage3D__IIIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint height, jint depth, jint border, jint imageSize, jlong data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCompressedTexImage3D__IIIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint internalformat, jint width, jint height, jint depth, jint border, jint imageSize, jlong data)
 {
     glCompressedTexImage3D(
         (GLenum)target,
@@ -1168,7 +1168,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexImage3D__IIIIIIIIJ(JNIEnv
 
 // void glCompressedTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, GLvoid* data);
 // public static native void glCompressedTexSubImage1D(int target, int level, int xoffset, int width, int format, int imageSize, Buffer data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexSubImage1D__IIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint width, jint format, jint imageSize, jobject data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCompressedTexSubImage1D__IIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint width, jint format, jint imageSize, jobject data)
 {
     glCompressedTexSubImage1D(
         (GLenum)target,
@@ -1182,7 +1182,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexSubImage1D__IIIIIILjava_n
 
 // void glCompressedTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, GLvoid* data);
 // public static native void glCompressedTexSubImage1D(int target, int level, int xoffset, int width, int format, int imageSize, long data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexSubImage1D__IIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint width, jint format, jint imageSize, jlong data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCompressedTexSubImage1D__IIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint width, jint format, jint imageSize, jlong data)
 {
     glCompressedTexSubImage1D(
         (GLenum)target,
@@ -1196,7 +1196,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexSubImage1D__IIIIIIJ(JNIEn
 
 // void glCompressedTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, GLvoid* data);
 // public static native void glCompressedTexSubImage2D(int target, int level, int xoffset, int yoffset, int width, int height, int format, int imageSize, Buffer data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexSubImage2D__IIIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint width, jint height, jint format, jint imageSize, jobject data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCompressedTexSubImage2D__IIIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint width, jint height, jint format, jint imageSize, jobject data)
 {
     glCompressedTexSubImage2D(
         (GLenum)target,
@@ -1212,7 +1212,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexSubImage2D__IIIIIIIILjava
 
 // void glCompressedTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, GLvoid* data);
 // public static native void glCompressedTexSubImage2D(int target, int level, int xoffset, int yoffset, int width, int height, int format, int imageSize, long data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexSubImage2D__IIIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint width, jint height, jint format, jint imageSize, jlong data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCompressedTexSubImage2D__IIIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint width, jint height, jint format, jint imageSize, jlong data)
 {
     glCompressedTexSubImage2D(
         (GLenum)target,
@@ -1228,7 +1228,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexSubImage2D__IIIIIIIIJ(JNI
 
 // void glCompressedTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, GLvoid* data);
 // public static native void glCompressedTexSubImage3D(int target, int level, int xoffset, int yoffset, int zoffset, int width, int height, int depth, int format, int imageSize, Buffer data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexSubImage3D__IIIIIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint zoffset, jint width, jint height, jint depth, jint format, jint imageSize, jobject data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCompressedTexSubImage3D__IIIIIIIIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint zoffset, jint width, jint height, jint depth, jint format, jint imageSize, jobject data)
 {
     glCompressedTexSubImage3D(
         (GLenum)target,
@@ -1246,7 +1246,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexSubImage3D__IIIIIIIIIILja
 
 // void glCompressedTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, GLvoid* data);
 // public static native void glCompressedTexSubImage3D(int target, int level, int xoffset, int yoffset, int zoffset, int width, int height, int depth, int format, int imageSize, long data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexSubImage3D__IIIIIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint zoffset, jint width, jint height, jint depth, jint format, jint imageSize, jlong data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCompressedTexSubImage3D__IIIIIIIIIIJ(JNIEnv* env, jclass clazz, jint target, jint level, jint xoffset, jint yoffset, jint zoffset, jint width, jint height, jint depth, jint format, jint imageSize, jlong data)
 {
     glCompressedTexSubImage3D(
         (GLenum)target,
@@ -1264,7 +1264,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompressedTexSubImage3D__IIIIIIIIIIJ(J
 
 // void glGetCompressedTexImage(GLenum target, GLint level, GLvoid* img);
 // public static native void glGetCompressedTexImage(int target, int level, Buffer img);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetCompressedTexImage__IILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jobject img)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetCompressedTexImage__IILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint level, jobject img)
 {
     glGetCompressedTexImage(
         (GLenum)target,
@@ -1274,7 +1274,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetCompressedTexImage__IILjava_nio_Buf
 
 // void glGetCompressedTexImage(GLenum target, GLint level, GLvoid* img);
 // public static native void glGetCompressedTexImage(int target, int level, long img);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetCompressedTexImage__IIJ(JNIEnv* env, jclass clazz, jint target, jint level, jlong img)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetCompressedTexImage__IIJ(JNIEnv* env, jclass clazz, jint target, jint level, jlong img)
 {
     glGetCompressedTexImage(
         (GLenum)target,
@@ -1284,7 +1284,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetCompressedTexImage__IIJ(JNIEnv* env
 
 // void glSampleCoverage(GLclampf value, GLboolean invert);
 // public static native void glSampleCoverage(float value, boolean invert);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSampleCoverage(JNIEnv* env, jclass clazz, jfloat value, jboolean invert)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glSampleCoverage(JNIEnv* env, jclass clazz, jfloat value, jboolean invert)
 {
     glSampleCoverage(
         (GLclampf)value,
@@ -1293,7 +1293,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSampleCoverage(JNIEnv* env, jclass cla
 
 // void glBlendFuncSeparate(GLenum sfactorRGB, GLenum dfactorRGB, GLenum sfactorAlpha, GLenum dfactorAlpha);
 // public static native void glBlendFuncSeparate(int sfactorRGB, int dfactorRGB, int sfactorAlpha, int dfactorAlpha);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendFuncSeparate(JNIEnv* env, jclass clazz, jint sfactorRGB, jint dfactorRGB, jint sfactorAlpha, jint dfactorAlpha)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBlendFuncSeparate(JNIEnv* env, jclass clazz, jint sfactorRGB, jint dfactorRGB, jint sfactorAlpha, jint dfactorAlpha)
 {
     glBlendFuncSeparate(
         (GLenum)sfactorRGB,
@@ -1304,7 +1304,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendFuncSeparate(JNIEnv* env, jclass 
 
 // void glMultiDrawArrays(GLenum mode, GLint* first, GLsizei* count, GLsizei primcount);
 // public static native void glMultiDrawArrays(int mode, IntBuffer first, IntBuffer count, int primcount);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiDrawArrays__ILjava_nio_IntBuffer_2Ljava_nio_IntBuffer_2I(JNIEnv* env, jclass clazz, jint mode, jobject first, jobject count, jint primcount)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiDrawArrays__ILjava_nio_IntBuffer_2Ljava_nio_IntBuffer_2I(JNIEnv* env, jclass clazz, jint mode, jobject first, jobject count, jint primcount)
 {
     glMultiDrawArrays(
         (GLenum)mode,
@@ -1315,7 +1315,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiDrawArrays__ILjava_nio_IntBuffer_
 
 // void glMultiDrawArrays(GLenum mode, GLint* first, GLsizei* count, GLsizei primcount);
 // public static native void glMultiDrawArrays(int mode, int[] first, int firstOffset, int[] count, int countOffset, int primcount);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiDrawArrays__I_3II_3III(JNIEnv* env, jclass clazz, jint mode, jintArray first, jint firstOffset, jintArray count, jint countOffset, jint primcount)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiDrawArrays__I_3II_3III(JNIEnv* env, jclass clazz, jint mode, jintArray first, jint firstOffset, jintArray count, jint countOffset, jint primcount)
 {
     jint* j_first = first ? (jint*)((*env)->GetPrimitiveArrayCritical(env, first, 0)) : 0;
     jint* j_count = count ? (jint*)((*env)->GetPrimitiveArrayCritical(env, count, 0)) : 0;
@@ -1330,7 +1330,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiDrawArrays__I_3II_3III(JNIEnv* en
 
 // void glMultiDrawElements(GLenum mode, GLsizei* count, GLenum type, GLvoid** indices, GLsizei primcount);
 // public static native void glMultiDrawElements(int mode, IntBuffer count, int type, Buffer[] indices, int primcount);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiDrawElements__ILjava_nio_IntBuffer_2I_3Ljava_nio_Buffer_2I(JNIEnv* env, jclass clazz, jint mode, jobject count, jint type, jobjectArray indices, jint primcount)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiDrawElements__ILjava_nio_IntBuffer_2I_3Ljava_nio_Buffer_2I(JNIEnv* env, jclass clazz, jint mode, jobject count, jint type, jobjectArray indices, jint primcount)
 {
     void** j_indices = newNativeBufferArray(env, indices);
     glMultiDrawElements(
@@ -1344,7 +1344,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiDrawElements__ILjava_nio_IntBuffe
 
 // void glMultiDrawElements(GLenum mode, GLsizei* count, GLenum type, GLvoid** indices, GLsizei primcount);
 // public static native void glMultiDrawElements(int mode, int[] count, int countOffset, int type, Buffer[] indices, int primcount);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiDrawElements__I_3III_3Ljava_nio_Buffer_2I(JNIEnv* env, jclass clazz, jint mode, jintArray count, jint countOffset, jint type, jobjectArray indices, jint primcount)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiDrawElements__I_3III_3Ljava_nio_Buffer_2I(JNIEnv* env, jclass clazz, jint mode, jintArray count, jint countOffset, jint type, jobjectArray indices, jint primcount)
 {
     jint* j_count = count ? (jint*)((*env)->GetPrimitiveArrayCritical(env, count, 0)) : 0;
     void** j_indices = newNativeBufferArray(env, indices);
@@ -1360,7 +1360,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiDrawElements__I_3III_3Ljava_nio_B
 
 // void glPointParameterf(GLenum pname, GLfloat param);
 // public static native void glPointParameterf(int pname, float param);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPointParameterf(JNIEnv* env, jclass clazz, jint pname, jfloat param)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glPointParameterf(JNIEnv* env, jclass clazz, jint pname, jfloat param)
 {
     glPointParameterf(
         (GLenum)pname,
@@ -1369,7 +1369,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPointParameterf(JNIEnv* env, jclass cl
 
 // void glPointParameterfv(GLenum pname, GLfloat* params);
 // public static native void glPointParameterfv(int pname, FloatBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPointParameterfv__ILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glPointParameterfv__ILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint pname, jobject params)
 {
     glPointParameterfv(
         (GLenum)pname,
@@ -1378,7 +1378,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPointParameterfv__ILjava_nio_FloatBuff
 
 // void glPointParameterfv(GLenum pname, GLfloat* params);
 // public static native void glPointParameterfv(int pname, float[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPointParameterfv__I_3FI(JNIEnv* env, jclass clazz, jint pname, jfloatArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glPointParameterfv__I_3FI(JNIEnv* env, jclass clazz, jint pname, jfloatArray params, jint paramsOffset)
 {
     jfloat* j_params = params ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glPointParameterfv(
@@ -1389,7 +1389,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPointParameterfv__I_3FI(JNIEnv* env, j
 
 // void glPointParameteri(GLenum pname, GLint param);
 // public static native void glPointParameteri(int pname, int param);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPointParameteri(JNIEnv* env, jclass clazz, jint pname, jint param)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glPointParameteri(JNIEnv* env, jclass clazz, jint pname, jint param)
 {
     glPointParameteri(
         (GLenum)pname,
@@ -1398,7 +1398,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPointParameteri(JNIEnv* env, jclass cl
 
 // void glPointParameteriv(GLenum pname, GLint* params);
 // public static native void glPointParameteriv(int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPointParameteriv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glPointParameteriv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint pname, jobject params)
 {
     glPointParameteriv(
         (GLenum)pname,
@@ -1407,7 +1407,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPointParameteriv__ILjava_nio_IntBuffer
 
 // void glPointParameteriv(GLenum pname, GLint* params);
 // public static native void glPointParameteriv(int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPointParameteriv__I_3II(JNIEnv* env, jclass clazz, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glPointParameteriv__I_3II(JNIEnv* env, jclass clazz, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glPointParameteriv(
@@ -1418,7 +1418,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPointParameteriv__I_3II(JNIEnv* env, j
 
 // void glBeginQuery(GLenum target, GLuint id);
 // public static native void glBeginQuery(int target, int id);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBeginQuery(JNIEnv* env, jclass clazz, jint target, jint id)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBeginQuery(JNIEnv* env, jclass clazz, jint target, jint id)
 {
     glBeginQuery(
         (GLenum)target,
@@ -1427,7 +1427,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBeginQuery(JNIEnv* env, jclass clazz, 
 
 // void glBindBuffer(GLenum target, GLuint buffer);
 // public static native void glBindBuffer(int target, int buffer);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindBuffer(JNIEnv* env, jclass clazz, jint target, jint buffer)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBindBuffer(JNIEnv* env, jclass clazz, jint target, jint buffer)
 {
     glBindBuffer(
         (GLenum)target,
@@ -1436,7 +1436,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindBuffer(JNIEnv* env, jclass clazz, 
 
 // void glBufferData(GLenum target, GLsizeiptr size, GLvoid* data, GLenum usage);
 // public static native void glBufferData(int target, int size, Buffer data, int usage);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBufferData__IILjava_nio_Buffer_2I(JNIEnv* env, jclass clazz, jint target, jint size, jobject data, jint usage)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBufferData__IILjava_nio_Buffer_2I(JNIEnv* env, jclass clazz, jint target, jint size, jobject data, jint usage)
 {
     glBufferData(
         (GLenum)target,
@@ -1447,7 +1447,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBufferData__IILjava_nio_Buffer_2I(JNIE
 
 // void glBufferData(GLenum target, GLsizeiptr size, GLvoid* data, GLenum usage);
 // public static native void glBufferData(int target, int size, long data, int usage);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBufferData__IIJI(JNIEnv* env, jclass clazz, jint target, jint size, jlong data, jint usage)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBufferData__IIJI(JNIEnv* env, jclass clazz, jint target, jint size, jlong data, jint usage)
 {
     glBufferData(
         (GLenum)target,
@@ -1458,7 +1458,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBufferData__IIJI(JNIEnv* env, jclass c
 
 // void glBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, GLvoid* data);
 // public static native void glBufferSubData(int target, int offset, int size, Buffer data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBufferSubData__IIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint offset, jint size, jobject data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBufferSubData__IIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint offset, jint size, jobject data)
 {
     glBufferSubData(
         (GLenum)target,
@@ -1469,7 +1469,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBufferSubData__IIILjava_nio_Buffer_2(J
 
 // void glBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, GLvoid* data);
 // public static native void glBufferSubData(int target, int offset, int size, long data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBufferSubData__IIIJ(JNIEnv* env, jclass clazz, jint target, jint offset, jint size, jlong data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBufferSubData__IIIJ(JNIEnv* env, jclass clazz, jint target, jint offset, jint size, jlong data)
 {
     glBufferSubData(
         (GLenum)target,
@@ -1480,7 +1480,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBufferSubData__IIIJ(JNIEnv* env, jclas
 
 // void glDeleteBuffers(GLsizei n, GLuint* buffers);
 // public static native void glDeleteBuffers(int n, IntBuffer buffers);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteBuffers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject buffers)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteBuffers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject buffers)
 {
     glDeleteBuffers(
         (GLsizei)n,
@@ -1489,7 +1489,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteBuffers__ILjava_nio_IntBuffer_2(
 
 // void glDeleteBuffers(GLsizei n, GLuint* buffers);
 // public static native void glDeleteBuffers(int n, int[] buffers, int buffersOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteBuffers__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray buffers, jint buffersOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteBuffers__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray buffers, jint buffersOffset)
 {
     jint* j_buffers = buffers ? (jint*)((*env)->GetPrimitiveArrayCritical(env, buffers, 0)) : 0;
     glDeleteBuffers(
@@ -1500,7 +1500,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteBuffers__I_3II(JNIEnv* env, jcla
 
 // void glDeleteQueries(GLsizei n, GLuint* ids);
 // public static native void glDeleteQueries(int n, IntBuffer ids);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteQueries__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject ids)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteQueries__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject ids)
 {
     glDeleteQueries(
         (GLsizei)n,
@@ -1509,7 +1509,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteQueries__ILjava_nio_IntBuffer_2(
 
 // void glDeleteQueries(GLsizei n, GLuint* ids);
 // public static native void glDeleteQueries(int n, int[] ids, int idsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteQueries__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray ids, jint idsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteQueries__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray ids, jint idsOffset)
 {
     jint* j_ids = ids ? (jint*)((*env)->GetPrimitiveArrayCritical(env, ids, 0)) : 0;
     glDeleteQueries(
@@ -1520,7 +1520,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteQueries__I_3II(JNIEnv* env, jcla
 
 // void glEndQuery(GLenum target);
 // public static native void glEndQuery(int target);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glEndQuery(JNIEnv* env, jclass clazz, jint target)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glEndQuery(JNIEnv* env, jclass clazz, jint target)
 {
     glEndQuery(
         (GLenum)target);
@@ -1528,7 +1528,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glEndQuery(JNIEnv* env, jclass clazz, ji
 
 // void glGenBuffers(GLsizei n, GLuint* buffers);
 // public static native void glGenBuffers(int n, IntBuffer buffers);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenBuffers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject buffers)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenBuffers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject buffers)
 {
     glGenBuffers(
         (GLsizei)n,
@@ -1537,7 +1537,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenBuffers__ILjava_nio_IntBuffer_2(JNI
 
 // void glGenBuffers(GLsizei n, GLuint* buffers);
 // public static native void glGenBuffers(int n, int[] buffers, int buffersOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenBuffers__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray buffers, jint buffersOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenBuffers__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray buffers, jint buffersOffset)
 {
     jint* j_buffers = buffers ? (jint*)((*env)->GetPrimitiveArrayCritical(env, buffers, 0)) : 0;
     glGenBuffers(
@@ -1548,7 +1548,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenBuffers__I_3II(JNIEnv* env, jclass 
 
 // void glGenQueries(GLsizei n, GLuint* ids);
 // public static native void glGenQueries(int n, IntBuffer ids);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenQueries__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject ids)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenQueries__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject ids)
 {
     glGenQueries(
         (GLsizei)n,
@@ -1557,7 +1557,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenQueries__ILjava_nio_IntBuffer_2(JNI
 
 // void glGenQueries(GLsizei n, GLuint* ids);
 // public static native void glGenQueries(int n, int[] ids, int idsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenQueries__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray ids, jint idsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenQueries__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray ids, jint idsOffset)
 {
     jint* j_ids = ids ? (jint*)((*env)->GetPrimitiveArrayCritical(env, ids, 0)) : 0;
     glGenQueries(
@@ -1568,7 +1568,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenQueries__I_3II(JNIEnv* env, jclass 
 
 // void glGetBufferParameteriv(GLenum target, GLenum pname, GLint* params);
 // public static native void glGetBufferParameteriv(int target, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBufferParameteriv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetBufferParameteriv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
 {
     glGetBufferParameteriv(
         (GLenum)target,
@@ -1578,7 +1578,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBufferParameteriv__IILjava_nio_IntB
 
 // void glGetBufferParameteriv(GLenum target, GLenum pname, GLint* params);
 // public static native void glGetBufferParameteriv(int target, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBufferParameteriv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetBufferParameteriv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetBufferParameteriv(
@@ -1590,7 +1590,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBufferParameteriv__II_3II(JNIEnv* e
 
 // void glGetBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, GLvoid* data);
 // public static native void glGetBufferSubData(int target, int offset, int size, Buffer data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBufferSubData__IIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint offset, jint size, jobject data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetBufferSubData__IIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint target, jint offset, jint size, jobject data)
 {
     glGetBufferSubData(
         (GLenum)target,
@@ -1601,7 +1601,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBufferSubData__IIILjava_nio_Buffer_
 
 // void glGetBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, GLvoid* data);
 // public static native void glGetBufferSubData(int target, int offset, int size, long data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBufferSubData__IIIJ(JNIEnv* env, jclass clazz, jint target, jint offset, jint size, jlong data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetBufferSubData__IIIJ(JNIEnv* env, jclass clazz, jint target, jint offset, jint size, jlong data)
 {
     glGetBufferSubData(
         (GLenum)target,
@@ -1612,7 +1612,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBufferSubData__IIIJ(JNIEnv* env, jc
 
 // void glGetQueryObjectiv(GLuint id, GLenum pname, GLint* params);
 // public static native void glGetQueryObjectiv(int id, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryObjectiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint id, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetQueryObjectiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint id, jint pname, jobject params)
 {
     glGetQueryObjectiv(
         (GLuint)id,
@@ -1622,7 +1622,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryObjectiv__IILjava_nio_IntBuffe
 
 // void glGetQueryObjectiv(GLuint id, GLenum pname, GLint* params);
 // public static native void glGetQueryObjectiv(int id, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryObjectiv__II_3II(JNIEnv* env, jclass clazz, jint id, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetQueryObjectiv__II_3II(JNIEnv* env, jclass clazz, jint id, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetQueryObjectiv(
@@ -1634,7 +1634,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryObjectiv__II_3II(JNIEnv* env, 
 
 // void glGetQueryObjectuiv(GLuint id, GLenum pname, GLuint* params);
 // public static native void glGetQueryObjectuiv(int id, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryObjectuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint id, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetQueryObjectuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint id, jint pname, jobject params)
 {
     glGetQueryObjectuiv(
         (GLuint)id,
@@ -1644,7 +1644,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryObjectuiv__IILjava_nio_IntBuff
 
 // void glGetQueryObjectuiv(GLuint id, GLenum pname, GLuint* params);
 // public static native void glGetQueryObjectuiv(int id, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryObjectuiv__II_3II(JNIEnv* env, jclass clazz, jint id, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetQueryObjectuiv__II_3II(JNIEnv* env, jclass clazz, jint id, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetQueryObjectuiv(
@@ -1656,7 +1656,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryObjectuiv__II_3II(JNIEnv* env,
 
 // void glGetQueryiv(GLenum target, GLenum pname, GLint* params);
 // public static native void glGetQueryiv(int target, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetQueryiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
 {
     glGetQueryiv(
         (GLenum)target,
@@ -1666,7 +1666,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryiv__IILjava_nio_IntBuffer_2(JN
 
 // void glGetQueryiv(GLenum target, GLenum pname, GLint* params);
 // public static native void glGetQueryiv(int target, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryiv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetQueryiv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetQueryiv(
@@ -1678,7 +1678,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryiv__II_3II(JNIEnv* env, jclass
 
 // GLboolean glIsBuffer(GLuint buffer);
 // public static native boolean glIsBuffer(int buffer);
-JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsBuffer(JNIEnv* env, jclass clazz, jint buffer)
+JNIEXPORT jboolean JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glIsBuffer(JNIEnv* env, jclass clazz, jint buffer)
 {
     GLboolean ret = (GLboolean)
         glIsBuffer(
@@ -1688,7 +1688,7 @@ JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsBuffer(JNIEnv* env, jclass clazz
 
 // GLboolean glIsQuery(GLuint id);
 // public static native boolean glIsQuery(int id);
-JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsQuery(JNIEnv* env, jclass clazz, jint id)
+JNIEXPORT jboolean JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glIsQuery(JNIEnv* env, jclass clazz, jint id)
 {
     GLboolean ret = (GLboolean)
         glIsQuery(
@@ -1698,7 +1698,7 @@ JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsQuery(JNIEnv* env, jclass clazz,
 
 // void glAttachShader(GLuint program, GLuint shader);
 // public static native void glAttachShader(int program, int shader);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glAttachShader(JNIEnv* env, jclass clazz, jint program, jint shader)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glAttachShader(JNIEnv* env, jclass clazz, jint program, jint shader)
 {
     glAttachShader(
         (GLuint)program,
@@ -1707,7 +1707,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glAttachShader(JNIEnv* env, jclass clazz
 
 // void glBindAttribLocation(GLuint program, GLuint index, GLchar* name);
 // public static native void glBindAttribLocation(int program, int index, String name);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindAttribLocation(JNIEnv* env, jclass clazz, jint program, jint index, jstring name)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBindAttribLocation(JNIEnv* env, jclass clazz, jint program, jint index, jstring name)
 {
     const char* j_name = (*env)->GetStringUTFChars(env, name, 0);
     glBindAttribLocation(
@@ -1719,7 +1719,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindAttribLocation(JNIEnv* env, jclass
 
 // void glBlendEquationSeparate(GLenum modeRGB, GLenum modeAlpha);
 // public static native void glBlendEquationSeparate(int modeRGB, int modeAlpha);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendEquationSeparate(JNIEnv* env, jclass clazz, jint modeRGB, jint modeAlpha)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBlendEquationSeparate(JNIEnv* env, jclass clazz, jint modeRGB, jint modeAlpha)
 {
     glBlendEquationSeparate(
         (GLenum)modeRGB,
@@ -1728,7 +1728,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendEquationSeparate(JNIEnv* env, jcl
 
 // void glCompileShader(GLuint shader);
 // public static native void glCompileShader(int shader);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompileShader(JNIEnv* env, jclass clazz, jint shader)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCompileShader(JNIEnv* env, jclass clazz, jint shader)
 {
     glCompileShader(
         (GLuint)shader);
@@ -1736,7 +1736,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCompileShader(JNIEnv* env, jclass claz
 
 // GLuint glCreateProgram();
 // public static native int glCreateProgram();
-JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glCreateProgram(JNIEnv* env, jclass clazz)
+JNIEXPORT jint JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCreateProgram(JNIEnv* env, jclass clazz)
 {
     return (jint)
         glCreateProgram();
@@ -1744,7 +1744,7 @@ JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glCreateProgram(JNIEnv* env, jclass claz
 
 // GLuint glCreateShader(GLenum type);
 // public static native int glCreateShader(int type);
-JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glCreateShader(JNIEnv* env, jclass clazz, jint type)
+JNIEXPORT jint JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCreateShader(JNIEnv* env, jclass clazz, jint type)
 {
     return (jint)
         glCreateShader(
@@ -1753,7 +1753,7 @@ JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glCreateShader(JNIEnv* env, jclass clazz
 
 // void glDeleteProgram(GLuint program);
 // public static native void glDeleteProgram(int program);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteProgram(JNIEnv* env, jclass clazz, jint program)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteProgram(JNIEnv* env, jclass clazz, jint program)
 {
     glDeleteProgram(
         (GLuint)program);
@@ -1761,7 +1761,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteProgram(JNIEnv* env, jclass claz
 
 // void glDeleteShader(GLuint shader);
 // public static native void glDeleteShader(int shader);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteShader(JNIEnv* env, jclass clazz, jint shader)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteShader(JNIEnv* env, jclass clazz, jint shader)
 {
     glDeleteShader(
         (GLuint)shader);
@@ -1769,7 +1769,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteShader(JNIEnv* env, jclass clazz
 
 // void glDetachShader(GLuint program, GLuint shader);
 // public static native void glDetachShader(int program, int shader);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDetachShader(JNIEnv* env, jclass clazz, jint program, jint shader)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDetachShader(JNIEnv* env, jclass clazz, jint program, jint shader)
 {
     glDetachShader(
         (GLuint)program,
@@ -1778,7 +1778,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDetachShader(JNIEnv* env, jclass clazz
 
 // void glDisableVertexAttribArray(GLuint index);
 // public static native void glDisableVertexAttribArray(int index);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDisableVertexAttribArray(JNIEnv* env, jclass clazz, jint index)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDisableVertexAttribArray(JNIEnv* env, jclass clazz, jint index)
 {
     glDisableVertexAttribArray(
         (GLuint)index);
@@ -1786,7 +1786,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDisableVertexAttribArray(JNIEnv* env, 
 
 // void glDrawBuffers(GLsizei n, GLenum* bufs);
 // public static native void glDrawBuffers(int n, IntBuffer bufs);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawBuffers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject bufs)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawBuffers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject bufs)
 {
     glDrawBuffers(
         (GLsizei)n,
@@ -1795,7 +1795,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawBuffers__ILjava_nio_IntBuffer_2(JN
 
 // void glDrawBuffers(GLsizei n, GLenum* bufs);
 // public static native void glDrawBuffers(int n, int[] bufs, int bufsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawBuffers__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray bufs, jint bufsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawBuffers__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray bufs, jint bufsOffset)
 {
     jint* j_bufs = bufs ? (jint*)((*env)->GetPrimitiveArrayCritical(env, bufs, 0)) : 0;
     glDrawBuffers(
@@ -1806,7 +1806,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawBuffers__I_3II(JNIEnv* env, jclass
 
 // void glEnableVertexAttribArray(GLuint index);
 // public static native void glEnableVertexAttribArray(int index);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glEnableVertexAttribArray(JNIEnv* env, jclass clazz, jint index)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glEnableVertexAttribArray(JNIEnv* env, jclass clazz, jint index)
 {
     glEnableVertexAttribArray(
         (GLuint)index);
@@ -1814,7 +1814,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glEnableVertexAttribArray(JNIEnv* env, j
 
 // void glGetActiveAttrib(GLuint program, GLuint index, GLsizei bufSize, GLsizei* length, GLint* size, GLenum* type, GLchar* name);
 // public static native void glGetActiveAttrib(int program, int index, int bufSize, IntBuffer length, IntBuffer size, IntBuffer type, ByteBuffer name);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveAttrib__IIILjava_nio_IntBuffer_2Ljava_nio_IntBuffer_2Ljava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint program, jint index, jint bufSize, jobject length, jobject size, jobject type, jobject name)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveAttrib__IIILjava_nio_IntBuffer_2Ljava_nio_IntBuffer_2Ljava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint program, jint index, jint bufSize, jobject length, jobject size, jobject type, jobject name)
 {
     glGetActiveAttrib(
         (GLuint)program,
@@ -1828,7 +1828,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveAttrib__IIILjava_nio_IntBuffe
 
 // void glGetActiveAttrib(GLuint program, GLuint index, GLsizei bufSize, GLsizei* length, GLint* size, GLenum* type, GLchar* name);
 // public static native void glGetActiveAttrib(int program, int index, int bufSize, int[] length, int lengthOffset, int[] size, int sizeOffset, int[] type, int typeOffset, byte[] name, int nameOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveAttrib__III_3II_3II_3II_3BI(JNIEnv* env, jclass clazz, jint program, jint index, jint bufSize, jintArray length, jint lengthOffset, jintArray size, jint sizeOffset, jintArray type, jint typeOffset, jbyteArray name, jint nameOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveAttrib__III_3II_3II_3II_3BI(JNIEnv* env, jclass clazz, jint program, jint index, jint bufSize, jintArray length, jint lengthOffset, jintArray size, jint sizeOffset, jintArray type, jint typeOffset, jbyteArray name, jint nameOffset)
 {
     jint* j_length = length ? (jint*)((*env)->GetPrimitiveArrayCritical(env, length, 0)) : 0;
     jint* j_size = size ? (jint*)((*env)->GetPrimitiveArrayCritical(env, size, 0)) : 0;
@@ -1850,7 +1850,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveAttrib__III_3II_3II_3II_3BI(J
 
 // void glGetActiveUniform(GLuint program, GLuint index, GLsizei bufSize, GLsizei* length, GLint* size, GLenum* type, GLchar* name);
 // public static native void glGetActiveUniform(int program, int index, int bufSize, IntBuffer length, IntBuffer size, IntBuffer type, ByteBuffer name);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniform__IIILjava_nio_IntBuffer_2Ljava_nio_IntBuffer_2Ljava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint program, jint index, jint bufSize, jobject length, jobject size, jobject type, jobject name)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveUniform__IIILjava_nio_IntBuffer_2Ljava_nio_IntBuffer_2Ljava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint program, jint index, jint bufSize, jobject length, jobject size, jobject type, jobject name)
 {
     glGetActiveUniform(
         (GLuint)program,
@@ -1864,7 +1864,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniform__IIILjava_nio_IntBuff
 
 // void glGetActiveUniform(GLuint program, GLuint index, GLsizei bufSize, GLsizei* length, GLint* size, GLenum* type, GLchar* name);
 // public static native void glGetActiveUniform(int program, int index, int bufSize, int[] length, int lengthOffset, int[] size, int sizeOffset, int[] type, int typeOffset, byte[] name, int nameOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniform__III_3II_3II_3II_3BI(JNIEnv* env, jclass clazz, jint program, jint index, jint bufSize, jintArray length, jint lengthOffset, jintArray size, jint sizeOffset, jintArray type, jint typeOffset, jbyteArray name, jint nameOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveUniform__III_3II_3II_3II_3BI(JNIEnv* env, jclass clazz, jint program, jint index, jint bufSize, jintArray length, jint lengthOffset, jintArray size, jint sizeOffset, jintArray type, jint typeOffset, jbyteArray name, jint nameOffset)
 {
     jint* j_length = length ? (jint*)((*env)->GetPrimitiveArrayCritical(env, length, 0)) : 0;
     jint* j_size = size ? (jint*)((*env)->GetPrimitiveArrayCritical(env, size, 0)) : 0;
@@ -1886,7 +1886,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniform__III_3II_3II_3II_3BI(
 
 // void glGetAttachedShaders(GLuint program, GLsizei maxCount, GLsizei* count, GLuint* obj);
 // public static native void glGetAttachedShaders(int program, int maxCount, IntBuffer count, IntBuffer obj);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetAttachedShaders__IILjava_nio_IntBuffer_2Ljava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint maxCount, jobject count, jobject obj)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetAttachedShaders__IILjava_nio_IntBuffer_2Ljava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint maxCount, jobject count, jobject obj)
 {
     glGetAttachedShaders(
         (GLuint)program,
@@ -1897,7 +1897,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetAttachedShaders__IILjava_nio_IntBuf
 
 // void glGetAttachedShaders(GLuint program, GLsizei maxCount, GLsizei* count, GLuint* obj);
 // public static native void glGetAttachedShaders(int program, int maxCount, int[] count, int countOffset, int[] obj, int objOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetAttachedShaders__II_3II_3II(JNIEnv* env, jclass clazz, jint program, jint maxCount, jintArray count, jint countOffset, jintArray obj, jint objOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetAttachedShaders__II_3II_3II(JNIEnv* env, jclass clazz, jint program, jint maxCount, jintArray count, jint countOffset, jintArray obj, jint objOffset)
 {
     jint* j_count = count ? (jint*)((*env)->GetPrimitiveArrayCritical(env, count, 0)) : 0;
     jint* j_obj = obj ? (jint*)((*env)->GetPrimitiveArrayCritical(env, obj, 0)) : 0;
@@ -1912,7 +1912,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetAttachedShaders__II_3II_3II(JNIEnv*
 
 // GLint glGetAttribLocation(GLuint program, GLchar* name);
 // public static native int glGetAttribLocation(int program, String name);
-JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glGetAttribLocation(JNIEnv* env, jclass clazz, jint program, jstring name)
+JNIEXPORT jint JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetAttribLocation(JNIEnv* env, jclass clazz, jint program, jstring name)
 {
     const char* j_name = (*env)->GetStringUTFChars(env, name, 0);
     GLint ret = (GLint)
@@ -1925,7 +1925,7 @@ JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glGetAttribLocation(JNIEnv* env, jclass 
 
 // void glGetProgramInfoLog(GLuint program, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
 // public static native void glGetProgramInfoLog(int program, int bufSize, IntBuffer length, ByteBuffer infoLog);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramInfoLog__IILjava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint program, jint bufSize, jobject length, jobject infoLog)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetProgramInfoLog__IILjava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint program, jint bufSize, jobject length, jobject infoLog)
 {
     glGetProgramInfoLog(
         (GLuint)program,
@@ -1936,7 +1936,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramInfoLog__IILjava_nio_IntBuff
 
 // void glGetProgramInfoLog(GLuint program, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
 // public static native void glGetProgramInfoLog(int program, int bufSize, int[] length, int lengthOffset, byte[] infoLog, int infoLogOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramInfoLog__II_3II_3BI(JNIEnv* env, jclass clazz, jint program, jint bufSize, jintArray length, jint lengthOffset, jbyteArray infoLog, jint infoLogOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetProgramInfoLog__II_3II_3BI(JNIEnv* env, jclass clazz, jint program, jint bufSize, jintArray length, jint lengthOffset, jbyteArray infoLog, jint infoLogOffset)
 {
     jint* j_length = length ? (jint*)((*env)->GetPrimitiveArrayCritical(env, length, 0)) : 0;
     jbyte* j_infoLog = infoLog ? (jbyte*)((*env)->GetPrimitiveArrayCritical(env, infoLog, 0)) : 0;
@@ -1951,7 +1951,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramInfoLog__II_3II_3BI(JNIEnv* 
 
 // void glGetProgramiv(GLuint program, GLenum pname, GLint* params);
 // public static native void glGetProgramiv(int program, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetProgramiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint pname, jobject params)
 {
     glGetProgramiv(
         (GLuint)program,
@@ -1961,7 +1961,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramiv__IILjava_nio_IntBuffer_2(
 
 // void glGetProgramiv(GLuint program, GLenum pname, GLint* params);
 // public static native void glGetProgramiv(int program, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramiv__II_3II(JNIEnv* env, jclass clazz, jint program, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetProgramiv__II_3II(JNIEnv* env, jclass clazz, jint program, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetProgramiv(
@@ -1973,7 +1973,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramiv__II_3II(JNIEnv* env, jcla
 
 // void glGetShaderInfoLog(GLuint shader, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
 // public static native void glGetShaderInfoLog(int shader, int bufSize, IntBuffer length, ByteBuffer infoLog);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetShaderInfoLog__IILjava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint shader, jint bufSize, jobject length, jobject infoLog)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetShaderInfoLog__IILjava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint shader, jint bufSize, jobject length, jobject infoLog)
 {
     glGetShaderInfoLog(
         (GLuint)shader,
@@ -1984,7 +1984,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetShaderInfoLog__IILjava_nio_IntBuffe
 
 // void glGetShaderInfoLog(GLuint shader, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
 // public static native void glGetShaderInfoLog(int shader, int bufSize, int[] length, int lengthOffset, byte[] infoLog, int infoLogOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetShaderInfoLog__II_3II_3BI(JNIEnv* env, jclass clazz, jint shader, jint bufSize, jintArray length, jint lengthOffset, jbyteArray infoLog, jint infoLogOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetShaderInfoLog__II_3II_3BI(JNIEnv* env, jclass clazz, jint shader, jint bufSize, jintArray length, jint lengthOffset, jbyteArray infoLog, jint infoLogOffset)
 {
     jint* j_length = length ? (jint*)((*env)->GetPrimitiveArrayCritical(env, length, 0)) : 0;
     jbyte* j_infoLog = infoLog ? (jbyte*)((*env)->GetPrimitiveArrayCritical(env, infoLog, 0)) : 0;
@@ -1999,7 +1999,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetShaderInfoLog__II_3II_3BI(JNIEnv* e
 
 // void glGetShaderSource(GLuint shader, GLsizei bufSize, GLsizei* length, GLchar* source);
 // public static native void glGetShaderSource(int shader, int bufSize, IntBuffer length, ByteBuffer source);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetShaderSource__IILjava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint shader, jint bufSize, jobject length, jobject source)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetShaderSource__IILjava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint shader, jint bufSize, jobject length, jobject source)
 {
     glGetShaderSource(
         (GLuint)shader,
@@ -2010,7 +2010,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetShaderSource__IILjava_nio_IntBuffer
 
 // void glGetShaderSource(GLuint shader, GLsizei bufSize, GLsizei* length, GLchar* source);
 // public static native void glGetShaderSource(int shader, int bufSize, int[] length, int lengthOffset, byte[] source, int sourceOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetShaderSource__II_3II_3BI(JNIEnv* env, jclass clazz, jint shader, jint bufSize, jintArray length, jint lengthOffset, jbyteArray source, jint sourceOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetShaderSource__II_3II_3BI(JNIEnv* env, jclass clazz, jint shader, jint bufSize, jintArray length, jint lengthOffset, jbyteArray source, jint sourceOffset)
 {
     jint* j_length = length ? (jint*)((*env)->GetPrimitiveArrayCritical(env, length, 0)) : 0;
     jbyte* j_source = source ? (jbyte*)((*env)->GetPrimitiveArrayCritical(env, source, 0)) : 0;
@@ -2025,7 +2025,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetShaderSource__II_3II_3BI(JNIEnv* en
 
 // void glGetShaderiv(GLuint shader, GLenum pname, GLint* params);
 // public static native void glGetShaderiv(int shader, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetShaderiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint shader, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetShaderiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint shader, jint pname, jobject params)
 {
     glGetShaderiv(
         (GLuint)shader,
@@ -2035,7 +2035,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetShaderiv__IILjava_nio_IntBuffer_2(J
 
 // void glGetShaderiv(GLuint shader, GLenum pname, GLint* params);
 // public static native void glGetShaderiv(int shader, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetShaderiv__II_3II(JNIEnv* env, jclass clazz, jint shader, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetShaderiv__II_3II(JNIEnv* env, jclass clazz, jint shader, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetShaderiv(
@@ -2047,7 +2047,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetShaderiv__II_3II(JNIEnv* env, jclas
 
 // GLint glGetUniformLocation(GLuint program, GLchar* name);
 // public static native int glGetUniformLocation(int program, String name);
-JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glGetUniformLocation(JNIEnv* env, jclass clazz, jint program, jstring name)
+JNIEXPORT jint JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetUniformLocation(JNIEnv* env, jclass clazz, jint program, jstring name)
 {
     const char* j_name = (*env)->GetStringUTFChars(env, name, 0);
     GLint ret = (GLint)
@@ -2060,7 +2060,7 @@ JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glGetUniformLocation(JNIEnv* env, jclass
 
 // void glGetUniformfv(GLuint program, GLint location, GLfloat* params);
 // public static native void glGetUniformfv(int program, int location, FloatBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformfv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetUniformfv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jobject params)
 {
     glGetUniformfv(
         (GLuint)program,
@@ -2070,7 +2070,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformfv__IILjava_nio_FloatBuffer_
 
 // void glGetUniformfv(GLuint program, GLint location, GLfloat* params);
 // public static native void glGetUniformfv(int program, int location, float[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformfv__II_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jfloatArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetUniformfv__II_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jfloatArray params, jint paramsOffset)
 {
     jfloat* j_params = params ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetUniformfv(
@@ -2082,7 +2082,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformfv__II_3FI(JNIEnv* env, jcla
 
 // void glGetUniformiv(GLuint program, GLint location, GLint* params);
 // public static native void glGetUniformiv(int program, int location, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetUniformiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jobject params)
 {
     glGetUniformiv(
         (GLuint)program,
@@ -2092,7 +2092,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformiv__IILjava_nio_IntBuffer_2(
 
 // void glGetUniformiv(GLuint program, GLint location, GLint* params);
 // public static native void glGetUniformiv(int program, int location, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformiv__II_3II(JNIEnv* env, jclass clazz, jint program, jint location, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetUniformiv__II_3II(JNIEnv* env, jclass clazz, jint program, jint location, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetUniformiv(
@@ -2104,7 +2104,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformiv__II_3II(JNIEnv* env, jcla
 
 // void glGetVertexAttribdv(GLuint index, GLenum pname, GLdouble* params);
 // public static native void glGetVertexAttribdv(int index, int pname, DoubleBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribdv__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetVertexAttribdv__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jint pname, jobject params)
 {
     glGetVertexAttribdv(
         (GLuint)index,
@@ -2114,7 +2114,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribdv__IILjava_nio_DoubleB
 
 // void glGetVertexAttribdv(GLuint index, GLenum pname, GLdouble* params);
 // public static native void glGetVertexAttribdv(int index, int pname, double[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribdv__II_3DI(JNIEnv* env, jclass clazz, jint index, jint pname, jdoubleArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetVertexAttribdv__II_3DI(JNIEnv* env, jclass clazz, jint index, jint pname, jdoubleArray params, jint paramsOffset)
 {
     jdouble* j_params = params ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetVertexAttribdv(
@@ -2126,7 +2126,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribdv__II_3DI(JNIEnv* env,
 
 // void glGetVertexAttribfv(GLuint index, GLenum pname, GLfloat* params);
 // public static native void glGetVertexAttribfv(int index, int pname, FloatBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribfv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint index, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetVertexAttribfv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint index, jint pname, jobject params)
 {
     glGetVertexAttribfv(
         (GLuint)index,
@@ -2136,7 +2136,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribfv__IILjava_nio_FloatBu
 
 // void glGetVertexAttribfv(GLuint index, GLenum pname, GLfloat* params);
 // public static native void glGetVertexAttribfv(int index, int pname, float[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribfv__II_3FI(JNIEnv* env, jclass clazz, jint index, jint pname, jfloatArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetVertexAttribfv__II_3FI(JNIEnv* env, jclass clazz, jint index, jint pname, jfloatArray params, jint paramsOffset)
 {
     jfloat* j_params = params ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetVertexAttribfv(
@@ -2148,7 +2148,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribfv__II_3FI(JNIEnv* env,
 
 // void glGetVertexAttribiv(GLuint index, GLenum pname, GLint* params);
 // public static native void glGetVertexAttribiv(int index, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetVertexAttribiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jint pname, jobject params)
 {
     glGetVertexAttribiv(
         (GLuint)index,
@@ -2158,7 +2158,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribiv__IILjava_nio_IntBuff
 
 // void glGetVertexAttribiv(GLuint index, GLenum pname, GLint* params);
 // public static native void glGetVertexAttribiv(int index, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribiv__II_3II(JNIEnv* env, jclass clazz, jint index, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetVertexAttribiv__II_3II(JNIEnv* env, jclass clazz, jint index, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetVertexAttribiv(
@@ -2170,7 +2170,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribiv__II_3II(JNIEnv* env,
 
 // GLboolean glIsProgram(GLuint program);
 // public static native boolean glIsProgram(int program);
-JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsProgram(JNIEnv* env, jclass clazz, jint program)
+JNIEXPORT jboolean JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glIsProgram(JNIEnv* env, jclass clazz, jint program)
 {
     GLboolean ret = (GLboolean)
         glIsProgram(
@@ -2180,7 +2180,7 @@ JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsProgram(JNIEnv* env, jclass claz
 
 // GLboolean glIsShader(GLuint shader);
 // public static native boolean glIsShader(int shader);
-JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsShader(JNIEnv* env, jclass clazz, jint shader)
+JNIEXPORT jboolean JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glIsShader(JNIEnv* env, jclass clazz, jint shader)
 {
     GLboolean ret = (GLboolean)
         glIsShader(
@@ -2190,7 +2190,7 @@ JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsShader(JNIEnv* env, jclass clazz
 
 // void glLinkProgram(GLuint program);
 // public static native void glLinkProgram(int program);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glLinkProgram(JNIEnv* env, jclass clazz, jint program)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glLinkProgram(JNIEnv* env, jclass clazz, jint program)
 {
     glLinkProgram(
         (GLuint)program);
@@ -2198,7 +2198,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glLinkProgram(JNIEnv* env, jclass clazz,
 
 // void glShaderSource(GLuint shader, GLsizei count, GLchar** string, GLint* length);
 // public static native void glShaderSource(int shader, int count, String[] string, IntBuffer length);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glShaderSource__II_3Ljava_lang_String_2Ljava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint shader, jint count, jobjectArray string, jobject length)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glShaderSource__II_3Ljava_lang_String_2Ljava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint shader, jint count, jobjectArray string, jobject length)
 {
     const char** j_string = newNativeStringArray(env, string);
     glShaderSource(
@@ -2211,7 +2211,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glShaderSource__II_3Ljava_lang_String_2L
 
 // void glShaderSource(GLuint shader, GLsizei count, GLchar** string, GLint* length);
 // public static native void glShaderSource(int shader, int count, String[] string, int[] length, int lengthOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glShaderSource__II_3Ljava_lang_String_2_3II(JNIEnv* env, jclass clazz, jint shader, jint count, jobjectArray string, jintArray length, jint lengthOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glShaderSource__II_3Ljava_lang_String_2_3II(JNIEnv* env, jclass clazz, jint shader, jint count, jobjectArray string, jintArray length, jint lengthOffset)
 {
     const char** j_string = newNativeStringArray(env, string);
     jint* j_length = length ? (jint*)((*env)->GetPrimitiveArrayCritical(env, length, 0)) : 0;
@@ -2226,7 +2226,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glShaderSource__II_3Ljava_lang_String_2_
 
 // void glStencilFuncSeparate(GLenum face, GLenum func, GLint ref, GLuint mask);
 // public static native void glStencilFuncSeparate(int face, int func, int ref, int mask);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glStencilFuncSeparate(JNIEnv* env, jclass clazz, jint face, jint func, jint ref, jint mask)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glStencilFuncSeparate(JNIEnv* env, jclass clazz, jint face, jint func, jint ref, jint mask)
 {
     glStencilFuncSeparate(
         (GLenum)face,
@@ -2237,7 +2237,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glStencilFuncSeparate(JNIEnv* env, jclas
 
 // void glStencilMaskSeparate(GLenum face, GLuint mask);
 // public static native void glStencilMaskSeparate(int face, int mask);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glStencilMaskSeparate(JNIEnv* env, jclass clazz, jint face, jint mask)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glStencilMaskSeparate(JNIEnv* env, jclass clazz, jint face, jint mask)
 {
     glStencilMaskSeparate(
         (GLenum)face,
@@ -2246,7 +2246,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glStencilMaskSeparate(JNIEnv* env, jclas
 
 // void glStencilOpSeparate(GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass);
 // public static native void glStencilOpSeparate(int face, int sfail, int dpfail, int dppass);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glStencilOpSeparate(JNIEnv* env, jclass clazz, jint face, jint sfail, jint dpfail, jint dppass)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glStencilOpSeparate(JNIEnv* env, jclass clazz, jint face, jint sfail, jint dpfail, jint dppass)
 {
     glStencilOpSeparate(
         (GLenum)face,
@@ -2257,7 +2257,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glStencilOpSeparate(JNIEnv* env, jclass 
 
 // void glUniform1f(GLint location, GLfloat v0);
 // public static native void glUniform1f(int location, float v0);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1f(JNIEnv* env, jclass clazz, jint location, jfloat v0)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform1f(JNIEnv* env, jclass clazz, jint location, jfloat v0)
 {
     glUniform1f(
         (GLint)location,
@@ -2266,7 +2266,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1f(JNIEnv* env, jclass clazz, j
 
 // void glUniform1fv(GLint location, GLsizei count, GLfloat* value);
 // public static native void glUniform1fv(int location, int count, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1fv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform1fv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
 {
     glUniform1fv(
         (GLint)location,
@@ -2276,7 +2276,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1fv__IILjava_nio_FloatBuffer_2(
 
 // void glUniform1fv(GLint location, GLsizei count, GLfloat* value);
 // public static native void glUniform1fv(int location, int count, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1fv__II_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform1fv__II_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniform1fv(
@@ -2288,7 +2288,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1fv__II_3FI(JNIEnv* env, jclass
 
 // void glUniform1i(GLint location, GLint v0);
 // public static native void glUniform1i(int location, int v0);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1i(JNIEnv* env, jclass clazz, jint location, jint v0)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform1i(JNIEnv* env, jclass clazz, jint location, jint v0)
 {
     glUniform1i(
         (GLint)location,
@@ -2297,7 +2297,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1i(JNIEnv* env, jclass clazz, j
 
 // void glUniform1iv(GLint location, GLsizei count, GLint* value);
 // public static native void glUniform1iv(int location, int count, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1iv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform1iv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
 {
     glUniform1iv(
         (GLint)location,
@@ -2307,7 +2307,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1iv__IILjava_nio_IntBuffer_2(JN
 
 // void glUniform1iv(GLint location, GLsizei count, GLint* value);
 // public static native void glUniform1iv(int location, int count, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1iv__II_3II(JNIEnv* env, jclass clazz, jint location, jint count, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform1iv__II_3II(JNIEnv* env, jclass clazz, jint location, jint count, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniform1iv(
@@ -2319,7 +2319,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1iv__II_3II(JNIEnv* env, jclass
 
 // void glUniform2f(GLint location, GLfloat v0, GLfloat v1);
 // public static native void glUniform2f(int location, float v0, float v1);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2f(JNIEnv* env, jclass clazz, jint location, jfloat v0, jfloat v1)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform2f(JNIEnv* env, jclass clazz, jint location, jfloat v0, jfloat v1)
 {
     glUniform2f(
         (GLint)location,
@@ -2329,7 +2329,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2f(JNIEnv* env, jclass clazz, j
 
 // void glUniform2fv(GLint location, GLsizei count, GLfloat* value);
 // public static native void glUniform2fv(int location, int count, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2fv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform2fv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
 {
     glUniform2fv(
         (GLint)location,
@@ -2339,7 +2339,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2fv__IILjava_nio_FloatBuffer_2(
 
 // void glUniform2fv(GLint location, GLsizei count, GLfloat* value);
 // public static native void glUniform2fv(int location, int count, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2fv__II_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform2fv__II_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniform2fv(
@@ -2351,7 +2351,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2fv__II_3FI(JNIEnv* env, jclass
 
 // void glUniform2i(GLint location, GLint v0, GLint v1);
 // public static native void glUniform2i(int location, int v0, int v1);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2i(JNIEnv* env, jclass clazz, jint location, jint v0, jint v1)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform2i(JNIEnv* env, jclass clazz, jint location, jint v0, jint v1)
 {
     glUniform2i(
         (GLint)location,
@@ -2361,7 +2361,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2i(JNIEnv* env, jclass clazz, j
 
 // void glUniform2iv(GLint location, GLsizei count, GLint* value);
 // public static native void glUniform2iv(int location, int count, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2iv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform2iv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
 {
     glUniform2iv(
         (GLint)location,
@@ -2371,7 +2371,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2iv__IILjava_nio_IntBuffer_2(JN
 
 // void glUniform2iv(GLint location, GLsizei count, GLint* value);
 // public static native void glUniform2iv(int location, int count, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2iv__II_3II(JNIEnv* env, jclass clazz, jint location, jint count, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform2iv__II_3II(JNIEnv* env, jclass clazz, jint location, jint count, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniform2iv(
@@ -2383,7 +2383,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2iv__II_3II(JNIEnv* env, jclass
 
 // void glUniform3f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2);
 // public static native void glUniform3f(int location, float v0, float v1, float v2);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3f(JNIEnv* env, jclass clazz, jint location, jfloat v0, jfloat v1, jfloat v2)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform3f(JNIEnv* env, jclass clazz, jint location, jfloat v0, jfloat v1, jfloat v2)
 {
     glUniform3f(
         (GLint)location,
@@ -2394,7 +2394,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3f(JNIEnv* env, jclass clazz, j
 
 // void glUniform3fv(GLint location, GLsizei count, GLfloat* value);
 // public static native void glUniform3fv(int location, int count, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3fv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform3fv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
 {
     glUniform3fv(
         (GLint)location,
@@ -2404,7 +2404,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3fv__IILjava_nio_FloatBuffer_2(
 
 // void glUniform3fv(GLint location, GLsizei count, GLfloat* value);
 // public static native void glUniform3fv(int location, int count, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3fv__II_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform3fv__II_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniform3fv(
@@ -2416,7 +2416,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3fv__II_3FI(JNIEnv* env, jclass
 
 // void glUniform3i(GLint location, GLint v0, GLint v1, GLint v2);
 // public static native void glUniform3i(int location, int v0, int v1, int v2);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3i(JNIEnv* env, jclass clazz, jint location, jint v0, jint v1, jint v2)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform3i(JNIEnv* env, jclass clazz, jint location, jint v0, jint v1, jint v2)
 {
     glUniform3i(
         (GLint)location,
@@ -2427,7 +2427,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3i(JNIEnv* env, jclass clazz, j
 
 // void glUniform3iv(GLint location, GLsizei count, GLint* value);
 // public static native void glUniform3iv(int location, int count, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3iv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform3iv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
 {
     glUniform3iv(
         (GLint)location,
@@ -2437,7 +2437,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3iv__IILjava_nio_IntBuffer_2(JN
 
 // void glUniform3iv(GLint location, GLsizei count, GLint* value);
 // public static native void glUniform3iv(int location, int count, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3iv__II_3II(JNIEnv* env, jclass clazz, jint location, jint count, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform3iv__II_3II(JNIEnv* env, jclass clazz, jint location, jint count, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniform3iv(
@@ -2449,7 +2449,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3iv__II_3II(JNIEnv* env, jclass
 
 // void glUniform4f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3);
 // public static native void glUniform4f(int location, float v0, float v1, float v2, float v3);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4f(JNIEnv* env, jclass clazz, jint location, jfloat v0, jfloat v1, jfloat v2, jfloat v3)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform4f(JNIEnv* env, jclass clazz, jint location, jfloat v0, jfloat v1, jfloat v2, jfloat v3)
 {
     glUniform4f(
         (GLint)location,
@@ -2461,7 +2461,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4f(JNIEnv* env, jclass clazz, j
 
 // void glUniform4fv(GLint location, GLsizei count, GLfloat* value);
 // public static native void glUniform4fv(int location, int count, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4fv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform4fv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
 {
     glUniform4fv(
         (GLint)location,
@@ -2471,7 +2471,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4fv__IILjava_nio_FloatBuffer_2(
 
 // void glUniform4fv(GLint location, GLsizei count, GLfloat* value);
 // public static native void glUniform4fv(int location, int count, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4fv__II_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform4fv__II_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniform4fv(
@@ -2483,7 +2483,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4fv__II_3FI(JNIEnv* env, jclass
 
 // void glUniform4i(GLint location, GLint v0, GLint v1, GLint v2, GLint v3);
 // public static native void glUniform4i(int location, int v0, int v1, int v2, int v3);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4i(JNIEnv* env, jclass clazz, jint location, jint v0, jint v1, jint v2, jint v3)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform4i(JNIEnv* env, jclass clazz, jint location, jint v0, jint v1, jint v2, jint v3)
 {
     glUniform4i(
         (GLint)location,
@@ -2495,7 +2495,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4i(JNIEnv* env, jclass clazz, j
 
 // void glUniform4iv(GLint location, GLsizei count, GLint* value);
 // public static native void glUniform4iv(int location, int count, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4iv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform4iv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
 {
     glUniform4iv(
         (GLint)location,
@@ -2505,7 +2505,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4iv__IILjava_nio_IntBuffer_2(JN
 
 // void glUniform4iv(GLint location, GLsizei count, GLint* value);
 // public static native void glUniform4iv(int location, int count, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4iv__II_3II(JNIEnv* env, jclass clazz, jint location, jint count, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform4iv__II_3II(JNIEnv* env, jclass clazz, jint location, jint count, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniform4iv(
@@ -2517,7 +2517,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4iv__II_3II(JNIEnv* env, jclass
 
 // void glUniformMatrix2fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix2fv(int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix2fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix2fv(
         (GLint)location,
@@ -2528,7 +2528,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2fv__IIZLjava_nio_FloatBu
 
 // void glUniformMatrix2fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix2fv(int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix2fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix2fv(
@@ -2541,7 +2541,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2fv__IIZ_3FI(JNIEnv* env,
 
 // void glUniformMatrix3fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix3fv(int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix3fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix3fv(
         (GLint)location,
@@ -2552,7 +2552,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3fv__IIZLjava_nio_FloatBu
 
 // void glUniformMatrix3fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix3fv(int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix3fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix3fv(
@@ -2565,7 +2565,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3fv__IIZ_3FI(JNIEnv* env,
 
 // void glUniformMatrix4fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix4fv(int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix4fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix4fv(
         (GLint)location,
@@ -2576,7 +2576,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4fv__IIZLjava_nio_FloatBu
 
 // void glUniformMatrix4fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix4fv(int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix4fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix4fv(
@@ -2589,7 +2589,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4fv__IIZ_3FI(JNIEnv* env,
 
 // void glUseProgram(GLuint program);
 // public static native void glUseProgram(int program);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUseProgram(JNIEnv* env, jclass clazz, jint program)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUseProgram(JNIEnv* env, jclass clazz, jint program)
 {
     glUseProgram(
         (GLuint)program);
@@ -2597,7 +2597,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUseProgram(JNIEnv* env, jclass clazz, 
 
 // void glValidateProgram(GLuint program);
 // public static native void glValidateProgram(int program);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glValidateProgram(JNIEnv* env, jclass clazz, jint program)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glValidateProgram(JNIEnv* env, jclass clazz, jint program)
 {
     glValidateProgram(
         (GLuint)program);
@@ -2605,7 +2605,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glValidateProgram(JNIEnv* env, jclass cl
 
 // void glVertexAttrib1d(GLuint index, GLdouble x);
 // public static native void glVertexAttrib1d(int index, double x);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1d(JNIEnv* env, jclass clazz, jint index, jdouble x)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib1d(JNIEnv* env, jclass clazz, jint index, jdouble x)
 {
     glVertexAttrib1d(
         (GLuint)index,
@@ -2614,7 +2614,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1d(JNIEnv* env, jclass cla
 
 // void glVertexAttrib1dv(GLuint index, GLdouble* v);
 // public static native void glVertexAttrib1dv(int index, DoubleBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1dv__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib1dv__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib1dv(
         (GLuint)index,
@@ -2623,7 +2623,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1dv__ILjava_nio_DoubleBuff
 
 // void glVertexAttrib1dv(GLuint index, GLdouble* v);
 // public static native void glVertexAttrib1dv(int index, double[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1dv__I_3DI(JNIEnv* env, jclass clazz, jint index, jdoubleArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib1dv__I_3DI(JNIEnv* env, jclass clazz, jint index, jdoubleArray v, jint vOffset)
 {
     jdouble* j_v = v ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib1dv(
@@ -2634,7 +2634,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1dv__I_3DI(JNIEnv* env, jc
 
 // void glVertexAttrib1f(GLuint index, GLfloat x);
 // public static native void glVertexAttrib1f(int index, float x);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1f(JNIEnv* env, jclass clazz, jint index, jfloat x)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib1f(JNIEnv* env, jclass clazz, jint index, jfloat x)
 {
     glVertexAttrib1f(
         (GLuint)index,
@@ -2643,7 +2643,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1f(JNIEnv* env, jclass cla
 
 // void glVertexAttrib1fv(GLuint index, GLfloat* v);
 // public static native void glVertexAttrib1fv(int index, FloatBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1fv__ILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib1fv__ILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib1fv(
         (GLuint)index,
@@ -2652,7 +2652,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1fv__ILjava_nio_FloatBuffe
 
 // void glVertexAttrib1fv(GLuint index, GLfloat* v);
 // public static native void glVertexAttrib1fv(int index, float[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1fv__I_3FI(JNIEnv* env, jclass clazz, jint index, jfloatArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib1fv__I_3FI(JNIEnv* env, jclass clazz, jint index, jfloatArray v, jint vOffset)
 {
     jfloat* j_v = v ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib1fv(
@@ -2663,7 +2663,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1fv__I_3FI(JNIEnv* env, jc
 
 // void glVertexAttrib1s(GLuint index, GLshort x);
 // public static native void glVertexAttrib1s(int index, short x);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1s(JNIEnv* env, jclass clazz, jint index, jshort x)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib1s(JNIEnv* env, jclass clazz, jint index, jshort x)
 {
     glVertexAttrib1s(
         (GLuint)index,
@@ -2672,7 +2672,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1s(JNIEnv* env, jclass cla
 
 // void glVertexAttrib1sv(GLuint index, GLshort* v);
 // public static native void glVertexAttrib1sv(int index, ShortBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1sv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib1sv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib1sv(
         (GLuint)index,
@@ -2681,7 +2681,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1sv__ILjava_nio_ShortBuffe
 
 // void glVertexAttrib1sv(GLuint index, GLshort* v);
 // public static native void glVertexAttrib1sv(int index, short[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1sv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib1sv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
 {
     jshort* j_v = v ? (jshort*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib1sv(
@@ -2692,7 +2692,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib1sv__I_3SI(JNIEnv* env, jc
 
 // void glVertexAttrib2d(GLuint index, GLdouble x, GLdouble y);
 // public static native void glVertexAttrib2d(int index, double x, double y);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2d(JNIEnv* env, jclass clazz, jint index, jdouble x, jdouble y)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib2d(JNIEnv* env, jclass clazz, jint index, jdouble x, jdouble y)
 {
     glVertexAttrib2d(
         (GLuint)index,
@@ -2702,7 +2702,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2d(JNIEnv* env, jclass cla
 
 // void glVertexAttrib2dv(GLuint index, GLdouble* v);
 // public static native void glVertexAttrib2dv(int index, DoubleBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2dv__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib2dv__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib2dv(
         (GLuint)index,
@@ -2711,7 +2711,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2dv__ILjava_nio_DoubleBuff
 
 // void glVertexAttrib2dv(GLuint index, GLdouble* v);
 // public static native void glVertexAttrib2dv(int index, double[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2dv__I_3DI(JNIEnv* env, jclass clazz, jint index, jdoubleArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib2dv__I_3DI(JNIEnv* env, jclass clazz, jint index, jdoubleArray v, jint vOffset)
 {
     jdouble* j_v = v ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib2dv(
@@ -2722,7 +2722,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2dv__I_3DI(JNIEnv* env, jc
 
 // void glVertexAttrib2f(GLuint index, GLfloat x, GLfloat y);
 // public static native void glVertexAttrib2f(int index, float x, float y);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2f(JNIEnv* env, jclass clazz, jint index, jfloat x, jfloat y)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib2f(JNIEnv* env, jclass clazz, jint index, jfloat x, jfloat y)
 {
     glVertexAttrib2f(
         (GLuint)index,
@@ -2732,7 +2732,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2f(JNIEnv* env, jclass cla
 
 // void glVertexAttrib2fv(GLuint index, GLfloat* v);
 // public static native void glVertexAttrib2fv(int index, FloatBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2fv__ILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib2fv__ILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib2fv(
         (GLuint)index,
@@ -2741,7 +2741,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2fv__ILjava_nio_FloatBuffe
 
 // void glVertexAttrib2fv(GLuint index, GLfloat* v);
 // public static native void glVertexAttrib2fv(int index, float[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2fv__I_3FI(JNIEnv* env, jclass clazz, jint index, jfloatArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib2fv__I_3FI(JNIEnv* env, jclass clazz, jint index, jfloatArray v, jint vOffset)
 {
     jfloat* j_v = v ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib2fv(
@@ -2752,7 +2752,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2fv__I_3FI(JNIEnv* env, jc
 
 // void glVertexAttrib2s(GLuint index, GLshort x, GLshort y);
 // public static native void glVertexAttrib2s(int index, short x, short y);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2s(JNIEnv* env, jclass clazz, jint index, jshort x, jshort y)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib2s(JNIEnv* env, jclass clazz, jint index, jshort x, jshort y)
 {
     glVertexAttrib2s(
         (GLuint)index,
@@ -2762,7 +2762,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2s(JNIEnv* env, jclass cla
 
 // void glVertexAttrib2sv(GLuint index, GLshort* v);
 // public static native void glVertexAttrib2sv(int index, ShortBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2sv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib2sv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib2sv(
         (GLuint)index,
@@ -2771,7 +2771,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2sv__ILjava_nio_ShortBuffe
 
 // void glVertexAttrib2sv(GLuint index, GLshort* v);
 // public static native void glVertexAttrib2sv(int index, short[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2sv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib2sv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
 {
     jshort* j_v = v ? (jshort*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib2sv(
@@ -2782,7 +2782,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib2sv__I_3SI(JNIEnv* env, jc
 
 // void glVertexAttrib3d(GLuint index, GLdouble x, GLdouble y, GLdouble z);
 // public static native void glVertexAttrib3d(int index, double x, double y, double z);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3d(JNIEnv* env, jclass clazz, jint index, jdouble x, jdouble y, jdouble z)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib3d(JNIEnv* env, jclass clazz, jint index, jdouble x, jdouble y, jdouble z)
 {
     glVertexAttrib3d(
         (GLuint)index,
@@ -2793,7 +2793,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3d(JNIEnv* env, jclass cla
 
 // void glVertexAttrib3dv(GLuint index, GLdouble* v);
 // public static native void glVertexAttrib3dv(int index, DoubleBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3dv__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib3dv__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib3dv(
         (GLuint)index,
@@ -2802,7 +2802,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3dv__ILjava_nio_DoubleBuff
 
 // void glVertexAttrib3dv(GLuint index, GLdouble* v);
 // public static native void glVertexAttrib3dv(int index, double[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3dv__I_3DI(JNIEnv* env, jclass clazz, jint index, jdoubleArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib3dv__I_3DI(JNIEnv* env, jclass clazz, jint index, jdoubleArray v, jint vOffset)
 {
     jdouble* j_v = v ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib3dv(
@@ -2813,7 +2813,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3dv__I_3DI(JNIEnv* env, jc
 
 // void glVertexAttrib3f(GLuint index, GLfloat x, GLfloat y, GLfloat z);
 // public static native void glVertexAttrib3f(int index, float x, float y, float z);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3f(JNIEnv* env, jclass clazz, jint index, jfloat x, jfloat y, jfloat z)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib3f(JNIEnv* env, jclass clazz, jint index, jfloat x, jfloat y, jfloat z)
 {
     glVertexAttrib3f(
         (GLuint)index,
@@ -2824,7 +2824,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3f(JNIEnv* env, jclass cla
 
 // void glVertexAttrib3fv(GLuint index, GLfloat* v);
 // public static native void glVertexAttrib3fv(int index, FloatBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3fv__ILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib3fv__ILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib3fv(
         (GLuint)index,
@@ -2833,7 +2833,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3fv__ILjava_nio_FloatBuffe
 
 // void glVertexAttrib3fv(GLuint index, GLfloat* v);
 // public static native void glVertexAttrib3fv(int index, float[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3fv__I_3FI(JNIEnv* env, jclass clazz, jint index, jfloatArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib3fv__I_3FI(JNIEnv* env, jclass clazz, jint index, jfloatArray v, jint vOffset)
 {
     jfloat* j_v = v ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib3fv(
@@ -2844,7 +2844,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3fv__I_3FI(JNIEnv* env, jc
 
 // void glVertexAttrib3s(GLuint index, GLshort x, GLshort y, GLshort z);
 // public static native void glVertexAttrib3s(int index, short x, short y, short z);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3s(JNIEnv* env, jclass clazz, jint index, jshort x, jshort y, jshort z)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib3s(JNIEnv* env, jclass clazz, jint index, jshort x, jshort y, jshort z)
 {
     glVertexAttrib3s(
         (GLuint)index,
@@ -2855,7 +2855,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3s(JNIEnv* env, jclass cla
 
 // void glVertexAttrib3sv(GLuint index, GLshort* v);
 // public static native void glVertexAttrib3sv(int index, ShortBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3sv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib3sv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib3sv(
         (GLuint)index,
@@ -2864,7 +2864,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3sv__ILjava_nio_ShortBuffe
 
 // void glVertexAttrib3sv(GLuint index, GLshort* v);
 // public static native void glVertexAttrib3sv(int index, short[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3sv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib3sv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
 {
     jshort* j_v = v ? (jshort*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib3sv(
@@ -2875,7 +2875,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib3sv__I_3SI(JNIEnv* env, jc
 
 // void glVertexAttrib4Nbv(GLuint index, GLbyte* v);
 // public static native void glVertexAttrib4Nbv(int index, ByteBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nbv__ILjava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4Nbv__ILjava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib4Nbv(
         (GLuint)index,
@@ -2884,7 +2884,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nbv__ILjava_nio_ByteBuffe
 
 // void glVertexAttrib4Nbv(GLuint index, GLbyte* v);
 // public static native void glVertexAttrib4Nbv(int index, byte[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nbv__I_3BI(JNIEnv* env, jclass clazz, jint index, jbyteArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4Nbv__I_3BI(JNIEnv* env, jclass clazz, jint index, jbyteArray v, jint vOffset)
 {
     jbyte* j_v = v ? (jbyte*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib4Nbv(
@@ -2895,7 +2895,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nbv__I_3BI(JNIEnv* env, j
 
 // void glVertexAttrib4Niv(GLuint index, GLint* v);
 // public static native void glVertexAttrib4Niv(int index, IntBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Niv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4Niv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib4Niv(
         (GLuint)index,
@@ -2904,7 +2904,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Niv__ILjava_nio_IntBuffer
 
 // void glVertexAttrib4Niv(GLuint index, GLint* v);
 // public static native void glVertexAttrib4Niv(int index, int[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Niv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4Niv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
 {
     jint* j_v = v ? (jint*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib4Niv(
@@ -2915,7 +2915,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Niv__I_3II(JNIEnv* env, j
 
 // void glVertexAttrib4Nsv(GLuint index, GLshort* v);
 // public static native void glVertexAttrib4Nsv(int index, ShortBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nsv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4Nsv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib4Nsv(
         (GLuint)index,
@@ -2924,7 +2924,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nsv__ILjava_nio_ShortBuff
 
 // void glVertexAttrib4Nsv(GLuint index, GLshort* v);
 // public static native void glVertexAttrib4Nsv(int index, short[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nsv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4Nsv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
 {
     jshort* j_v = v ? (jshort*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib4Nsv(
@@ -2935,7 +2935,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nsv__I_3SI(JNIEnv* env, j
 
 // void glVertexAttrib4Nub(GLuint index, GLubyte x, GLubyte y, GLubyte z, GLubyte w);
 // public static native void glVertexAttrib4Nub(int index, byte x, byte y, byte z, byte w);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nub(JNIEnv* env, jclass clazz, jint index, jbyte x, jbyte y, jbyte z, jbyte w)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4Nub(JNIEnv* env, jclass clazz, jint index, jbyte x, jbyte y, jbyte z, jbyte w)
 {
     glVertexAttrib4Nub(
         (GLuint)index,
@@ -2947,7 +2947,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nub(JNIEnv* env, jclass c
 
 // void glVertexAttrib4Nubv(GLuint index, GLubyte* v);
 // public static native void glVertexAttrib4Nubv(int index, ByteBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nubv__ILjava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4Nubv__ILjava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib4Nubv(
         (GLuint)index,
@@ -2956,7 +2956,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nubv__ILjava_nio_ByteBuff
 
 // void glVertexAttrib4Nubv(GLuint index, GLubyte* v);
 // public static native void glVertexAttrib4Nubv(int index, byte[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nubv__I_3BI(JNIEnv* env, jclass clazz, jint index, jbyteArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4Nubv__I_3BI(JNIEnv* env, jclass clazz, jint index, jbyteArray v, jint vOffset)
 {
     jbyte* j_v = v ? (jbyte*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib4Nubv(
@@ -2967,7 +2967,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nubv__I_3BI(JNIEnv* env, 
 
 // void glVertexAttrib4Nuiv(GLuint index, GLuint* v);
 // public static native void glVertexAttrib4Nuiv(int index, IntBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nuiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4Nuiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib4Nuiv(
         (GLuint)index,
@@ -2976,7 +2976,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nuiv__ILjava_nio_IntBuffe
 
 // void glVertexAttrib4Nuiv(GLuint index, GLuint* v);
 // public static native void glVertexAttrib4Nuiv(int index, int[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nuiv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4Nuiv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
 {
     jint* j_v = v ? (jint*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib4Nuiv(
@@ -2987,7 +2987,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nuiv__I_3II(JNIEnv* env, 
 
 // void glVertexAttrib4Nusv(GLuint index, GLushort* v);
 // public static native void glVertexAttrib4Nusv(int index, ShortBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nusv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4Nusv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib4Nusv(
         (GLuint)index,
@@ -2996,7 +2996,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nusv__ILjava_nio_ShortBuf
 
 // void glVertexAttrib4Nusv(GLuint index, GLushort* v);
 // public static native void glVertexAttrib4Nusv(int index, short[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nusv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4Nusv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
 {
     jshort* j_v = v ? (jshort*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib4Nusv(
@@ -3007,7 +3007,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4Nusv__I_3SI(JNIEnv* env, 
 
 // void glVertexAttrib4bv(GLuint index, GLbyte* v);
 // public static native void glVertexAttrib4bv(int index, ByteBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4bv__ILjava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4bv__ILjava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib4bv(
         (GLuint)index,
@@ -3016,7 +3016,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4bv__ILjava_nio_ByteBuffer
 
 // void glVertexAttrib4bv(GLuint index, GLbyte* v);
 // public static native void glVertexAttrib4bv(int index, byte[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4bv__I_3BI(JNIEnv* env, jclass clazz, jint index, jbyteArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4bv__I_3BI(JNIEnv* env, jclass clazz, jint index, jbyteArray v, jint vOffset)
 {
     jbyte* j_v = v ? (jbyte*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib4bv(
@@ -3027,7 +3027,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4bv__I_3BI(JNIEnv* env, jc
 
 // void glVertexAttrib4d(GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
 // public static native void glVertexAttrib4d(int index, double x, double y, double z, double w);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4d(JNIEnv* env, jclass clazz, jint index, jdouble x, jdouble y, jdouble z, jdouble w)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4d(JNIEnv* env, jclass clazz, jint index, jdouble x, jdouble y, jdouble z, jdouble w)
 {
     glVertexAttrib4d(
         (GLuint)index,
@@ -3039,7 +3039,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4d(JNIEnv* env, jclass cla
 
 // void glVertexAttrib4dv(GLuint index, GLdouble* v);
 // public static native void glVertexAttrib4dv(int index, DoubleBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4dv__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4dv__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib4dv(
         (GLuint)index,
@@ -3048,7 +3048,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4dv__ILjava_nio_DoubleBuff
 
 // void glVertexAttrib4dv(GLuint index, GLdouble* v);
 // public static native void glVertexAttrib4dv(int index, double[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4dv__I_3DI(JNIEnv* env, jclass clazz, jint index, jdoubleArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4dv__I_3DI(JNIEnv* env, jclass clazz, jint index, jdoubleArray v, jint vOffset)
 {
     jdouble* j_v = v ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib4dv(
@@ -3059,7 +3059,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4dv__I_3DI(JNIEnv* env, jc
 
 // void glVertexAttrib4f(GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
 // public static native void glVertexAttrib4f(int index, float x, float y, float z, float w);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4f(JNIEnv* env, jclass clazz, jint index, jfloat x, jfloat y, jfloat z, jfloat w)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4f(JNIEnv* env, jclass clazz, jint index, jfloat x, jfloat y, jfloat z, jfloat w)
 {
     glVertexAttrib4f(
         (GLuint)index,
@@ -3071,7 +3071,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4f(JNIEnv* env, jclass cla
 
 // void glVertexAttrib4fv(GLuint index, GLfloat* v);
 // public static native void glVertexAttrib4fv(int index, FloatBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4fv__ILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4fv__ILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib4fv(
         (GLuint)index,
@@ -3080,7 +3080,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4fv__ILjava_nio_FloatBuffe
 
 // void glVertexAttrib4fv(GLuint index, GLfloat* v);
 // public static native void glVertexAttrib4fv(int index, float[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4fv__I_3FI(JNIEnv* env, jclass clazz, jint index, jfloatArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4fv__I_3FI(JNIEnv* env, jclass clazz, jint index, jfloatArray v, jint vOffset)
 {
     jfloat* j_v = v ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib4fv(
@@ -3091,7 +3091,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4fv__I_3FI(JNIEnv* env, jc
 
 // void glVertexAttrib4iv(GLuint index, GLint* v);
 // public static native void glVertexAttrib4iv(int index, IntBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4iv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4iv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib4iv(
         (GLuint)index,
@@ -3100,7 +3100,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4iv__ILjava_nio_IntBuffer_
 
 // void glVertexAttrib4iv(GLuint index, GLint* v);
 // public static native void glVertexAttrib4iv(int index, int[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4iv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4iv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
 {
     jint* j_v = v ? (jint*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib4iv(
@@ -3111,7 +3111,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4iv__I_3II(JNIEnv* env, jc
 
 // void glVertexAttrib4s(GLuint index, GLshort x, GLshort y, GLshort z, GLshort w);
 // public static native void glVertexAttrib4s(int index, short x, short y, short z, short w);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4s(JNIEnv* env, jclass clazz, jint index, jshort x, jshort y, jshort z, jshort w)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4s(JNIEnv* env, jclass clazz, jint index, jshort x, jshort y, jshort z, jshort w)
 {
     glVertexAttrib4s(
         (GLuint)index,
@@ -3123,7 +3123,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4s(JNIEnv* env, jclass cla
 
 // void glVertexAttrib4sv(GLuint index, GLshort* v);
 // public static native void glVertexAttrib4sv(int index, ShortBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4sv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4sv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib4sv(
         (GLuint)index,
@@ -3132,7 +3132,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4sv__ILjava_nio_ShortBuffe
 
 // void glVertexAttrib4sv(GLuint index, GLshort* v);
 // public static native void glVertexAttrib4sv(int index, short[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4sv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4sv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
 {
     jshort* j_v = v ? (jshort*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib4sv(
@@ -3143,7 +3143,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4sv__I_3SI(JNIEnv* env, jc
 
 // void glVertexAttrib4ubv(GLuint index, GLubyte* v);
 // public static native void glVertexAttrib4ubv(int index, ByteBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4ubv__ILjava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4ubv__ILjava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib4ubv(
         (GLuint)index,
@@ -3152,7 +3152,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4ubv__ILjava_nio_ByteBuffe
 
 // void glVertexAttrib4ubv(GLuint index, GLubyte* v);
 // public static native void glVertexAttrib4ubv(int index, byte[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4ubv__I_3BI(JNIEnv* env, jclass clazz, jint index, jbyteArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4ubv__I_3BI(JNIEnv* env, jclass clazz, jint index, jbyteArray v, jint vOffset)
 {
     jbyte* j_v = v ? (jbyte*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib4ubv(
@@ -3163,7 +3163,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4ubv__I_3BI(JNIEnv* env, j
 
 // void glVertexAttrib4uiv(GLuint index, GLuint* v);
 // public static native void glVertexAttrib4uiv(int index, IntBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib4uiv(
         (GLuint)index,
@@ -3172,7 +3172,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4uiv__ILjava_nio_IntBuffer
 
 // void glVertexAttrib4uiv(GLuint index, GLuint* v);
 // public static native void glVertexAttrib4uiv(int index, int[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4uiv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4uiv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
 {
     jint* j_v = v ? (jint*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib4uiv(
@@ -3183,7 +3183,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4uiv__I_3II(JNIEnv* env, j
 
 // void glVertexAttrib4usv(GLuint index, GLushort* v);
 // public static native void glVertexAttrib4usv(int index, ShortBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4usv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4usv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttrib4usv(
         (GLuint)index,
@@ -3192,7 +3192,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4usv__ILjava_nio_ShortBuff
 
 // void glVertexAttrib4usv(GLuint index, GLushort* v);
 // public static native void glVertexAttrib4usv(int index, short[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4usv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttrib4usv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
 {
     jshort* j_v = v ? (jshort*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttrib4usv(
@@ -3203,7 +3203,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttrib4usv__I_3SI(JNIEnv* env, j
 
 // void glVertexAttribPointer(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, GLvoid* pointer);
 // public static native void glVertexAttribPointer(int index, int size, int type, boolean normalized, int stride, Buffer pointer);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribPointer__IIIZILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint index, jint size, jint type, jboolean normalized, jint stride, jobject pointer)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribPointer__IIIZILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint index, jint size, jint type, jboolean normalized, jint stride, jobject pointer)
 {
     glVertexAttribPointer(
         (GLuint)index,
@@ -3216,7 +3216,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribPointer__IIIZILjava_nio_Bu
 
 // void glVertexAttribPointer(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, GLvoid* pointer);
 // public static native void glVertexAttribPointer(int index, int size, int type, boolean normalized, int stride, long pointer);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribPointer__IIIZIJ(JNIEnv* env, jclass clazz, jint index, jint size, jint type, jboolean normalized, jint stride, jlong pointer)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribPointer__IIIZIJ(JNIEnv* env, jclass clazz, jint index, jint size, jint type, jboolean normalized, jint stride, jlong pointer)
 {
     glVertexAttribPointer(
         (GLuint)index,
@@ -3229,7 +3229,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribPointer__IIIZIJ(JNIEnv* en
 
 // void glUniformMatrix2x3fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix2x3fv(int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2x3fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix2x3fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix2x3fv(
         (GLint)location,
@@ -3240,7 +3240,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2x3fv__IIZLjava_nio_Float
 
 // void glUniformMatrix2x3fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix2x3fv(int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2x3fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix2x3fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix2x3fv(
@@ -3253,7 +3253,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2x3fv__IIZ_3FI(JNIEnv* en
 
 // void glUniformMatrix2x4fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix2x4fv(int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2x4fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix2x4fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix2x4fv(
         (GLint)location,
@@ -3264,7 +3264,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2x4fv__IIZLjava_nio_Float
 
 // void glUniformMatrix2x4fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix2x4fv(int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2x4fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix2x4fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix2x4fv(
@@ -3277,7 +3277,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2x4fv__IIZ_3FI(JNIEnv* en
 
 // void glUniformMatrix3x2fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix3x2fv(int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3x2fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix3x2fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix3x2fv(
         (GLint)location,
@@ -3288,7 +3288,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3x2fv__IIZLjava_nio_Float
 
 // void glUniformMatrix3x2fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix3x2fv(int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3x2fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix3x2fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix3x2fv(
@@ -3301,7 +3301,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3x2fv__IIZ_3FI(JNIEnv* en
 
 // void glUniformMatrix3x4fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix3x4fv(int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3x4fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix3x4fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix3x4fv(
         (GLint)location,
@@ -3312,7 +3312,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3x4fv__IIZLjava_nio_Float
 
 // void glUniformMatrix3x4fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix3x4fv(int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3x4fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix3x4fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix3x4fv(
@@ -3325,7 +3325,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3x4fv__IIZ_3FI(JNIEnv* en
 
 // void glUniformMatrix4x2fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix4x2fv(int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4x2fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix4x2fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix4x2fv(
         (GLint)location,
@@ -3336,7 +3336,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4x2fv__IIZLjava_nio_Float
 
 // void glUniformMatrix4x2fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix4x2fv(int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4x2fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix4x2fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix4x2fv(
@@ -3349,7 +3349,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4x2fv__IIZ_3FI(JNIEnv* en
 
 // void glUniformMatrix4x3fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix4x3fv(int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4x3fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix4x3fv__IIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix4x3fv(
         (GLint)location,
@@ -3360,7 +3360,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4x3fv__IIZLjava_nio_Float
 
 // void glUniformMatrix4x3fv(GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glUniformMatrix4x3fv(int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4x3fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix4x3fv__IIZ_3FI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix4x3fv(
@@ -3373,7 +3373,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4x3fv__IIZ_3FI(JNIEnv* en
 
 // void glBeginConditionalRender(GLuint id, GLenum mode);
 // public static native void glBeginConditionalRender(int id, int mode);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBeginConditionalRender(JNIEnv* env, jclass clazz, jint id, jint mode)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBeginConditionalRender(JNIEnv* env, jclass clazz, jint id, jint mode)
 {
     glBeginConditionalRender(
         (GLuint)id,
@@ -3382,7 +3382,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBeginConditionalRender(JNIEnv* env, jc
 
 // void glBeginTransformFeedback(GLenum primitiveMode);
 // public static native void glBeginTransformFeedback(int primitiveMode);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBeginTransformFeedback(JNIEnv* env, jclass clazz, jint primitiveMode)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBeginTransformFeedback(JNIEnv* env, jclass clazz, jint primitiveMode)
 {
     glBeginTransformFeedback(
         (GLenum)primitiveMode);
@@ -3390,7 +3390,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBeginTransformFeedback(JNIEnv* env, jc
 
 // void glBindBufferBase(GLenum target, GLuint index, GLuint buffer);
 // public static native void glBindBufferBase(int target, int index, int buffer);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindBufferBase(JNIEnv* env, jclass clazz, jint target, jint index, jint buffer)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBindBufferBase(JNIEnv* env, jclass clazz, jint target, jint index, jint buffer)
 {
     glBindBufferBase(
         (GLenum)target,
@@ -3400,7 +3400,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindBufferBase(JNIEnv* env, jclass cla
 
 // void glBindBufferRange(GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size);
 // public static native void glBindBufferRange(int target, int index, int buffer, int offset, int size);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindBufferRange(JNIEnv* env, jclass clazz, jint target, jint index, jint buffer, jint offset, jint size)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBindBufferRange(JNIEnv* env, jclass clazz, jint target, jint index, jint buffer, jint offset, jint size)
 {
     glBindBufferRange(
         (GLenum)target,
@@ -3412,7 +3412,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindBufferRange(JNIEnv* env, jclass cl
 
 // void glBindFragDataLocation(GLuint program, GLuint color, GLchar* name);
 // public static native void glBindFragDataLocation(int program, int color, String name);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindFragDataLocation(JNIEnv* env, jclass clazz, jint program, jint color, jstring name)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBindFragDataLocation(JNIEnv* env, jclass clazz, jint program, jint color, jstring name)
 {
     const char* j_name = (*env)->GetStringUTFChars(env, name, 0);
     glBindFragDataLocation(
@@ -3424,7 +3424,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindFragDataLocation(JNIEnv* env, jcla
 
 // void glBindFramebuffer(GLenum target, GLuint framebuffer);
 // public static native void glBindFramebuffer(int target, int framebuffer);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindFramebuffer(JNIEnv* env, jclass clazz, jint target, jint framebuffer)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBindFramebuffer(JNIEnv* env, jclass clazz, jint target, jint framebuffer)
 {
     glBindFramebuffer(
         (GLenum)target,
@@ -3433,7 +3433,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindFramebuffer(JNIEnv* env, jclass cl
 
 // void glBindRenderbuffer(GLenum target, GLuint renderbuffer);
 // public static native void glBindRenderbuffer(int target, int renderbuffer);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindRenderbuffer(JNIEnv* env, jclass clazz, jint target, jint renderbuffer)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBindRenderbuffer(JNIEnv* env, jclass clazz, jint target, jint renderbuffer)
 {
     glBindRenderbuffer(
         (GLenum)target,
@@ -3442,7 +3442,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindRenderbuffer(JNIEnv* env, jclass c
 
 // void glBindVertexArray(GLuint array);
 // public static native void glBindVertexArray(int array);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindVertexArray(JNIEnv* env, jclass clazz, jint array)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBindVertexArray(JNIEnv* env, jclass clazz, jint array)
 {
     glBindVertexArray(
         (GLuint)array);
@@ -3450,7 +3450,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindVertexArray(JNIEnv* env, jclass cl
 
 // void glBlitFramebuffer(GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter);
 // public static native void glBlitFramebuffer(int srcX0, int srcY0, int srcX1, int srcY1, int dstX0, int dstY0, int dstX1, int dstY1, int mask, int filter);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlitFramebuffer(JNIEnv* env, jclass clazz, jint srcX0, jint srcY0, jint srcX1, jint srcY1, jint dstX0, jint dstY0, jint dstX1, jint dstY1, jint mask, jint filter)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBlitFramebuffer(JNIEnv* env, jclass clazz, jint srcX0, jint srcY0, jint srcX1, jint srcY1, jint dstX0, jint dstY0, jint dstX1, jint dstY1, jint mask, jint filter)
 {
     glBlitFramebuffer(
         (GLint)srcX0,
@@ -3467,7 +3467,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlitFramebuffer(JNIEnv* env, jclass cl
 
 // GLenum glCheckFramebufferStatus(GLenum target);
 // public static native int glCheckFramebufferStatus(int target);
-JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glCheckFramebufferStatus(JNIEnv* env, jclass clazz, jint target)
+JNIEXPORT jint JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCheckFramebufferStatus(JNIEnv* env, jclass clazz, jint target)
 {
     return (jint)
         glCheckFramebufferStatus(
@@ -3476,7 +3476,7 @@ JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glCheckFramebufferStatus(JNIEnv* env, jc
 
 // void glClampColor(GLenum target, GLenum clamp);
 // public static native void glClampColor(int target, int clamp);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClampColor(JNIEnv* env, jclass clazz, jint target, jint clamp)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glClampColor(JNIEnv* env, jclass clazz, jint target, jint clamp)
 {
     glClampColor(
         (GLenum)target,
@@ -3485,7 +3485,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClampColor(JNIEnv* env, jclass clazz, 
 
 // void glClearBufferfi(GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil);
 // public static native void glClearBufferfi(int buffer, int drawbuffer, float depth, int stencil);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearBufferfi(JNIEnv* env, jclass clazz, jint buffer, jint drawbuffer, jfloat depth, jint stencil)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glClearBufferfi(JNIEnv* env, jclass clazz, jint buffer, jint drawbuffer, jfloat depth, jint stencil)
 {
     glClearBufferfi(
         (GLenum)buffer,
@@ -3496,7 +3496,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearBufferfi(JNIEnv* env, jclass claz
 
 // void glClearBufferfv(GLenum buffer, GLint drawbuffer, GLfloat* value);
 // public static native void glClearBufferfv(int buffer, int drawbuffer, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearBufferfv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint buffer, jint drawbuffer, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glClearBufferfv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint buffer, jint drawbuffer, jobject value)
 {
     glClearBufferfv(
         (GLenum)buffer,
@@ -3506,7 +3506,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearBufferfv__IILjava_nio_FloatBuffer
 
 // void glClearBufferfv(GLenum buffer, GLint drawbuffer, GLfloat* value);
 // public static native void glClearBufferfv(int buffer, int drawbuffer, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearBufferfv__II_3FI(JNIEnv* env, jclass clazz, jint buffer, jint drawbuffer, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glClearBufferfv__II_3FI(JNIEnv* env, jclass clazz, jint buffer, jint drawbuffer, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glClearBufferfv(
@@ -3518,7 +3518,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearBufferfv__II_3FI(JNIEnv* env, jcl
 
 // void glClearBufferiv(GLenum buffer, GLint drawbuffer, GLint* value);
 // public static native void glClearBufferiv(int buffer, int drawbuffer, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearBufferiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint buffer, jint drawbuffer, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glClearBufferiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint buffer, jint drawbuffer, jobject value)
 {
     glClearBufferiv(
         (GLenum)buffer,
@@ -3528,7 +3528,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearBufferiv__IILjava_nio_IntBuffer_2
 
 // void glClearBufferiv(GLenum buffer, GLint drawbuffer, GLint* value);
 // public static native void glClearBufferiv(int buffer, int drawbuffer, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearBufferiv__II_3II(JNIEnv* env, jclass clazz, jint buffer, jint drawbuffer, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glClearBufferiv__II_3II(JNIEnv* env, jclass clazz, jint buffer, jint drawbuffer, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glClearBufferiv(
@@ -3540,7 +3540,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearBufferiv__II_3II(JNIEnv* env, jcl
 
 // void glClearBufferuiv(GLenum buffer, GLint drawbuffer, GLuint* value);
 // public static native void glClearBufferuiv(int buffer, int drawbuffer, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearBufferuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint buffer, jint drawbuffer, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glClearBufferuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint buffer, jint drawbuffer, jobject value)
 {
     glClearBufferuiv(
         (GLenum)buffer,
@@ -3550,7 +3550,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearBufferuiv__IILjava_nio_IntBuffer_
 
 // void glClearBufferuiv(GLenum buffer, GLint drawbuffer, GLuint* value);
 // public static native void glClearBufferuiv(int buffer, int drawbuffer, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearBufferuiv__II_3II(JNIEnv* env, jclass clazz, jint buffer, jint drawbuffer, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glClearBufferuiv__II_3II(JNIEnv* env, jclass clazz, jint buffer, jint drawbuffer, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glClearBufferuiv(
@@ -3562,7 +3562,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearBufferuiv__II_3II(JNIEnv* env, jc
 
 // void glColorMaski(GLuint index, GLboolean r, GLboolean g, GLboolean b, GLboolean a);
 // public static native void glColorMaski(int index, boolean r, boolean g, boolean b, boolean a);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glColorMaski(JNIEnv* env, jclass clazz, jint index, jboolean r, jboolean g, jboolean b, jboolean a)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glColorMaski(JNIEnv* env, jclass clazz, jint index, jboolean r, jboolean g, jboolean b, jboolean a)
 {
     glColorMaski(
         (GLuint)index,
@@ -3574,7 +3574,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glColorMaski(JNIEnv* env, jclass clazz, 
 
 // void glDeleteFramebuffers(GLsizei n, GLuint* framebuffers);
 // public static native void glDeleteFramebuffers(int n, IntBuffer framebuffers);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteFramebuffers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject framebuffers)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteFramebuffers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject framebuffers)
 {
     glDeleteFramebuffers(
         (GLsizei)n,
@@ -3583,7 +3583,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteFramebuffers__ILjava_nio_IntBuff
 
 // void glDeleteFramebuffers(GLsizei n, GLuint* framebuffers);
 // public static native void glDeleteFramebuffers(int n, int[] framebuffers, int framebuffersOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteFramebuffers__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray framebuffers, jint framebuffersOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteFramebuffers__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray framebuffers, jint framebuffersOffset)
 {
     jint* j_framebuffers = framebuffers ? (jint*)((*env)->GetPrimitiveArrayCritical(env, framebuffers, 0)) : 0;
     glDeleteFramebuffers(
@@ -3594,7 +3594,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteFramebuffers__I_3II(JNIEnv* env,
 
 // void glDeleteRenderbuffers(GLsizei n, GLuint* renderbuffers);
 // public static native void glDeleteRenderbuffers(int n, IntBuffer renderbuffers);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteRenderbuffers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject renderbuffers)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteRenderbuffers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject renderbuffers)
 {
     glDeleteRenderbuffers(
         (GLsizei)n,
@@ -3603,7 +3603,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteRenderbuffers__ILjava_nio_IntBuf
 
 // void glDeleteRenderbuffers(GLsizei n, GLuint* renderbuffers);
 // public static native void glDeleteRenderbuffers(int n, int[] renderbuffers, int renderbuffersOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteRenderbuffers__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray renderbuffers, jint renderbuffersOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteRenderbuffers__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray renderbuffers, jint renderbuffersOffset)
 {
     jint* j_renderbuffers = renderbuffers ? (jint*)((*env)->GetPrimitiveArrayCritical(env, renderbuffers, 0)) : 0;
     glDeleteRenderbuffers(
@@ -3614,7 +3614,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteRenderbuffers__I_3II(JNIEnv* env
 
 // void glDeleteVertexArrays(GLsizei n, GLuint* arrays);
 // public static native void glDeleteVertexArrays(int n, IntBuffer arrays);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteVertexArrays__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject arrays)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteVertexArrays__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject arrays)
 {
     glDeleteVertexArrays(
         (GLsizei)n,
@@ -3623,7 +3623,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteVertexArrays__ILjava_nio_IntBuff
 
 // void glDeleteVertexArrays(GLsizei n, GLuint* arrays);
 // public static native void glDeleteVertexArrays(int n, int[] arrays, int arraysOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteVertexArrays__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray arrays, jint arraysOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteVertexArrays__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray arrays, jint arraysOffset)
 {
     jint* j_arrays = arrays ? (jint*)((*env)->GetPrimitiveArrayCritical(env, arrays, 0)) : 0;
     glDeleteVertexArrays(
@@ -3634,7 +3634,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteVertexArrays__I_3II(JNIEnv* env,
 
 // void glDisablei(GLenum target, GLuint index);
 // public static native void glDisablei(int target, int index);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDisablei(JNIEnv* env, jclass clazz, jint target, jint index)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDisablei(JNIEnv* env, jclass clazz, jint target, jint index)
 {
     glDisablei(
         (GLenum)target,
@@ -3643,7 +3643,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDisablei(JNIEnv* env, jclass clazz, ji
 
 // void glEnablei(GLenum target, GLuint index);
 // public static native void glEnablei(int target, int index);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glEnablei(JNIEnv* env, jclass clazz, jint target, jint index)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glEnablei(JNIEnv* env, jclass clazz, jint target, jint index)
 {
     glEnablei(
         (GLenum)target,
@@ -3652,21 +3652,21 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glEnablei(JNIEnv* env, jclass clazz, jin
 
 // void glEndConditionalRender();
 // public static native void glEndConditionalRender();
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glEndConditionalRender(JNIEnv* env, jclass clazz)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glEndConditionalRender(JNIEnv* env, jclass clazz)
 {
     glEndConditionalRender();
 }
 
 // void glEndTransformFeedback();
 // public static native void glEndTransformFeedback();
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glEndTransformFeedback(JNIEnv* env, jclass clazz)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glEndTransformFeedback(JNIEnv* env, jclass clazz)
 {
     glEndTransformFeedback();
 }
 
 // void glFramebufferRenderbuffer(GLenum target, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer);
 // public static native void glFramebufferRenderbuffer(int target, int attachment, int renderbuffertarget, int renderbuffer);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glFramebufferRenderbuffer(JNIEnv* env, jclass clazz, jint target, jint attachment, jint renderbuffertarget, jint renderbuffer)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glFramebufferRenderbuffer(JNIEnv* env, jclass clazz, jint target, jint attachment, jint renderbuffertarget, jint renderbuffer)
 {
     glFramebufferRenderbuffer(
         (GLenum)target,
@@ -3677,7 +3677,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glFramebufferRenderbuffer(JNIEnv* env, j
 
 // void glFramebufferTexture1D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level);
 // public static native void glFramebufferTexture1D(int target, int attachment, int textarget, int texture, int level);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glFramebufferTexture1D(JNIEnv* env, jclass clazz, jint target, jint attachment, jint textarget, jint texture, jint level)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glFramebufferTexture1D(JNIEnv* env, jclass clazz, jint target, jint attachment, jint textarget, jint texture, jint level)
 {
     glFramebufferTexture1D(
         (GLenum)target,
@@ -3689,7 +3689,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glFramebufferTexture1D(JNIEnv* env, jcla
 
 // void glFramebufferTexture2D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level);
 // public static native void glFramebufferTexture2D(int target, int attachment, int textarget, int texture, int level);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glFramebufferTexture2D(JNIEnv* env, jclass clazz, jint target, jint attachment, jint textarget, jint texture, jint level)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glFramebufferTexture2D(JNIEnv* env, jclass clazz, jint target, jint attachment, jint textarget, jint texture, jint level)
 {
     glFramebufferTexture2D(
         (GLenum)target,
@@ -3701,7 +3701,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glFramebufferTexture2D(JNIEnv* env, jcla
 
 // void glFramebufferTexture3D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level, GLint zoffset);
 // public static native void glFramebufferTexture3D(int target, int attachment, int textarget, int texture, int level, int zoffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glFramebufferTexture3D(JNIEnv* env, jclass clazz, jint target, jint attachment, jint textarget, jint texture, jint level, jint zoffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glFramebufferTexture3D(JNIEnv* env, jclass clazz, jint target, jint attachment, jint textarget, jint texture, jint level, jint zoffset)
 {
     glFramebufferTexture3D(
         (GLenum)target,
@@ -3714,7 +3714,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glFramebufferTexture3D(JNIEnv* env, jcla
 
 // void glFramebufferTextureLayer(GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer);
 // public static native void glFramebufferTextureLayer(int target, int attachment, int texture, int level, int layer);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glFramebufferTextureLayer(JNIEnv* env, jclass clazz, jint target, jint attachment, jint texture, jint level, jint layer)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glFramebufferTextureLayer(JNIEnv* env, jclass clazz, jint target, jint attachment, jint texture, jint level, jint layer)
 {
     glFramebufferTextureLayer(
         (GLenum)target,
@@ -3726,7 +3726,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glFramebufferTextureLayer(JNIEnv* env, j
 
 // void glGenFramebuffers(GLsizei n, GLuint* framebuffers);
 // public static native void glGenFramebuffers(int n, IntBuffer framebuffers);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenFramebuffers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject framebuffers)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenFramebuffers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject framebuffers)
 {
     glGenFramebuffers(
         (GLsizei)n,
@@ -3735,7 +3735,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenFramebuffers__ILjava_nio_IntBuffer_
 
 // void glGenFramebuffers(GLsizei n, GLuint* framebuffers);
 // public static native void glGenFramebuffers(int n, int[] framebuffers, int framebuffersOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenFramebuffers__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray framebuffers, jint framebuffersOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenFramebuffers__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray framebuffers, jint framebuffersOffset)
 {
     jint* j_framebuffers = framebuffers ? (jint*)((*env)->GetPrimitiveArrayCritical(env, framebuffers, 0)) : 0;
     glGenFramebuffers(
@@ -3746,7 +3746,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenFramebuffers__I_3II(JNIEnv* env, jc
 
 // void glGenRenderbuffers(GLsizei n, GLuint* renderbuffers);
 // public static native void glGenRenderbuffers(int n, IntBuffer renderbuffers);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenRenderbuffers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject renderbuffers)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenRenderbuffers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject renderbuffers)
 {
     glGenRenderbuffers(
         (GLsizei)n,
@@ -3755,7 +3755,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenRenderbuffers__ILjava_nio_IntBuffer
 
 // void glGenRenderbuffers(GLsizei n, GLuint* renderbuffers);
 // public static native void glGenRenderbuffers(int n, int[] renderbuffers, int renderbuffersOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenRenderbuffers__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray renderbuffers, jint renderbuffersOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenRenderbuffers__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray renderbuffers, jint renderbuffersOffset)
 {
     jint* j_renderbuffers = renderbuffers ? (jint*)((*env)->GetPrimitiveArrayCritical(env, renderbuffers, 0)) : 0;
     glGenRenderbuffers(
@@ -3766,7 +3766,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenRenderbuffers__I_3II(JNIEnv* env, j
 
 // void glGenVertexArrays(GLsizei n, GLuint* arrays);
 // public static native void glGenVertexArrays(int n, IntBuffer arrays);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenVertexArrays__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject arrays)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenVertexArrays__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject arrays)
 {
     glGenVertexArrays(
         (GLsizei)n,
@@ -3775,7 +3775,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenVertexArrays__ILjava_nio_IntBuffer_
 
 // void glGenVertexArrays(GLsizei n, GLuint* arrays);
 // public static native void glGenVertexArrays(int n, int[] arrays, int arraysOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenVertexArrays__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray arrays, jint arraysOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenVertexArrays__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray arrays, jint arraysOffset)
 {
     jint* j_arrays = arrays ? (jint*)((*env)->GetPrimitiveArrayCritical(env, arrays, 0)) : 0;
     glGenVertexArrays(
@@ -3786,7 +3786,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenVertexArrays__I_3II(JNIEnv* env, jc
 
 // void glGenerateMipmap(GLenum target);
 // public static native void glGenerateMipmap(int target);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenerateMipmap(JNIEnv* env, jclass clazz, jint target)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenerateMipmap(JNIEnv* env, jclass clazz, jint target)
 {
     glGenerateMipmap(
         (GLenum)target);
@@ -3794,7 +3794,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenerateMipmap(JNIEnv* env, jclass cla
 
 // void glGetBooleani_v(GLenum target, GLuint index, GLboolean* data);
 // public static native void glGetBooleani_v(int target, int index, ByteBuffer data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBooleani_1v__IILjava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint target, jint index, jobject data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetBooleani_1v__IILjava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint target, jint index, jobject data)
 {
     glGetBooleani_v(
         (GLenum)target,
@@ -3804,7 +3804,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBooleani_1v__IILjava_nio_ByteBuffer
 
 // void glGetBooleani_v(GLenum target, GLuint index, GLboolean* data);
 // public static native void glGetBooleani_v(int target, int index, byte[] data, int dataOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBooleani_1v__II_3BI(JNIEnv* env, jclass clazz, jint target, jint index, jbyteArray data, jint dataOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetBooleani_1v__II_3BI(JNIEnv* env, jclass clazz, jint target, jint index, jbyteArray data, jint dataOffset)
 {
     jbyte* j_data = data ? (jbyte*)((*env)->GetPrimitiveArrayCritical(env, data, 0)) : 0;
     glGetBooleani_v(
@@ -3816,7 +3816,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBooleani_1v__II_3BI(JNIEnv* env, jc
 
 // GLint glGetFragDataLocation(GLuint program, GLchar* name);
 // public static native int glGetFragDataLocation(int program, String name);
-JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glGetFragDataLocation(JNIEnv* env, jclass clazz, jint program, jstring name)
+JNIEXPORT jint JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetFragDataLocation(JNIEnv* env, jclass clazz, jint program, jstring name)
 {
     const char* j_name = (*env)->GetStringUTFChars(env, name, 0);
     GLint ret = (GLint)
@@ -3829,7 +3829,7 @@ JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glGetFragDataLocation(JNIEnv* env, jclas
 
 // void glGetFramebufferAttachmentParameteriv(GLenum target, GLenum attachment, GLenum pname, GLint* params);
 // public static native void glGetFramebufferAttachmentParameteriv(int target, int attachment, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetFramebufferAttachmentParameteriv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint attachment, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetFramebufferAttachmentParameteriv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint attachment, jint pname, jobject params)
 {
     glGetFramebufferAttachmentParameteriv(
         (GLenum)target,
@@ -3840,7 +3840,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetFramebufferAttachmentParameteriv__I
 
 // void glGetFramebufferAttachmentParameteriv(GLenum target, GLenum attachment, GLenum pname, GLint* params);
 // public static native void glGetFramebufferAttachmentParameteriv(int target, int attachment, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetFramebufferAttachmentParameteriv__III_3II(JNIEnv* env, jclass clazz, jint target, jint attachment, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetFramebufferAttachmentParameteriv__III_3II(JNIEnv* env, jclass clazz, jint target, jint attachment, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetFramebufferAttachmentParameteriv(
@@ -3853,7 +3853,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetFramebufferAttachmentParameteriv__I
 
 // void glGetIntegeri_v(GLenum target, GLuint index, GLint* data);
 // public static native void glGetIntegeri_v(int target, int index, IntBuffer data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetIntegeri_1v__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint index, jobject data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetIntegeri_1v__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint index, jobject data)
 {
     glGetIntegeri_v(
         (GLenum)target,
@@ -3863,7 +3863,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetIntegeri_1v__IILjava_nio_IntBuffer_
 
 // void glGetIntegeri_v(GLenum target, GLuint index, GLint* data);
 // public static native void glGetIntegeri_v(int target, int index, int[] data, int dataOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetIntegeri_1v__II_3II(JNIEnv* env, jclass clazz, jint target, jint index, jintArray data, jint dataOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetIntegeri_1v__II_3II(JNIEnv* env, jclass clazz, jint target, jint index, jintArray data, jint dataOffset)
 {
     jint* j_data = data ? (jint*)((*env)->GetPrimitiveArrayCritical(env, data, 0)) : 0;
     glGetIntegeri_v(
@@ -3875,7 +3875,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetIntegeri_1v__II_3II(JNIEnv* env, jc
 
 // void glGetRenderbufferParameteriv(GLenum target, GLenum pname, GLint* params);
 // public static native void glGetRenderbufferParameteriv(int target, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetRenderbufferParameteriv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetRenderbufferParameteriv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
 {
     glGetRenderbufferParameteriv(
         (GLenum)target,
@@ -3885,7 +3885,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetRenderbufferParameteriv__IILjava_ni
 
 // void glGetRenderbufferParameteriv(GLenum target, GLenum pname, GLint* params);
 // public static native void glGetRenderbufferParameteriv(int target, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetRenderbufferParameteriv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetRenderbufferParameteriv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetRenderbufferParameteriv(
@@ -3897,7 +3897,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetRenderbufferParameteriv__II_3II(JNI
 
 // GLubyte* glGetStringi(GLenum name, GLuint index);
 // public static native String glGetStringi(int name, int index);
-JNIEXPORT jstring JNICALL Java_njsdl_gl_GL_glGetStringi(JNIEnv* env, jclass clazz, jint name, jint index)
+JNIEXPORT jstring JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetStringi(JNIEnv* env, jclass clazz, jint name, jint index)
 {
     GLubyte* ret = (GLubyte*)
         glGetStringi(
@@ -3908,7 +3908,7 @@ JNIEXPORT jstring JNICALL Java_njsdl_gl_GL_glGetStringi(JNIEnv* env, jclass claz
 
 // void glGetTexParameterIiv(GLenum target, GLenum pname, GLint* params);
 // public static native void glGetTexParameterIiv(int target, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexParameterIiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetTexParameterIiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
 {
     glGetTexParameterIiv(
         (GLenum)target,
@@ -3918,7 +3918,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexParameterIiv__IILjava_nio_IntBuf
 
 // void glGetTexParameterIiv(GLenum target, GLenum pname, GLint* params);
 // public static native void glGetTexParameterIiv(int target, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexParameterIiv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetTexParameterIiv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetTexParameterIiv(
@@ -3930,7 +3930,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexParameterIiv__II_3II(JNIEnv* env
 
 // void glGetTexParameterIuiv(GLenum target, GLenum pname, GLuint* params);
 // public static native void glGetTexParameterIuiv(int target, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexParameterIuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetTexParameterIuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
 {
     glGetTexParameterIuiv(
         (GLenum)target,
@@ -3940,7 +3940,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexParameterIuiv__IILjava_nio_IntBu
 
 // void glGetTexParameterIuiv(GLenum target, GLenum pname, GLuint* params);
 // public static native void glGetTexParameterIuiv(int target, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexParameterIuiv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetTexParameterIuiv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetTexParameterIuiv(
@@ -3952,7 +3952,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTexParameterIuiv__II_3II(JNIEnv* en
 
 // void glGetTransformFeedbackVarying(GLuint program, GLuint index, GLsizei bufSize, GLsizei* length, GLsizei* size, GLenum* type, GLchar* name);
 // public static native void glGetTransformFeedbackVarying(int program, int index, int bufSize, IntBuffer length, IntBuffer size, IntBuffer type, String name);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTransformFeedbackVarying__IIILjava_nio_IntBuffer_2Ljava_nio_IntBuffer_2Ljava_nio_IntBuffer_2Ljava_lang_String_2(JNIEnv* env, jclass clazz, jint program, jint index, jint bufSize, jobject length, jobject size, jobject type, jstring name)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetTransformFeedbackVarying__IIILjava_nio_IntBuffer_2Ljava_nio_IntBuffer_2Ljava_nio_IntBuffer_2Ljava_lang_String_2(JNIEnv* env, jclass clazz, jint program, jint index, jint bufSize, jobject length, jobject size, jobject type, jstring name)
 {
     const char* j_name = (*env)->GetStringUTFChars(env, name, 0);
     glGetTransformFeedbackVarying(
@@ -3968,7 +3968,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTransformFeedbackVarying__IIILjava_
 
 // void glGetTransformFeedbackVarying(GLuint program, GLuint index, GLsizei bufSize, GLsizei* length, GLsizei* size, GLenum* type, GLchar* name);
 // public static native void glGetTransformFeedbackVarying(int program, int index, int bufSize, int[] length, int lengthOffset, int[] size, int sizeOffset, int[] type, int typeOffset, String name);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTransformFeedbackVarying__III_3II_3II_3IILjava_lang_String_2(JNIEnv* env, jclass clazz, jint program, jint index, jint bufSize, jintArray length, jint lengthOffset, jintArray size, jint sizeOffset, jintArray type, jint typeOffset, jstring name)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetTransformFeedbackVarying__III_3II_3II_3IILjava_lang_String_2(JNIEnv* env, jclass clazz, jint program, jint index, jint bufSize, jintArray length, jint lengthOffset, jintArray size, jint sizeOffset, jintArray type, jint typeOffset, jstring name)
 {
     jint* j_length = length ? (jint*)((*env)->GetPrimitiveArrayCritical(env, length, 0)) : 0;
     jint* j_size = size ? (jint*)((*env)->GetPrimitiveArrayCritical(env, size, 0)) : 0;
@@ -3990,7 +3990,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetTransformFeedbackVarying__III_3II_3
 
 // void glGetUniformuiv(GLuint program, GLint location, GLuint* params);
 // public static native void glGetUniformuiv(int program, int location, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetUniformuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jobject params)
 {
     glGetUniformuiv(
         (GLuint)program,
@@ -4000,7 +4000,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformuiv__IILjava_nio_IntBuffer_2
 
 // void glGetUniformuiv(GLuint program, GLint location, GLuint* params);
 // public static native void glGetUniformuiv(int program, int location, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformuiv__II_3II(JNIEnv* env, jclass clazz, jint program, jint location, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetUniformuiv__II_3II(JNIEnv* env, jclass clazz, jint program, jint location, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetUniformuiv(
@@ -4012,7 +4012,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformuiv__II_3II(JNIEnv* env, jcl
 
 // void glGetVertexAttribIiv(GLuint index, GLenum pname, GLint* params);
 // public static native void glGetVertexAttribIiv(int index, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribIiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetVertexAttribIiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jint pname, jobject params)
 {
     glGetVertexAttribIiv(
         (GLuint)index,
@@ -4022,7 +4022,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribIiv__IILjava_nio_IntBuf
 
 // void glGetVertexAttribIiv(GLuint index, GLenum pname, GLint* params);
 // public static native void glGetVertexAttribIiv(int index, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribIiv__II_3II(JNIEnv* env, jclass clazz, jint index, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetVertexAttribIiv__II_3II(JNIEnv* env, jclass clazz, jint index, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetVertexAttribIiv(
@@ -4034,7 +4034,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribIiv__II_3II(JNIEnv* env
 
 // void glGetVertexAttribIuiv(GLuint index, GLenum pname, GLuint* params);
 // public static native void glGetVertexAttribIuiv(int index, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribIuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetVertexAttribIuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jint pname, jobject params)
 {
     glGetVertexAttribIuiv(
         (GLuint)index,
@@ -4044,7 +4044,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribIuiv__IILjava_nio_IntBu
 
 // void glGetVertexAttribIuiv(GLuint index, GLenum pname, GLuint* params);
 // public static native void glGetVertexAttribIuiv(int index, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribIuiv__II_3II(JNIEnv* env, jclass clazz, jint index, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetVertexAttribIuiv__II_3II(JNIEnv* env, jclass clazz, jint index, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetVertexAttribIuiv(
@@ -4056,7 +4056,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribIuiv__II_3II(JNIEnv* en
 
 // GLboolean glIsEnabledi(GLenum target, GLuint index);
 // public static native boolean glIsEnabledi(int target, int index);
-JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsEnabledi(JNIEnv* env, jclass clazz, jint target, jint index)
+JNIEXPORT jboolean JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glIsEnabledi(JNIEnv* env, jclass clazz, jint target, jint index)
 {
     GLboolean ret = (GLboolean)
         glIsEnabledi(
@@ -4067,7 +4067,7 @@ JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsEnabledi(JNIEnv* env, jclass cla
 
 // GLboolean glIsFramebuffer(GLuint framebuffer);
 // public static native boolean glIsFramebuffer(int framebuffer);
-JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsFramebuffer(JNIEnv* env, jclass clazz, jint framebuffer)
+JNIEXPORT jboolean JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glIsFramebuffer(JNIEnv* env, jclass clazz, jint framebuffer)
 {
     GLboolean ret = (GLboolean)
         glIsFramebuffer(
@@ -4077,7 +4077,7 @@ JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsFramebuffer(JNIEnv* env, jclass 
 
 // GLboolean glIsRenderbuffer(GLuint renderbuffer);
 // public static native boolean glIsRenderbuffer(int renderbuffer);
-JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsRenderbuffer(JNIEnv* env, jclass clazz, jint renderbuffer)
+JNIEXPORT jboolean JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glIsRenderbuffer(JNIEnv* env, jclass clazz, jint renderbuffer)
 {
     GLboolean ret = (GLboolean)
         glIsRenderbuffer(
@@ -4087,7 +4087,7 @@ JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsRenderbuffer(JNIEnv* env, jclass
 
 // GLboolean glIsVertexArray(GLuint array);
 // public static native boolean glIsVertexArray(int array);
-JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsVertexArray(JNIEnv* env, jclass clazz, jint array)
+JNIEXPORT jboolean JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glIsVertexArray(JNIEnv* env, jclass clazz, jint array)
 {
     GLboolean ret = (GLboolean)
         glIsVertexArray(
@@ -4097,7 +4097,7 @@ JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsVertexArray(JNIEnv* env, jclass 
 
 // void glRenderbufferStorage(GLenum target, GLenum internalformat, GLsizei width, GLsizei height);
 // public static native void glRenderbufferStorage(int target, int internalformat, int width, int height);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glRenderbufferStorage(JNIEnv* env, jclass clazz, jint target, jint internalformat, jint width, jint height)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glRenderbufferStorage(JNIEnv* env, jclass clazz, jint target, jint internalformat, jint width, jint height)
 {
     glRenderbufferStorage(
         (GLenum)target,
@@ -4108,7 +4108,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glRenderbufferStorage(JNIEnv* env, jclas
 
 // void glRenderbufferStorageMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height);
 // public static native void glRenderbufferStorageMultisample(int target, int samples, int internalformat, int width, int height);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glRenderbufferStorageMultisample(JNIEnv* env, jclass clazz, jint target, jint samples, jint internalformat, jint width, jint height)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glRenderbufferStorageMultisample(JNIEnv* env, jclass clazz, jint target, jint samples, jint internalformat, jint width, jint height)
 {
     glRenderbufferStorageMultisample(
         (GLenum)target,
@@ -4120,7 +4120,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glRenderbufferStorageMultisample(JNIEnv*
 
 // void glTexParameterIiv(GLenum target, GLenum pname, GLint* params);
 // public static native void glTexParameterIiv(int target, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameterIiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexParameterIiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
 {
     glTexParameterIiv(
         (GLenum)target,
@@ -4130,7 +4130,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameterIiv__IILjava_nio_IntBuffer
 
 // void glTexParameterIiv(GLenum target, GLenum pname, GLint* params);
 // public static native void glTexParameterIiv(int target, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameterIiv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexParameterIiv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glTexParameterIiv(
@@ -4142,7 +4142,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameterIiv__II_3II(JNIEnv* env, j
 
 // void glTexParameterIuiv(GLenum target, GLenum pname, GLuint* params);
 // public static native void glTexParameterIuiv(int target, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameterIuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexParameterIuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
 {
     glTexParameterIuiv(
         (GLenum)target,
@@ -4152,7 +4152,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameterIuiv__IILjava_nio_IntBuffe
 
 // void glTexParameterIuiv(GLenum target, GLenum pname, GLuint* params);
 // public static native void glTexParameterIuiv(int target, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameterIuiv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexParameterIuiv__II_3II(JNIEnv* env, jclass clazz, jint target, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glTexParameterIuiv(
@@ -4164,7 +4164,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexParameterIuiv__II_3II(JNIEnv* env, 
 
 // void glTransformFeedbackVaryings(GLuint program, GLsizei count, GLchar** varyings, GLenum bufferMode);
 // public static native void glTransformFeedbackVaryings(int program, int count, String[] varyings, int bufferMode);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTransformFeedbackVaryings(JNIEnv* env, jclass clazz, jint program, jint count, jobjectArray varyings, jint bufferMode)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTransformFeedbackVaryings(JNIEnv* env, jclass clazz, jint program, jint count, jobjectArray varyings, jint bufferMode)
 {
     const char** j_varyings = newNativeStringArray(env, varyings);
     glTransformFeedbackVaryings(
@@ -4177,7 +4177,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTransformFeedbackVaryings(JNIEnv* env,
 
 // void glUniform1ui(GLint location, GLuint v0);
 // public static native void glUniform1ui(int location, int v0);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1ui(JNIEnv* env, jclass clazz, jint location, jint v0)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform1ui(JNIEnv* env, jclass clazz, jint location, jint v0)
 {
     glUniform1ui(
         (GLint)location,
@@ -4186,7 +4186,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1ui(JNIEnv* env, jclass clazz, 
 
 // void glUniform1uiv(GLint location, GLsizei count, GLuint* value);
 // public static native void glUniform1uiv(int location, int count, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1uiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform1uiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
 {
     glUniform1uiv(
         (GLint)location,
@@ -4196,7 +4196,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1uiv__IILjava_nio_IntBuffer_2(J
 
 // void glUniform1uiv(GLint location, GLsizei count, GLuint* value);
 // public static native void glUniform1uiv(int location, int count, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1uiv__II_3II(JNIEnv* env, jclass clazz, jint location, jint count, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform1uiv__II_3II(JNIEnv* env, jclass clazz, jint location, jint count, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniform1uiv(
@@ -4208,7 +4208,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1uiv__II_3II(JNIEnv* env, jclas
 
 // void glUniform2ui(GLint location, GLuint v0, GLuint v1);
 // public static native void glUniform2ui(int location, int v0, int v1);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2ui(JNIEnv* env, jclass clazz, jint location, jint v0, jint v1)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform2ui(JNIEnv* env, jclass clazz, jint location, jint v0, jint v1)
 {
     glUniform2ui(
         (GLint)location,
@@ -4218,7 +4218,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2ui(JNIEnv* env, jclass clazz, 
 
 // void glUniform2uiv(GLint location, GLsizei count, GLuint* value);
 // public static native void glUniform2uiv(int location, int count, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2uiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform2uiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
 {
     glUniform2uiv(
         (GLint)location,
@@ -4228,7 +4228,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2uiv__IILjava_nio_IntBuffer_2(J
 
 // void glUniform2uiv(GLint location, GLsizei count, GLuint* value);
 // public static native void glUniform2uiv(int location, int count, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2uiv__II_3II(JNIEnv* env, jclass clazz, jint location, jint count, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform2uiv__II_3II(JNIEnv* env, jclass clazz, jint location, jint count, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniform2uiv(
@@ -4240,7 +4240,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2uiv__II_3II(JNIEnv* env, jclas
 
 // void glUniform3ui(GLint location, GLuint v0, GLuint v1, GLuint v2);
 // public static native void glUniform3ui(int location, int v0, int v1, int v2);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3ui(JNIEnv* env, jclass clazz, jint location, jint v0, jint v1, jint v2)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform3ui(JNIEnv* env, jclass clazz, jint location, jint v0, jint v1, jint v2)
 {
     glUniform3ui(
         (GLint)location,
@@ -4251,7 +4251,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3ui(JNIEnv* env, jclass clazz, 
 
 // void glUniform3uiv(GLint location, GLsizei count, GLuint* value);
 // public static native void glUniform3uiv(int location, int count, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3uiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform3uiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
 {
     glUniform3uiv(
         (GLint)location,
@@ -4261,7 +4261,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3uiv__IILjava_nio_IntBuffer_2(J
 
 // void glUniform3uiv(GLint location, GLsizei count, GLuint* value);
 // public static native void glUniform3uiv(int location, int count, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3uiv__II_3II(JNIEnv* env, jclass clazz, jint location, jint count, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform3uiv__II_3II(JNIEnv* env, jclass clazz, jint location, jint count, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniform3uiv(
@@ -4273,7 +4273,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3uiv__II_3II(JNIEnv* env, jclas
 
 // void glUniform4ui(GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3);
 // public static native void glUniform4ui(int location, int v0, int v1, int v2, int v3);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4ui(JNIEnv* env, jclass clazz, jint location, jint v0, jint v1, jint v2, jint v3)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform4ui(JNIEnv* env, jclass clazz, jint location, jint v0, jint v1, jint v2, jint v3)
 {
     glUniform4ui(
         (GLint)location,
@@ -4285,7 +4285,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4ui(JNIEnv* env, jclass clazz, 
 
 // void glUniform4uiv(GLint location, GLsizei count, GLuint* value);
 // public static native void glUniform4uiv(int location, int count, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4uiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform4uiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
 {
     glUniform4uiv(
         (GLint)location,
@@ -4295,7 +4295,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4uiv__IILjava_nio_IntBuffer_2(J
 
 // void glUniform4uiv(GLint location, GLsizei count, GLuint* value);
 // public static native void glUniform4uiv(int location, int count, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4uiv__II_3II(JNIEnv* env, jclass clazz, jint location, jint count, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform4uiv__II_3II(JNIEnv* env, jclass clazz, jint location, jint count, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniform4uiv(
@@ -4307,7 +4307,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4uiv__II_3II(JNIEnv* env, jclas
 
 // void glVertexAttribI1i(GLuint index, GLint x);
 // public static native void glVertexAttribI1i(int index, int x);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI1i(JNIEnv* env, jclass clazz, jint index, jint x)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI1i(JNIEnv* env, jclass clazz, jint index, jint x)
 {
     glVertexAttribI1i(
         (GLuint)index,
@@ -4316,7 +4316,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI1i(JNIEnv* env, jclass cl
 
 // void glVertexAttribI1iv(GLuint index, GLint* v);
 // public static native void glVertexAttribI1iv(int index, IntBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI1iv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI1iv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttribI1iv(
         (GLuint)index,
@@ -4325,7 +4325,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI1iv__ILjava_nio_IntBuffer
 
 // void glVertexAttribI1iv(GLuint index, GLint* v);
 // public static native void glVertexAttribI1iv(int index, int[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI1iv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI1iv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
 {
     jint* j_v = v ? (jint*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttribI1iv(
@@ -4336,7 +4336,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI1iv__I_3II(JNIEnv* env, j
 
 // void glVertexAttribI1ui(GLuint index, GLuint x);
 // public static native void glVertexAttribI1ui(int index, int x);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI1ui(JNIEnv* env, jclass clazz, jint index, jint x)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI1ui(JNIEnv* env, jclass clazz, jint index, jint x)
 {
     glVertexAttribI1ui(
         (GLuint)index,
@@ -4345,7 +4345,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI1ui(JNIEnv* env, jclass c
 
 // void glVertexAttribI1uiv(GLuint index, GLuint* v);
 // public static native void glVertexAttribI1uiv(int index, IntBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI1uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI1uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttribI1uiv(
         (GLuint)index,
@@ -4354,7 +4354,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI1uiv__ILjava_nio_IntBuffe
 
 // void glVertexAttribI1uiv(GLuint index, GLuint* v);
 // public static native void glVertexAttribI1uiv(int index, int[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI1uiv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI1uiv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
 {
     jint* j_v = v ? (jint*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttribI1uiv(
@@ -4365,7 +4365,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI1uiv__I_3II(JNIEnv* env, 
 
 // void glVertexAttribI2i(GLuint index, GLint x, GLint y);
 // public static native void glVertexAttribI2i(int index, int x, int y);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI2i(JNIEnv* env, jclass clazz, jint index, jint x, jint y)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI2i(JNIEnv* env, jclass clazz, jint index, jint x, jint y)
 {
     glVertexAttribI2i(
         (GLuint)index,
@@ -4375,7 +4375,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI2i(JNIEnv* env, jclass cl
 
 // void glVertexAttribI2iv(GLuint index, GLint* v);
 // public static native void glVertexAttribI2iv(int index, IntBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI2iv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI2iv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttribI2iv(
         (GLuint)index,
@@ -4384,7 +4384,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI2iv__ILjava_nio_IntBuffer
 
 // void glVertexAttribI2iv(GLuint index, GLint* v);
 // public static native void glVertexAttribI2iv(int index, int[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI2iv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI2iv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
 {
     jint* j_v = v ? (jint*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttribI2iv(
@@ -4395,7 +4395,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI2iv__I_3II(JNIEnv* env, j
 
 // void glVertexAttribI2ui(GLuint index, GLuint x, GLuint y);
 // public static native void glVertexAttribI2ui(int index, int x, int y);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI2ui(JNIEnv* env, jclass clazz, jint index, jint x, jint y)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI2ui(JNIEnv* env, jclass clazz, jint index, jint x, jint y)
 {
     glVertexAttribI2ui(
         (GLuint)index,
@@ -4405,7 +4405,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI2ui(JNIEnv* env, jclass c
 
 // void glVertexAttribI2uiv(GLuint index, GLuint* v);
 // public static native void glVertexAttribI2uiv(int index, IntBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI2uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI2uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttribI2uiv(
         (GLuint)index,
@@ -4414,7 +4414,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI2uiv__ILjava_nio_IntBuffe
 
 // void glVertexAttribI2uiv(GLuint index, GLuint* v);
 // public static native void glVertexAttribI2uiv(int index, int[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI2uiv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI2uiv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
 {
     jint* j_v = v ? (jint*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttribI2uiv(
@@ -4425,7 +4425,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI2uiv__I_3II(JNIEnv* env, 
 
 // void glVertexAttribI3i(GLuint index, GLint x, GLint y, GLint z);
 // public static native void glVertexAttribI3i(int index, int x, int y, int z);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI3i(JNIEnv* env, jclass clazz, jint index, jint x, jint y, jint z)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI3i(JNIEnv* env, jclass clazz, jint index, jint x, jint y, jint z)
 {
     glVertexAttribI3i(
         (GLuint)index,
@@ -4436,7 +4436,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI3i(JNIEnv* env, jclass cl
 
 // void glVertexAttribI3iv(GLuint index, GLint* v);
 // public static native void glVertexAttribI3iv(int index, IntBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI3iv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI3iv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttribI3iv(
         (GLuint)index,
@@ -4445,7 +4445,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI3iv__ILjava_nio_IntBuffer
 
 // void glVertexAttribI3iv(GLuint index, GLint* v);
 // public static native void glVertexAttribI3iv(int index, int[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI3iv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI3iv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
 {
     jint* j_v = v ? (jint*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttribI3iv(
@@ -4456,7 +4456,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI3iv__I_3II(JNIEnv* env, j
 
 // void glVertexAttribI3ui(GLuint index, GLuint x, GLuint y, GLuint z);
 // public static native void glVertexAttribI3ui(int index, int x, int y, int z);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI3ui(JNIEnv* env, jclass clazz, jint index, jint x, jint y, jint z)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI3ui(JNIEnv* env, jclass clazz, jint index, jint x, jint y, jint z)
 {
     glVertexAttribI3ui(
         (GLuint)index,
@@ -4467,7 +4467,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI3ui(JNIEnv* env, jclass c
 
 // void glVertexAttribI3uiv(GLuint index, GLuint* v);
 // public static native void glVertexAttribI3uiv(int index, IntBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI3uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI3uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttribI3uiv(
         (GLuint)index,
@@ -4476,7 +4476,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI3uiv__ILjava_nio_IntBuffe
 
 // void glVertexAttribI3uiv(GLuint index, GLuint* v);
 // public static native void glVertexAttribI3uiv(int index, int[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI3uiv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI3uiv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
 {
     jint* j_v = v ? (jint*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttribI3uiv(
@@ -4487,7 +4487,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI3uiv__I_3II(JNIEnv* env, 
 
 // void glVertexAttribI4bv(GLuint index, GLbyte* v);
 // public static native void glVertexAttribI4bv(int index, ByteBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4bv__ILjava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI4bv__ILjava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttribI4bv(
         (GLuint)index,
@@ -4496,7 +4496,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4bv__ILjava_nio_ByteBuffe
 
 // void glVertexAttribI4bv(GLuint index, GLbyte* v);
 // public static native void glVertexAttribI4bv(int index, byte[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4bv__I_3BI(JNIEnv* env, jclass clazz, jint index, jbyteArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI4bv__I_3BI(JNIEnv* env, jclass clazz, jint index, jbyteArray v, jint vOffset)
 {
     jbyte* j_v = v ? (jbyte*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttribI4bv(
@@ -4507,7 +4507,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4bv__I_3BI(JNIEnv* env, j
 
 // void glVertexAttribI4i(GLuint index, GLint x, GLint y, GLint z, GLint w);
 // public static native void glVertexAttribI4i(int index, int x, int y, int z, int w);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4i(JNIEnv* env, jclass clazz, jint index, jint x, jint y, jint z, jint w)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI4i(JNIEnv* env, jclass clazz, jint index, jint x, jint y, jint z, jint w)
 {
     glVertexAttribI4i(
         (GLuint)index,
@@ -4519,7 +4519,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4i(JNIEnv* env, jclass cl
 
 // void glVertexAttribI4iv(GLuint index, GLint* v);
 // public static native void glVertexAttribI4iv(int index, IntBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4iv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI4iv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttribI4iv(
         (GLuint)index,
@@ -4528,7 +4528,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4iv__ILjava_nio_IntBuffer
 
 // void glVertexAttribI4iv(GLuint index, GLint* v);
 // public static native void glVertexAttribI4iv(int index, int[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4iv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI4iv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
 {
     jint* j_v = v ? (jint*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttribI4iv(
@@ -4539,7 +4539,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4iv__I_3II(JNIEnv* env, j
 
 // void glVertexAttribI4sv(GLuint index, GLshort* v);
 // public static native void glVertexAttribI4sv(int index, ShortBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4sv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI4sv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttribI4sv(
         (GLuint)index,
@@ -4548,7 +4548,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4sv__ILjava_nio_ShortBuff
 
 // void glVertexAttribI4sv(GLuint index, GLshort* v);
 // public static native void glVertexAttribI4sv(int index, short[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4sv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI4sv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
 {
     jshort* j_v = v ? (jshort*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttribI4sv(
@@ -4559,7 +4559,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4sv__I_3SI(JNIEnv* env, j
 
 // void glVertexAttribI4ubv(GLuint index, GLubyte* v);
 // public static native void glVertexAttribI4ubv(int index, ByteBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4ubv__ILjava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI4ubv__ILjava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttribI4ubv(
         (GLuint)index,
@@ -4568,7 +4568,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4ubv__ILjava_nio_ByteBuff
 
 // void glVertexAttribI4ubv(GLuint index, GLubyte* v);
 // public static native void glVertexAttribI4ubv(int index, byte[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4ubv__I_3BI(JNIEnv* env, jclass clazz, jint index, jbyteArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI4ubv__I_3BI(JNIEnv* env, jclass clazz, jint index, jbyteArray v, jint vOffset)
 {
     jbyte* j_v = v ? (jbyte*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttribI4ubv(
@@ -4579,7 +4579,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4ubv__I_3BI(JNIEnv* env, 
 
 // void glVertexAttribI4ui(GLuint index, GLuint x, GLuint y, GLuint z, GLuint w);
 // public static native void glVertexAttribI4ui(int index, int x, int y, int z, int w);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4ui(JNIEnv* env, jclass clazz, jint index, jint x, jint y, jint z, jint w)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI4ui(JNIEnv* env, jclass clazz, jint index, jint x, jint y, jint z, jint w)
 {
     glVertexAttribI4ui(
         (GLuint)index,
@@ -4591,7 +4591,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4ui(JNIEnv* env, jclass c
 
 // void glVertexAttribI4uiv(GLuint index, GLuint* v);
 // public static native void glVertexAttribI4uiv(int index, IntBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI4uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttribI4uiv(
         (GLuint)index,
@@ -4600,7 +4600,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4uiv__ILjava_nio_IntBuffe
 
 // void glVertexAttribI4uiv(GLuint index, GLuint* v);
 // public static native void glVertexAttribI4uiv(int index, int[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4uiv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI4uiv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
 {
     jint* j_v = v ? (jint*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttribI4uiv(
@@ -4611,7 +4611,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4uiv__I_3II(JNIEnv* env, 
 
 // void glVertexAttribI4usv(GLuint index, GLushort* v);
 // public static native void glVertexAttribI4usv(int index, ShortBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4usv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI4usv__ILjava_nio_ShortBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttribI4usv(
         (GLuint)index,
@@ -4620,7 +4620,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4usv__ILjava_nio_ShortBuf
 
 // void glVertexAttribI4usv(GLuint index, GLushort* v);
 // public static native void glVertexAttribI4usv(int index, short[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4usv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribI4usv__I_3SI(JNIEnv* env, jclass clazz, jint index, jshortArray v, jint vOffset)
 {
     jshort* j_v = v ? (jshort*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttribI4usv(
@@ -4631,7 +4631,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribI4usv__I_3SI(JNIEnv* env, 
 
 // void glVertexAttribIPointer(GLuint index, GLint size, GLenum type, GLsizei stride, GLvoid* pointer);
 // public static native void glVertexAttribIPointer(int index, int size, int type, int stride, Buffer pointer);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribIPointer__IIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint index, jint size, jint type, jint stride, jobject pointer)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribIPointer__IIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint index, jint size, jint type, jint stride, jobject pointer)
 {
     glVertexAttribIPointer(
         (GLuint)index,
@@ -4643,7 +4643,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribIPointer__IIIILjava_nio_Bu
 
 // void glVertexAttribIPointer(GLuint index, GLint size, GLenum type, GLsizei stride, GLvoid* pointer);
 // public static native void glVertexAttribIPointer(int index, int size, int type, int stride, long pointer);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribIPointer__IIIIJ(JNIEnv* env, jclass clazz, jint index, jint size, jint type, jint stride, jlong pointer)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribIPointer__IIIIJ(JNIEnv* env, jclass clazz, jint index, jint size, jint type, jint stride, jlong pointer)
 {
     glVertexAttribIPointer(
         (GLuint)index,
@@ -4655,7 +4655,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribIPointer__IIIIJ(JNIEnv* en
 
 // void glCopyBufferSubData(GLenum readTarget, GLenum writeTarget, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size);
 // public static native void glCopyBufferSubData(int readTarget, int writeTarget, int readOffset, int writeOffset, int size);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCopyBufferSubData(JNIEnv* env, jclass clazz, jint readTarget, jint writeTarget, jint readOffset, jint writeOffset, jint size)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCopyBufferSubData(JNIEnv* env, jclass clazz, jint readTarget, jint writeTarget, jint readOffset, jint writeOffset, jint size)
 {
     glCopyBufferSubData(
         (GLenum)readTarget,
@@ -4667,7 +4667,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glCopyBufferSubData(JNIEnv* env, jclass 
 
 // void glDrawArraysInstanced(GLenum mode, GLint first, GLsizei count, GLsizei primcount);
 // public static native void glDrawArraysInstanced(int mode, int first, int count, int primcount);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawArraysInstanced(JNIEnv* env, jclass clazz, jint mode, jint first, jint count, jint primcount)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawArraysInstanced(JNIEnv* env, jclass clazz, jint mode, jint first, jint count, jint primcount)
 {
     glDrawArraysInstanced(
         (GLenum)mode,
@@ -4678,7 +4678,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawArraysInstanced(JNIEnv* env, jclas
 
 // void glDrawElementsInstanced(GLenum mode, GLsizei count, GLenum type, GLvoid* indices, GLsizei primcount);
 // public static native void glDrawElementsInstanced(int mode, int count, int type, Buffer indices, int primcount);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElementsInstanced__IIILjava_nio_Buffer_2I(JNIEnv* env, jclass clazz, jint mode, jint count, jint type, jobject indices, jint primcount)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawElementsInstanced__IIILjava_nio_Buffer_2I(JNIEnv* env, jclass clazz, jint mode, jint count, jint type, jobject indices, jint primcount)
 {
     glDrawElementsInstanced(
         (GLenum)mode,
@@ -4690,7 +4690,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElementsInstanced__IIILjava_nio_Bu
 
 // void glDrawElementsInstanced(GLenum mode, GLsizei count, GLenum type, GLvoid* indices, GLsizei primcount);
 // public static native void glDrawElementsInstanced(int mode, int count, int type, long indices, int primcount);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElementsInstanced__IIIJI(JNIEnv* env, jclass clazz, jint mode, jint count, jint type, jlong indices, jint primcount)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawElementsInstanced__IIIJI(JNIEnv* env, jclass clazz, jint mode, jint count, jint type, jlong indices, jint primcount)
 {
     glDrawElementsInstanced(
         (GLenum)mode,
@@ -4702,7 +4702,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElementsInstanced__IIIJI(JNIEnv* e
 
 // void glGetActiveUniformBlockName(GLuint program, GLuint uniformBlockIndex, GLsizei bufSize, GLsizei* length, GLchar* uniformBlockName);
 // public static native void glGetActiveUniformBlockName(int program, int uniformBlockIndex, int bufSize, IntBuffer length, ByteBuffer uniformBlockName);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniformBlockName__IIILjava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint program, jint uniformBlockIndex, jint bufSize, jobject length, jobject uniformBlockName)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveUniformBlockName__IIILjava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint program, jint uniformBlockIndex, jint bufSize, jobject length, jobject uniformBlockName)
 {
     glGetActiveUniformBlockName(
         (GLuint)program,
@@ -4714,7 +4714,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniformBlockName__IIILjava_ni
 
 // void glGetActiveUniformBlockName(GLuint program, GLuint uniformBlockIndex, GLsizei bufSize, GLsizei* length, GLchar* uniformBlockName);
 // public static native void glGetActiveUniformBlockName(int program, int uniformBlockIndex, int bufSize, int[] length, int lengthOffset, byte[] uniformBlockName, int uniformBlockNameOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniformBlockName__III_3II_3BI(JNIEnv* env, jclass clazz, jint program, jint uniformBlockIndex, jint bufSize, jintArray length, jint lengthOffset, jbyteArray uniformBlockName, jint uniformBlockNameOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveUniformBlockName__III_3II_3BI(JNIEnv* env, jclass clazz, jint program, jint uniformBlockIndex, jint bufSize, jintArray length, jint lengthOffset, jbyteArray uniformBlockName, jint uniformBlockNameOffset)
 {
     jint* j_length = length ? (jint*)((*env)->GetPrimitiveArrayCritical(env, length, 0)) : 0;
     jbyte* j_uniformBlockName = uniformBlockName ? (jbyte*)((*env)->GetPrimitiveArrayCritical(env, uniformBlockName, 0)) : 0;
@@ -4730,7 +4730,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniformBlockName__III_3II_3BI
 
 // void glGetActiveUniformBlockiv(GLuint program, GLuint uniformBlockIndex, GLenum pname, GLint* params);
 // public static native void glGetActiveUniformBlockiv(int program, int uniformBlockIndex, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniformBlockiv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint uniformBlockIndex, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveUniformBlockiv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint uniformBlockIndex, jint pname, jobject params)
 {
     glGetActiveUniformBlockiv(
         (GLuint)program,
@@ -4741,7 +4741,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniformBlockiv__IIILjava_nio_
 
 // void glGetActiveUniformBlockiv(GLuint program, GLuint uniformBlockIndex, GLenum pname, GLint* params);
 // public static native void glGetActiveUniformBlockiv(int program, int uniformBlockIndex, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniformBlockiv__III_3II(JNIEnv* env, jclass clazz, jint program, jint uniformBlockIndex, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveUniformBlockiv__III_3II(JNIEnv* env, jclass clazz, jint program, jint uniformBlockIndex, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetActiveUniformBlockiv(
@@ -4754,7 +4754,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniformBlockiv__III_3II(JNIEn
 
 // void glGetActiveUniformName(GLuint program, GLuint uniformIndex, GLsizei bufSize, GLsizei* length, GLchar* uniformName);
 // public static native void glGetActiveUniformName(int program, int uniformIndex, int bufSize, IntBuffer length, ByteBuffer uniformName);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniformName__IIILjava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint program, jint uniformIndex, jint bufSize, jobject length, jobject uniformName)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveUniformName__IIILjava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint program, jint uniformIndex, jint bufSize, jobject length, jobject uniformName)
 {
     glGetActiveUniformName(
         (GLuint)program,
@@ -4766,7 +4766,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniformName__IIILjava_nio_Int
 
 // void glGetActiveUniformName(GLuint program, GLuint uniformIndex, GLsizei bufSize, GLsizei* length, GLchar* uniformName);
 // public static native void glGetActiveUniformName(int program, int uniformIndex, int bufSize, int[] length, int lengthOffset, byte[] uniformName, int uniformNameOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniformName__III_3II_3BI(JNIEnv* env, jclass clazz, jint program, jint uniformIndex, jint bufSize, jintArray length, jint lengthOffset, jbyteArray uniformName, jint uniformNameOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveUniformName__III_3II_3BI(JNIEnv* env, jclass clazz, jint program, jint uniformIndex, jint bufSize, jintArray length, jint lengthOffset, jbyteArray uniformName, jint uniformNameOffset)
 {
     jint* j_length = length ? (jint*)((*env)->GetPrimitiveArrayCritical(env, length, 0)) : 0;
     jbyte* j_uniformName = uniformName ? (jbyte*)((*env)->GetPrimitiveArrayCritical(env, uniformName, 0)) : 0;
@@ -4782,7 +4782,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniformName__III_3II_3BI(JNIE
 
 // void glGetActiveUniformsiv(GLuint program, GLsizei uniformCount, GLuint* uniformIndices, GLenum pname, GLint* params);
 // public static native void glGetActiveUniformsiv(int program, int uniformCount, IntBuffer uniformIndices, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniformsiv__IILjava_nio_IntBuffer_2ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint uniformCount, jobject uniformIndices, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveUniformsiv__IILjava_nio_IntBuffer_2ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint uniformCount, jobject uniformIndices, jint pname, jobject params)
 {
     glGetActiveUniformsiv(
         (GLuint)program,
@@ -4794,7 +4794,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniformsiv__IILjava_nio_IntBu
 
 // void glGetActiveUniformsiv(GLuint program, GLsizei uniformCount, GLuint* uniformIndices, GLenum pname, GLint* params);
 // public static native void glGetActiveUniformsiv(int program, int uniformCount, int[] uniformIndices, int uniformIndicesOffset, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniformsiv__II_3III_3II(JNIEnv* env, jclass clazz, jint program, jint uniformCount, jintArray uniformIndices, jint uniformIndicesOffset, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveUniformsiv__II_3III_3II(JNIEnv* env, jclass clazz, jint program, jint uniformCount, jintArray uniformIndices, jint uniformIndicesOffset, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_uniformIndices = uniformIndices ? (jint*)((*env)->GetPrimitiveArrayCritical(env, uniformIndices, 0)) : 0;
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
@@ -4810,7 +4810,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveUniformsiv__II_3III_3II(JNIEn
 
 // GLuint glGetUniformBlockIndex(GLuint program, GLchar* uniformBlockName);
 // public static native int glGetUniformBlockIndex(int program, String uniformBlockName);
-JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glGetUniformBlockIndex(JNIEnv* env, jclass clazz, jint program, jstring uniformBlockName)
+JNIEXPORT jint JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetUniformBlockIndex(JNIEnv* env, jclass clazz, jint program, jstring uniformBlockName)
 {
     const char* j_uniformBlockName = (*env)->GetStringUTFChars(env, uniformBlockName, 0);
     GLuint ret = (GLuint)
@@ -4823,7 +4823,7 @@ JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glGetUniformBlockIndex(JNIEnv* env, jcla
 
 // void glGetUniformIndices(GLuint program, GLsizei uniformCount, GLchar** uniformNames, GLuint* uniformIndices);
 // public static native void glGetUniformIndices(int program, int uniformCount, String[] uniformNames, IntBuffer uniformIndices);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformIndices__II_3Ljava_lang_String_2Ljava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint uniformCount, jobjectArray uniformNames, jobject uniformIndices)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetUniformIndices__II_3Ljava_lang_String_2Ljava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint uniformCount, jobjectArray uniformNames, jobject uniformIndices)
 {
     const char** j_uniformNames = newNativeStringArray(env, uniformNames);
     glGetUniformIndices(
@@ -4836,7 +4836,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformIndices__II_3Ljava_lang_Stri
 
 // void glGetUniformIndices(GLuint program, GLsizei uniformCount, GLchar** uniformNames, GLuint* uniformIndices);
 // public static native void glGetUniformIndices(int program, int uniformCount, String[] uniformNames, int[] uniformIndices, int uniformIndicesOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformIndices__II_3Ljava_lang_String_2_3II(JNIEnv* env, jclass clazz, jint program, jint uniformCount, jobjectArray uniformNames, jintArray uniformIndices, jint uniformIndicesOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetUniformIndices__II_3Ljava_lang_String_2_3II(JNIEnv* env, jclass clazz, jint program, jint uniformCount, jobjectArray uniformNames, jintArray uniformIndices, jint uniformIndicesOffset)
 {
     const char** j_uniformNames = newNativeStringArray(env, uniformNames);
     jint* j_uniformIndices = uniformIndices ? (jint*)((*env)->GetPrimitiveArrayCritical(env, uniformIndices, 0)) : 0;
@@ -4851,7 +4851,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformIndices__II_3Ljava_lang_Stri
 
 // void glPrimitiveRestartIndex(GLuint index);
 // public static native void glPrimitiveRestartIndex(int index);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPrimitiveRestartIndex(JNIEnv* env, jclass clazz, jint index)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glPrimitiveRestartIndex(JNIEnv* env, jclass clazz, jint index)
 {
     glPrimitiveRestartIndex(
         (GLuint)index);
@@ -4859,7 +4859,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPrimitiveRestartIndex(JNIEnv* env, jcl
 
 // void glTexBuffer(GLenum target, GLenum internalformat, GLuint buffer);
 // public static native void glTexBuffer(int target, int internalformat, int buffer);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexBuffer(JNIEnv* env, jclass clazz, jint target, jint internalformat, jint buffer)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexBuffer(JNIEnv* env, jclass clazz, jint target, jint internalformat, jint buffer)
 {
     glTexBuffer(
         (GLenum)target,
@@ -4869,7 +4869,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexBuffer(JNIEnv* env, jclass clazz, j
 
 // void glUniformBlockBinding(GLuint program, GLuint uniformBlockIndex, GLuint uniformBlockBinding);
 // public static native void glUniformBlockBinding(int program, int uniformBlockIndex, int uniformBlockBinding);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformBlockBinding(JNIEnv* env, jclass clazz, jint program, jint uniformBlockIndex, jint uniformBlockBinding)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformBlockBinding(JNIEnv* env, jclass clazz, jint program, jint uniformBlockIndex, jint uniformBlockBinding)
 {
     glUniformBlockBinding(
         (GLuint)program,
@@ -4879,7 +4879,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformBlockBinding(JNIEnv* env, jclas
 
 // void glDrawElementsBaseVertex(GLenum mode, GLsizei count, GLenum type, GLvoid* indices, GLint basevertex);
 // public static native void glDrawElementsBaseVertex(int mode, int count, int type, Buffer indices, int basevertex);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElementsBaseVertex__IIILjava_nio_Buffer_2I(JNIEnv* env, jclass clazz, jint mode, jint count, jint type, jobject indices, jint basevertex)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawElementsBaseVertex__IIILjava_nio_Buffer_2I(JNIEnv* env, jclass clazz, jint mode, jint count, jint type, jobject indices, jint basevertex)
 {
     glDrawElementsBaseVertex(
         (GLenum)mode,
@@ -4891,7 +4891,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElementsBaseVertex__IIILjava_nio_B
 
 // void glDrawElementsBaseVertex(GLenum mode, GLsizei count, GLenum type, GLvoid* indices, GLint basevertex);
 // public static native void glDrawElementsBaseVertex(int mode, int count, int type, long indices, int basevertex);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElementsBaseVertex__IIIJI(JNIEnv* env, jclass clazz, jint mode, jint count, jint type, jlong indices, jint basevertex)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawElementsBaseVertex__IIIJI(JNIEnv* env, jclass clazz, jint mode, jint count, jint type, jlong indices, jint basevertex)
 {
     glDrawElementsBaseVertex(
         (GLenum)mode,
@@ -4903,7 +4903,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElementsBaseVertex__IIIJI(JNIEnv* 
 
 // void glDrawElementsInstancedBaseVertex(GLenum mode, GLsizei count, GLenum type, GLvoid* indices, GLsizei primcount, GLint basevertex);
 // public static native void glDrawElementsInstancedBaseVertex(int mode, int count, int type, Buffer indices, int primcount, int basevertex);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElementsInstancedBaseVertex__IIILjava_nio_Buffer_2II(JNIEnv* env, jclass clazz, jint mode, jint count, jint type, jobject indices, jint primcount, jint basevertex)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawElementsInstancedBaseVertex__IIILjava_nio_Buffer_2II(JNIEnv* env, jclass clazz, jint mode, jint count, jint type, jobject indices, jint primcount, jint basevertex)
 {
     glDrawElementsInstancedBaseVertex(
         (GLenum)mode,
@@ -4916,7 +4916,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElementsInstancedBaseVertex__IIILj
 
 // void glDrawElementsInstancedBaseVertex(GLenum mode, GLsizei count, GLenum type, GLvoid* indices, GLsizei primcount, GLint basevertex);
 // public static native void glDrawElementsInstancedBaseVertex(int mode, int count, int type, long indices, int primcount, int basevertex);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElementsInstancedBaseVertex__IIIJII(JNIEnv* env, jclass clazz, jint mode, jint count, jint type, jlong indices, jint primcount, jint basevertex)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawElementsInstancedBaseVertex__IIIJII(JNIEnv* env, jclass clazz, jint mode, jint count, jint type, jlong indices, jint primcount, jint basevertex)
 {
     glDrawElementsInstancedBaseVertex(
         (GLenum)mode,
@@ -4929,7 +4929,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElementsInstancedBaseVertex__IIIJI
 
 // void glDrawRangeElementsBaseVertex(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, GLvoid* indices, GLint basevertex);
 // public static native void glDrawRangeElementsBaseVertex(int mode, int start, int end, int count, int type, Buffer indices, int basevertex);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawRangeElementsBaseVertex__IIIIILjava_nio_Buffer_2I(JNIEnv* env, jclass clazz, jint mode, jint start, jint end, jint count, jint type, jobject indices, jint basevertex)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawRangeElementsBaseVertex__IIIIILjava_nio_Buffer_2I(JNIEnv* env, jclass clazz, jint mode, jint start, jint end, jint count, jint type, jobject indices, jint basevertex)
 {
     glDrawRangeElementsBaseVertex(
         (GLenum)mode,
@@ -4943,7 +4943,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawRangeElementsBaseVertex__IIIIILjav
 
 // void glDrawRangeElementsBaseVertex(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, GLvoid* indices, GLint basevertex);
 // public static native void glDrawRangeElementsBaseVertex(int mode, int start, int end, int count, int type, long indices, int basevertex);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawRangeElementsBaseVertex__IIIIIJI(JNIEnv* env, jclass clazz, jint mode, jint start, jint end, jint count, jint type, jlong indices, jint basevertex)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawRangeElementsBaseVertex__IIIIIJI(JNIEnv* env, jclass clazz, jint mode, jint start, jint end, jint count, jint type, jlong indices, jint basevertex)
 {
     glDrawRangeElementsBaseVertex(
         (GLenum)mode,
@@ -4957,7 +4957,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawRangeElementsBaseVertex__IIIIIJI(J
 
 // void glFramebufferTexture(GLenum target, GLenum attachment, GLuint texture, GLint level);
 // public static native void glFramebufferTexture(int target, int attachment, int texture, int level);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glFramebufferTexture(JNIEnv* env, jclass clazz, jint target, jint attachment, jint texture, jint level)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glFramebufferTexture(JNIEnv* env, jclass clazz, jint target, jint attachment, jint texture, jint level)
 {
     glFramebufferTexture(
         (GLenum)target,
@@ -4968,7 +4968,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glFramebufferTexture(JNIEnv* env, jclass
 
 // void glGetBufferParameteri64v(GLenum target, GLenum pname, GLint64* params);
 // public static native void glGetBufferParameteri64v(int target, int pname, LongBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBufferParameteri64v__IILjava_nio_LongBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetBufferParameteri64v__IILjava_nio_LongBuffer_2(JNIEnv* env, jclass clazz, jint target, jint pname, jobject params)
 {
     glGetBufferParameteri64v(
         (GLenum)target,
@@ -4978,7 +4978,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBufferParameteri64v__IILjava_nio_Lo
 
 // void glGetBufferParameteri64v(GLenum target, GLenum pname, GLint64* params);
 // public static native void glGetBufferParameteri64v(int target, int pname, long[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBufferParameteri64v__II_3JI(JNIEnv* env, jclass clazz, jint target, jint pname, jlongArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetBufferParameteri64v__II_3JI(JNIEnv* env, jclass clazz, jint target, jint pname, jlongArray params, jint paramsOffset)
 {
     jlong* j_params = params ? (jlong*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetBufferParameteri64v(
@@ -4990,7 +4990,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetBufferParameteri64v__II_3JI(JNIEnv*
 
 // void glGetInteger64i_v(GLenum target, GLuint index, GLint64* data);
 // public static native void glGetInteger64i_v(int target, int index, LongBuffer data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetInteger64i_1v__IILjava_nio_LongBuffer_2(JNIEnv* env, jclass clazz, jint target, jint index, jobject data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetInteger64i_1v__IILjava_nio_LongBuffer_2(JNIEnv* env, jclass clazz, jint target, jint index, jobject data)
 {
     glGetInteger64i_v(
         (GLenum)target,
@@ -5000,7 +5000,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetInteger64i_1v__IILjava_nio_LongBuff
 
 // void glGetInteger64i_v(GLenum target, GLuint index, GLint64* data);
 // public static native void glGetInteger64i_v(int target, int index, long[] data, int dataOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetInteger64i_1v__II_3JI(JNIEnv* env, jclass clazz, jint target, jint index, jlongArray data, jint dataOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetInteger64i_1v__II_3JI(JNIEnv* env, jclass clazz, jint target, jint index, jlongArray data, jint dataOffset)
 {
     jlong* j_data = data ? (jlong*)((*env)->GetPrimitiveArrayCritical(env, data, 0)) : 0;
     glGetInteger64i_v(
@@ -5012,7 +5012,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetInteger64i_1v__II_3JI(JNIEnv* env, 
 
 // void glGetInteger64v(GLenum pname, GLint64* params);
 // public static native void glGetInteger64v(int pname, LongBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetInteger64v__ILjava_nio_LongBuffer_2(JNIEnv* env, jclass clazz, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetInteger64v__ILjava_nio_LongBuffer_2(JNIEnv* env, jclass clazz, jint pname, jobject params)
 {
     glGetInteger64v(
         (GLenum)pname,
@@ -5021,7 +5021,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetInteger64v__ILjava_nio_LongBuffer_2
 
 // void glGetInteger64v(GLenum pname, GLint64* params);
 // public static native void glGetInteger64v(int pname, long[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetInteger64v__I_3JI(JNIEnv* env, jclass clazz, jint pname, jlongArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetInteger64v__I_3JI(JNIEnv* env, jclass clazz, jint pname, jlongArray params, jint paramsOffset)
 {
     jlong* j_params = params ? (jlong*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetInteger64v(
@@ -5032,7 +5032,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetInteger64v__I_3JI(JNIEnv* env, jcla
 
 // void glGetMultisamplefv(GLenum pname, GLuint index, GLfloat* val);
 // public static native void glGetMultisamplefv(int pname, int index, FloatBuffer val);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetMultisamplefv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint pname, jint index, jobject val)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetMultisamplefv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint pname, jint index, jobject val)
 {
     glGetMultisamplefv(
         (GLenum)pname,
@@ -5042,7 +5042,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetMultisamplefv__IILjava_nio_FloatBuf
 
 // void glGetMultisamplefv(GLenum pname, GLuint index, GLfloat* val);
 // public static native void glGetMultisamplefv(int pname, int index, float[] val, int valOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetMultisamplefv__II_3FI(JNIEnv* env, jclass clazz, jint pname, jint index, jfloatArray val, jint valOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetMultisamplefv__II_3FI(JNIEnv* env, jclass clazz, jint pname, jint index, jfloatArray val, jint valOffset)
 {
     jfloat* j_val = val ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, val, 0)) : 0;
     glGetMultisamplefv(
@@ -5054,7 +5054,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetMultisamplefv__II_3FI(JNIEnv* env, 
 
 // void glMultiDrawElementsBaseVertex(GLenum mode, GLsizei* count, GLenum type, GLvoid** indices, GLsizei primcount, GLint* basevertex);
 // public static native void glMultiDrawElementsBaseVertex(int mode, IntBuffer count, int type, Buffer[] indices, int primcount, IntBuffer basevertex);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiDrawElementsBaseVertex__ILjava_nio_IntBuffer_2I_3Ljava_nio_Buffer_2ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint mode, jobject count, jint type, jobjectArray indices, jint primcount, jobject basevertex)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiDrawElementsBaseVertex__ILjava_nio_IntBuffer_2I_3Ljava_nio_Buffer_2ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint mode, jobject count, jint type, jobjectArray indices, jint primcount, jobject basevertex)
 {
     void** j_indices = newNativeBufferArray(env, indices);
     glMultiDrawElementsBaseVertex(
@@ -5069,7 +5069,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiDrawElementsBaseVertex__ILjava_ni
 
 // void glMultiDrawElementsBaseVertex(GLenum mode, GLsizei* count, GLenum type, GLvoid** indices, GLsizei primcount, GLint* basevertex);
 // public static native void glMultiDrawElementsBaseVertex(int mode, int[] count, int countOffset, int type, Buffer[] indices, int primcount, int[] basevertex, int basevertexOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiDrawElementsBaseVertex__I_3III_3Ljava_nio_Buffer_2I_3II(JNIEnv* env, jclass clazz, jint mode, jintArray count, jint countOffset, jint type, jobjectArray indices, jint primcount, jintArray basevertex, jint basevertexOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiDrawElementsBaseVertex__I_3III_3Ljava_nio_Buffer_2I_3II(JNIEnv* env, jclass clazz, jint mode, jintArray count, jint countOffset, jint type, jobjectArray indices, jint primcount, jintArray basevertex, jint basevertexOffset)
 {
     jint* j_count = count ? (jint*)((*env)->GetPrimitiveArrayCritical(env, count, 0)) : 0;
     void** j_indices = newNativeBufferArray(env, indices);
@@ -5088,7 +5088,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiDrawElementsBaseVertex__I_3III_3L
 
 // void glProvokingVertex(GLenum mode);
 // public static native void glProvokingVertex(int mode);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProvokingVertex(JNIEnv* env, jclass clazz, jint mode)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProvokingVertex(JNIEnv* env, jclass clazz, jint mode)
 {
     glProvokingVertex(
         (GLenum)mode);
@@ -5096,7 +5096,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProvokingVertex(JNIEnv* env, jclass cl
 
 // void glSampleMaski(GLuint index, GLbitfield mask);
 // public static native void glSampleMaski(int index, int mask);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSampleMaski(JNIEnv* env, jclass clazz, jint index, jint mask)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glSampleMaski(JNIEnv* env, jclass clazz, jint index, jint mask)
 {
     glSampleMaski(
         (GLuint)index,
@@ -5105,7 +5105,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSampleMaski(JNIEnv* env, jclass clazz,
 
 // void glTexImage2DMultisample(GLenum target, GLsizei samples, GLint internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations);
 // public static native void glTexImage2DMultisample(int target, int samples, int internalformat, int width, int height, boolean fixedsamplelocations);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexImage2DMultisample(JNIEnv* env, jclass clazz, jint target, jint samples, jint internalformat, jint width, jint height, jboolean fixedsamplelocations)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexImage2DMultisample(JNIEnv* env, jclass clazz, jint target, jint samples, jint internalformat, jint width, jint height, jboolean fixedsamplelocations)
 {
     glTexImage2DMultisample(
         (GLenum)target,
@@ -5118,7 +5118,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexImage2DMultisample(JNIEnv* env, jcl
 
 // void glTexImage3DMultisample(GLenum target, GLsizei samples, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
 // public static native void glTexImage3DMultisample(int target, int samples, int internalformat, int width, int height, int depth, boolean fixedsamplelocations);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexImage3DMultisample(JNIEnv* env, jclass clazz, jint target, jint samples, jint internalformat, jint width, jint height, jint depth, jboolean fixedsamplelocations)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexImage3DMultisample(JNIEnv* env, jclass clazz, jint target, jint samples, jint internalformat, jint width, jint height, jint depth, jboolean fixedsamplelocations)
 {
     glTexImage3DMultisample(
         (GLenum)target,
@@ -5132,7 +5132,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexImage3DMultisample(JNIEnv* env, jcl
 
 // void glBindFragDataLocationIndexed(GLuint program, GLuint colorNumber, GLuint index, GLchar* name);
 // public static native void glBindFragDataLocationIndexed(int program, int colorNumber, int index, String name);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindFragDataLocationIndexed(JNIEnv* env, jclass clazz, jint program, jint colorNumber, jint index, jstring name)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBindFragDataLocationIndexed(JNIEnv* env, jclass clazz, jint program, jint colorNumber, jint index, jstring name)
 {
     const char* j_name = (*env)->GetStringUTFChars(env, name, 0);
     glBindFragDataLocationIndexed(
@@ -5145,7 +5145,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindFragDataLocationIndexed(JNIEnv* en
 
 // void glBindSampler(GLuint unit, GLuint sampler);
 // public static native void glBindSampler(int unit, int sampler);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindSampler(JNIEnv* env, jclass clazz, jint unit, jint sampler)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBindSampler(JNIEnv* env, jclass clazz, jint unit, jint sampler)
 {
     glBindSampler(
         (GLuint)unit,
@@ -5154,7 +5154,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindSampler(JNIEnv* env, jclass clazz,
 
 // void glColorP3ui(GLenum type, GLuint color);
 // public static native void glColorP3ui(int type, int color);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glColorP3ui(JNIEnv* env, jclass clazz, jint type, jint color)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glColorP3ui(JNIEnv* env, jclass clazz, jint type, jint color)
 {
     glColorP3ui(
         (GLenum)type,
@@ -5163,7 +5163,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glColorP3ui(JNIEnv* env, jclass clazz, j
 
 // void glColorP3uiv(GLenum type, GLuint* color);
 // public static native void glColorP3uiv(int type, IntBuffer color);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glColorP3uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject color)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glColorP3uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject color)
 {
     glColorP3uiv(
         (GLenum)type,
@@ -5172,7 +5172,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glColorP3uiv__ILjava_nio_IntBuffer_2(JNI
 
 // void glColorP3uiv(GLenum type, GLuint* color);
 // public static native void glColorP3uiv(int type, int[] color, int colorOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glColorP3uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray color, jint colorOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glColorP3uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray color, jint colorOffset)
 {
     jint* j_color = color ? (jint*)((*env)->GetPrimitiveArrayCritical(env, color, 0)) : 0;
     glColorP3uiv(
@@ -5183,7 +5183,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glColorP3uiv__I_3II(JNIEnv* env, jclass 
 
 // void glColorP4ui(GLenum type, GLuint color);
 // public static native void glColorP4ui(int type, int color);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glColorP4ui(JNIEnv* env, jclass clazz, jint type, jint color)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glColorP4ui(JNIEnv* env, jclass clazz, jint type, jint color)
 {
     glColorP4ui(
         (GLenum)type,
@@ -5192,7 +5192,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glColorP4ui(JNIEnv* env, jclass clazz, j
 
 // void glColorP4uiv(GLenum type, GLuint* color);
 // public static native void glColorP4uiv(int type, IntBuffer color);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glColorP4uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject color)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glColorP4uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject color)
 {
     glColorP4uiv(
         (GLenum)type,
@@ -5201,7 +5201,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glColorP4uiv__ILjava_nio_IntBuffer_2(JNI
 
 // void glColorP4uiv(GLenum type, GLuint* color);
 // public static native void glColorP4uiv(int type, int[] color, int colorOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glColorP4uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray color, jint colorOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glColorP4uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray color, jint colorOffset)
 {
     jint* j_color = color ? (jint*)((*env)->GetPrimitiveArrayCritical(env, color, 0)) : 0;
     glColorP4uiv(
@@ -5212,7 +5212,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glColorP4uiv__I_3II(JNIEnv* env, jclass 
 
 // void glDeleteSamplers(GLsizei count, GLuint* samplers);
 // public static native void glDeleteSamplers(int count, IntBuffer samplers);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteSamplers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint count, jobject samplers)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteSamplers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint count, jobject samplers)
 {
     glDeleteSamplers(
         (GLsizei)count,
@@ -5221,7 +5221,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteSamplers__ILjava_nio_IntBuffer_2
 
 // void glDeleteSamplers(GLsizei count, GLuint* samplers);
 // public static native void glDeleteSamplers(int count, int[] samplers, int samplersOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteSamplers__I_3II(JNIEnv* env, jclass clazz, jint count, jintArray samplers, jint samplersOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteSamplers__I_3II(JNIEnv* env, jclass clazz, jint count, jintArray samplers, jint samplersOffset)
 {
     jint* j_samplers = samplers ? (jint*)((*env)->GetPrimitiveArrayCritical(env, samplers, 0)) : 0;
     glDeleteSamplers(
@@ -5232,7 +5232,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteSamplers__I_3II(JNIEnv* env, jcl
 
 // void glGenSamplers(GLsizei count, GLuint* samplers);
 // public static native void glGenSamplers(int count, IntBuffer samplers);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenSamplers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint count, jobject samplers)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenSamplers__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint count, jobject samplers)
 {
     glGenSamplers(
         (GLsizei)count,
@@ -5241,7 +5241,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenSamplers__ILjava_nio_IntBuffer_2(JN
 
 // void glGenSamplers(GLsizei count, GLuint* samplers);
 // public static native void glGenSamplers(int count, int[] samplers, int samplersOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenSamplers__I_3II(JNIEnv* env, jclass clazz, jint count, jintArray samplers, jint samplersOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenSamplers__I_3II(JNIEnv* env, jclass clazz, jint count, jintArray samplers, jint samplersOffset)
 {
     jint* j_samplers = samplers ? (jint*)((*env)->GetPrimitiveArrayCritical(env, samplers, 0)) : 0;
     glGenSamplers(
@@ -5252,7 +5252,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenSamplers__I_3II(JNIEnv* env, jclass
 
 // GLint glGetFragDataIndex(GLuint program, GLchar* name);
 // public static native int glGetFragDataIndex(int program, String name);
-JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glGetFragDataIndex(JNIEnv* env, jclass clazz, jint program, jstring name)
+JNIEXPORT jint JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetFragDataIndex(JNIEnv* env, jclass clazz, jint program, jstring name)
 {
     const char* j_name = (*env)->GetStringUTFChars(env, name, 0);
     GLint ret = (GLint)
@@ -5265,7 +5265,7 @@ JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glGetFragDataIndex(JNIEnv* env, jclass c
 
 // void glGetQueryObjecti64v(GLuint id, GLenum pname, GLint64* params);
 // public static native void glGetQueryObjecti64v(int id, int pname, LongBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryObjecti64v__IILjava_nio_LongBuffer_2(JNIEnv* env, jclass clazz, jint id, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetQueryObjecti64v__IILjava_nio_LongBuffer_2(JNIEnv* env, jclass clazz, jint id, jint pname, jobject params)
 {
     glGetQueryObjecti64v(
         (GLuint)id,
@@ -5275,7 +5275,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryObjecti64v__IILjava_nio_LongBu
 
 // void glGetQueryObjecti64v(GLuint id, GLenum pname, GLint64* params);
 // public static native void glGetQueryObjecti64v(int id, int pname, long[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryObjecti64v__II_3JI(JNIEnv* env, jclass clazz, jint id, jint pname, jlongArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetQueryObjecti64v__II_3JI(JNIEnv* env, jclass clazz, jint id, jint pname, jlongArray params, jint paramsOffset)
 {
     jlong* j_params = params ? (jlong*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetQueryObjecti64v(
@@ -5287,7 +5287,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryObjecti64v__II_3JI(JNIEnv* env
 
 // void glGetQueryObjectui64v(GLuint id, GLenum pname, GLuint64* params);
 // public static native void glGetQueryObjectui64v(int id, int pname, LongBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryObjectui64v__IILjava_nio_LongBuffer_2(JNIEnv* env, jclass clazz, jint id, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetQueryObjectui64v__IILjava_nio_LongBuffer_2(JNIEnv* env, jclass clazz, jint id, jint pname, jobject params)
 {
     glGetQueryObjectui64v(
         (GLuint)id,
@@ -5297,7 +5297,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryObjectui64v__IILjava_nio_LongB
 
 // void glGetQueryObjectui64v(GLuint id, GLenum pname, GLuint64* params);
 // public static native void glGetQueryObjectui64v(int id, int pname, long[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryObjectui64v__II_3JI(JNIEnv* env, jclass clazz, jint id, jint pname, jlongArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetQueryObjectui64v__II_3JI(JNIEnv* env, jclass clazz, jint id, jint pname, jlongArray params, jint paramsOffset)
 {
     jlong* j_params = params ? (jlong*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetQueryObjectui64v(
@@ -5309,7 +5309,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryObjectui64v__II_3JI(JNIEnv* en
 
 // void glGetSamplerParameterIiv(GLuint sampler, GLenum pname, GLint* params);
 // public static native void glGetSamplerParameterIiv(int sampler, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetSamplerParameterIiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint sampler, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetSamplerParameterIiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint sampler, jint pname, jobject params)
 {
     glGetSamplerParameterIiv(
         (GLuint)sampler,
@@ -5319,7 +5319,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetSamplerParameterIiv__IILjava_nio_In
 
 // void glGetSamplerParameterIiv(GLuint sampler, GLenum pname, GLint* params);
 // public static native void glGetSamplerParameterIiv(int sampler, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetSamplerParameterIiv__II_3II(JNIEnv* env, jclass clazz, jint sampler, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetSamplerParameterIiv__II_3II(JNIEnv* env, jclass clazz, jint sampler, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetSamplerParameterIiv(
@@ -5331,7 +5331,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetSamplerParameterIiv__II_3II(JNIEnv*
 
 // void glGetSamplerParameterIuiv(GLuint sampler, GLenum pname, GLuint* params);
 // public static native void glGetSamplerParameterIuiv(int sampler, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetSamplerParameterIuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint sampler, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetSamplerParameterIuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint sampler, jint pname, jobject params)
 {
     glGetSamplerParameterIuiv(
         (GLuint)sampler,
@@ -5341,7 +5341,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetSamplerParameterIuiv__IILjava_nio_I
 
 // void glGetSamplerParameterIuiv(GLuint sampler, GLenum pname, GLuint* params);
 // public static native void glGetSamplerParameterIuiv(int sampler, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetSamplerParameterIuiv__II_3II(JNIEnv* env, jclass clazz, jint sampler, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetSamplerParameterIuiv__II_3II(JNIEnv* env, jclass clazz, jint sampler, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetSamplerParameterIuiv(
@@ -5353,7 +5353,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetSamplerParameterIuiv__II_3II(JNIEnv
 
 // void glGetSamplerParameterfv(GLuint sampler, GLenum pname, GLfloat* params);
 // public static native void glGetSamplerParameterfv(int sampler, int pname, FloatBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetSamplerParameterfv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint sampler, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetSamplerParameterfv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint sampler, jint pname, jobject params)
 {
     glGetSamplerParameterfv(
         (GLuint)sampler,
@@ -5363,7 +5363,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetSamplerParameterfv__IILjava_nio_Flo
 
 // void glGetSamplerParameterfv(GLuint sampler, GLenum pname, GLfloat* params);
 // public static native void glGetSamplerParameterfv(int sampler, int pname, float[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetSamplerParameterfv__II_3FI(JNIEnv* env, jclass clazz, jint sampler, jint pname, jfloatArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetSamplerParameterfv__II_3FI(JNIEnv* env, jclass clazz, jint sampler, jint pname, jfloatArray params, jint paramsOffset)
 {
     jfloat* j_params = params ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetSamplerParameterfv(
@@ -5375,7 +5375,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetSamplerParameterfv__II_3FI(JNIEnv* 
 
 // void glGetSamplerParameteriv(GLuint sampler, GLenum pname, GLint* params);
 // public static native void glGetSamplerParameteriv(int sampler, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetSamplerParameteriv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint sampler, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetSamplerParameteriv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint sampler, jint pname, jobject params)
 {
     glGetSamplerParameteriv(
         (GLuint)sampler,
@@ -5385,7 +5385,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetSamplerParameteriv__IILjava_nio_Int
 
 // void glGetSamplerParameteriv(GLuint sampler, GLenum pname, GLint* params);
 // public static native void glGetSamplerParameteriv(int sampler, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetSamplerParameteriv__II_3II(JNIEnv* env, jclass clazz, jint sampler, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetSamplerParameteriv__II_3II(JNIEnv* env, jclass clazz, jint sampler, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetSamplerParameteriv(
@@ -5397,7 +5397,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetSamplerParameteriv__II_3II(JNIEnv* 
 
 // GLboolean glIsSampler(GLuint sampler);
 // public static native boolean glIsSampler(int sampler);
-JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsSampler(JNIEnv* env, jclass clazz, jint sampler)
+JNIEXPORT jboolean JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glIsSampler(JNIEnv* env, jclass clazz, jint sampler)
 {
     GLboolean ret = (GLboolean)
         glIsSampler(
@@ -5407,7 +5407,7 @@ JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsSampler(JNIEnv* env, jclass claz
 
 // void glMultiTexCoordP1ui(GLenum texture, GLenum type, GLuint coords);
 // public static native void glMultiTexCoordP1ui(int texture, int type, int coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP1ui(JNIEnv* env, jclass clazz, jint texture, jint type, jint coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiTexCoordP1ui(JNIEnv* env, jclass clazz, jint texture, jint type, jint coords)
 {
     glMultiTexCoordP1ui(
         (GLenum)texture,
@@ -5417,7 +5417,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP1ui(JNIEnv* env, jclass 
 
 // void glMultiTexCoordP1uiv(GLenum texture, GLenum type, GLuint* coords);
 // public static native void glMultiTexCoordP1uiv(int texture, int type, IntBuffer coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP1uiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint texture, jint type, jobject coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiTexCoordP1uiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint texture, jint type, jobject coords)
 {
     glMultiTexCoordP1uiv(
         (GLenum)texture,
@@ -5427,7 +5427,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP1uiv__IILjava_nio_IntBuf
 
 // void glMultiTexCoordP1uiv(GLenum texture, GLenum type, GLuint* coords);
 // public static native void glMultiTexCoordP1uiv(int texture, int type, int[] coords, int coordsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP1uiv__II_3II(JNIEnv* env, jclass clazz, jint texture, jint type, jintArray coords, jint coordsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiTexCoordP1uiv__II_3II(JNIEnv* env, jclass clazz, jint texture, jint type, jintArray coords, jint coordsOffset)
 {
     jint* j_coords = coords ? (jint*)((*env)->GetPrimitiveArrayCritical(env, coords, 0)) : 0;
     glMultiTexCoordP1uiv(
@@ -5439,7 +5439,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP1uiv__II_3II(JNIEnv* env
 
 // void glMultiTexCoordP2ui(GLenum texture, GLenum type, GLuint coords);
 // public static native void glMultiTexCoordP2ui(int texture, int type, int coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP2ui(JNIEnv* env, jclass clazz, jint texture, jint type, jint coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiTexCoordP2ui(JNIEnv* env, jclass clazz, jint texture, jint type, jint coords)
 {
     glMultiTexCoordP2ui(
         (GLenum)texture,
@@ -5449,7 +5449,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP2ui(JNIEnv* env, jclass 
 
 // void glMultiTexCoordP2uiv(GLenum texture, GLenum type, GLuint* coords);
 // public static native void glMultiTexCoordP2uiv(int texture, int type, IntBuffer coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP2uiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint texture, jint type, jobject coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiTexCoordP2uiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint texture, jint type, jobject coords)
 {
     glMultiTexCoordP2uiv(
         (GLenum)texture,
@@ -5459,7 +5459,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP2uiv__IILjava_nio_IntBuf
 
 // void glMultiTexCoordP2uiv(GLenum texture, GLenum type, GLuint* coords);
 // public static native void glMultiTexCoordP2uiv(int texture, int type, int[] coords, int coordsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP2uiv__II_3II(JNIEnv* env, jclass clazz, jint texture, jint type, jintArray coords, jint coordsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiTexCoordP2uiv__II_3II(JNIEnv* env, jclass clazz, jint texture, jint type, jintArray coords, jint coordsOffset)
 {
     jint* j_coords = coords ? (jint*)((*env)->GetPrimitiveArrayCritical(env, coords, 0)) : 0;
     glMultiTexCoordP2uiv(
@@ -5471,7 +5471,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP2uiv__II_3II(JNIEnv* env
 
 // void glMultiTexCoordP3ui(GLenum texture, GLenum type, GLuint coords);
 // public static native void glMultiTexCoordP3ui(int texture, int type, int coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP3ui(JNIEnv* env, jclass clazz, jint texture, jint type, jint coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiTexCoordP3ui(JNIEnv* env, jclass clazz, jint texture, jint type, jint coords)
 {
     glMultiTexCoordP3ui(
         (GLenum)texture,
@@ -5481,7 +5481,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP3ui(JNIEnv* env, jclass 
 
 // void glMultiTexCoordP3uiv(GLenum texture, GLenum type, GLuint* coords);
 // public static native void glMultiTexCoordP3uiv(int texture, int type, IntBuffer coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP3uiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint texture, jint type, jobject coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiTexCoordP3uiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint texture, jint type, jobject coords)
 {
     glMultiTexCoordP3uiv(
         (GLenum)texture,
@@ -5491,7 +5491,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP3uiv__IILjava_nio_IntBuf
 
 // void glMultiTexCoordP3uiv(GLenum texture, GLenum type, GLuint* coords);
 // public static native void glMultiTexCoordP3uiv(int texture, int type, int[] coords, int coordsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP3uiv__II_3II(JNIEnv* env, jclass clazz, jint texture, jint type, jintArray coords, jint coordsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiTexCoordP3uiv__II_3II(JNIEnv* env, jclass clazz, jint texture, jint type, jintArray coords, jint coordsOffset)
 {
     jint* j_coords = coords ? (jint*)((*env)->GetPrimitiveArrayCritical(env, coords, 0)) : 0;
     glMultiTexCoordP3uiv(
@@ -5503,7 +5503,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP3uiv__II_3II(JNIEnv* env
 
 // void glMultiTexCoordP4ui(GLenum texture, GLenum type, GLuint coords);
 // public static native void glMultiTexCoordP4ui(int texture, int type, int coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP4ui(JNIEnv* env, jclass clazz, jint texture, jint type, jint coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiTexCoordP4ui(JNIEnv* env, jclass clazz, jint texture, jint type, jint coords)
 {
     glMultiTexCoordP4ui(
         (GLenum)texture,
@@ -5513,7 +5513,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP4ui(JNIEnv* env, jclass 
 
 // void glMultiTexCoordP4uiv(GLenum texture, GLenum type, GLuint* coords);
 // public static native void glMultiTexCoordP4uiv(int texture, int type, IntBuffer coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP4uiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint texture, jint type, jobject coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiTexCoordP4uiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint texture, jint type, jobject coords)
 {
     glMultiTexCoordP4uiv(
         (GLenum)texture,
@@ -5523,7 +5523,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP4uiv__IILjava_nio_IntBuf
 
 // void glMultiTexCoordP4uiv(GLenum texture, GLenum type, GLuint* coords);
 // public static native void glMultiTexCoordP4uiv(int texture, int type, int[] coords, int coordsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP4uiv__II_3II(JNIEnv* env, jclass clazz, jint texture, jint type, jintArray coords, jint coordsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMultiTexCoordP4uiv__II_3II(JNIEnv* env, jclass clazz, jint texture, jint type, jintArray coords, jint coordsOffset)
 {
     jint* j_coords = coords ? (jint*)((*env)->GetPrimitiveArrayCritical(env, coords, 0)) : 0;
     glMultiTexCoordP4uiv(
@@ -5535,7 +5535,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMultiTexCoordP4uiv__II_3II(JNIEnv* env
 
 // void glNormalP3ui(GLenum type, GLuint coords);
 // public static native void glNormalP3ui(int type, int coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glNormalP3ui(JNIEnv* env, jclass clazz, jint type, jint coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glNormalP3ui(JNIEnv* env, jclass clazz, jint type, jint coords)
 {
     glNormalP3ui(
         (GLenum)type,
@@ -5544,7 +5544,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glNormalP3ui(JNIEnv* env, jclass clazz, 
 
 // void glNormalP3uiv(GLenum type, GLuint* coords);
 // public static native void glNormalP3uiv(int type, IntBuffer coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glNormalP3uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glNormalP3uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject coords)
 {
     glNormalP3uiv(
         (GLenum)type,
@@ -5553,7 +5553,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glNormalP3uiv__ILjava_nio_IntBuffer_2(JN
 
 // void glNormalP3uiv(GLenum type, GLuint* coords);
 // public static native void glNormalP3uiv(int type, int[] coords, int coordsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glNormalP3uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray coords, jint coordsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glNormalP3uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray coords, jint coordsOffset)
 {
     jint* j_coords = coords ? (jint*)((*env)->GetPrimitiveArrayCritical(env, coords, 0)) : 0;
     glNormalP3uiv(
@@ -5564,7 +5564,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glNormalP3uiv__I_3II(JNIEnv* env, jclass
 
 // void glQueryCounter(GLuint id, GLenum target);
 // public static native void glQueryCounter(int id, int target);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glQueryCounter(JNIEnv* env, jclass clazz, jint id, jint target)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glQueryCounter(JNIEnv* env, jclass clazz, jint id, jint target)
 {
     glQueryCounter(
         (GLuint)id,
@@ -5573,7 +5573,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glQueryCounter(JNIEnv* env, jclass clazz
 
 // void glSamplerParameterIiv(GLuint sampler, GLenum pname, GLint* param);
 // public static native void glSamplerParameterIiv(int sampler, int pname, IntBuffer param);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameterIiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint sampler, jint pname, jobject param)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glSamplerParameterIiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint sampler, jint pname, jobject param)
 {
     glSamplerParameterIiv(
         (GLuint)sampler,
@@ -5583,7 +5583,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameterIiv__IILjava_nio_IntBu
 
 // void glSamplerParameterIiv(GLuint sampler, GLenum pname, GLint* param);
 // public static native void glSamplerParameterIiv(int sampler, int pname, int[] param, int paramOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameterIiv__II_3II(JNIEnv* env, jclass clazz, jint sampler, jint pname, jintArray param, jint paramOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glSamplerParameterIiv__II_3II(JNIEnv* env, jclass clazz, jint sampler, jint pname, jintArray param, jint paramOffset)
 {
     jint* j_param = param ? (jint*)((*env)->GetPrimitiveArrayCritical(env, param, 0)) : 0;
     glSamplerParameterIiv(
@@ -5595,7 +5595,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameterIiv__II_3II(JNIEnv* en
 
 // void glSamplerParameterIuiv(GLuint sampler, GLenum pname, GLuint* param);
 // public static native void glSamplerParameterIuiv(int sampler, int pname, IntBuffer param);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameterIuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint sampler, jint pname, jobject param)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glSamplerParameterIuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint sampler, jint pname, jobject param)
 {
     glSamplerParameterIuiv(
         (GLuint)sampler,
@@ -5605,7 +5605,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameterIuiv__IILjava_nio_IntB
 
 // void glSamplerParameterIuiv(GLuint sampler, GLenum pname, GLuint* param);
 // public static native void glSamplerParameterIuiv(int sampler, int pname, int[] param, int paramOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameterIuiv__II_3II(JNIEnv* env, jclass clazz, jint sampler, jint pname, jintArray param, jint paramOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glSamplerParameterIuiv__II_3II(JNIEnv* env, jclass clazz, jint sampler, jint pname, jintArray param, jint paramOffset)
 {
     jint* j_param = param ? (jint*)((*env)->GetPrimitiveArrayCritical(env, param, 0)) : 0;
     glSamplerParameterIuiv(
@@ -5617,7 +5617,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameterIuiv__II_3II(JNIEnv* e
 
 // void glSamplerParameterf(GLuint sampler, GLenum pname, GLfloat param);
 // public static native void glSamplerParameterf(int sampler, int pname, float param);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameterf(JNIEnv* env, jclass clazz, jint sampler, jint pname, jfloat param)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glSamplerParameterf(JNIEnv* env, jclass clazz, jint sampler, jint pname, jfloat param)
 {
     glSamplerParameterf(
         (GLuint)sampler,
@@ -5627,7 +5627,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameterf(JNIEnv* env, jclass 
 
 // void glSamplerParameterfv(GLuint sampler, GLenum pname, GLfloat* param);
 // public static native void glSamplerParameterfv(int sampler, int pname, FloatBuffer param);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameterfv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint sampler, jint pname, jobject param)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glSamplerParameterfv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint sampler, jint pname, jobject param)
 {
     glSamplerParameterfv(
         (GLuint)sampler,
@@ -5637,7 +5637,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameterfv__IILjava_nio_FloatB
 
 // void glSamplerParameterfv(GLuint sampler, GLenum pname, GLfloat* param);
 // public static native void glSamplerParameterfv(int sampler, int pname, float[] param, int paramOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameterfv__II_3FI(JNIEnv* env, jclass clazz, jint sampler, jint pname, jfloatArray param, jint paramOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glSamplerParameterfv__II_3FI(JNIEnv* env, jclass clazz, jint sampler, jint pname, jfloatArray param, jint paramOffset)
 {
     jfloat* j_param = param ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, param, 0)) : 0;
     glSamplerParameterfv(
@@ -5649,7 +5649,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameterfv__II_3FI(JNIEnv* env
 
 // void glSamplerParameteri(GLuint sampler, GLenum pname, GLint param);
 // public static native void glSamplerParameteri(int sampler, int pname, int param);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameteri(JNIEnv* env, jclass clazz, jint sampler, jint pname, jint param)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glSamplerParameteri(JNIEnv* env, jclass clazz, jint sampler, jint pname, jint param)
 {
     glSamplerParameteri(
         (GLuint)sampler,
@@ -5659,7 +5659,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameteri(JNIEnv* env, jclass 
 
 // void glSamplerParameteriv(GLuint sampler, GLenum pname, GLint* param);
 // public static native void glSamplerParameteriv(int sampler, int pname, IntBuffer param);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameteriv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint sampler, jint pname, jobject param)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glSamplerParameteriv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint sampler, jint pname, jobject param)
 {
     glSamplerParameteriv(
         (GLuint)sampler,
@@ -5669,7 +5669,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameteriv__IILjava_nio_IntBuf
 
 // void glSamplerParameteriv(GLuint sampler, GLenum pname, GLint* param);
 // public static native void glSamplerParameteriv(int sampler, int pname, int[] param, int paramOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameteriv__II_3II(JNIEnv* env, jclass clazz, jint sampler, jint pname, jintArray param, jint paramOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glSamplerParameteriv__II_3II(JNIEnv* env, jclass clazz, jint sampler, jint pname, jintArray param, jint paramOffset)
 {
     jint* j_param = param ? (jint*)((*env)->GetPrimitiveArrayCritical(env, param, 0)) : 0;
     glSamplerParameteriv(
@@ -5681,7 +5681,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSamplerParameteriv__II_3II(JNIEnv* env
 
 // void glSecondaryColorP3ui(GLenum type, GLuint color);
 // public static native void glSecondaryColorP3ui(int type, int color);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSecondaryColorP3ui(JNIEnv* env, jclass clazz, jint type, jint color)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glSecondaryColorP3ui(JNIEnv* env, jclass clazz, jint type, jint color)
 {
     glSecondaryColorP3ui(
         (GLenum)type,
@@ -5690,7 +5690,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSecondaryColorP3ui(JNIEnv* env, jclass
 
 // void glSecondaryColorP3uiv(GLenum type, GLuint* color);
 // public static native void glSecondaryColorP3uiv(int type, IntBuffer color);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSecondaryColorP3uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject color)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glSecondaryColorP3uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject color)
 {
     glSecondaryColorP3uiv(
         (GLenum)type,
@@ -5699,7 +5699,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSecondaryColorP3uiv__ILjava_nio_IntBuf
 
 // void glSecondaryColorP3uiv(GLenum type, GLuint* color);
 // public static native void glSecondaryColorP3uiv(int type, int[] color, int colorOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSecondaryColorP3uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray color, jint colorOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glSecondaryColorP3uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray color, jint colorOffset)
 {
     jint* j_color = color ? (jint*)((*env)->GetPrimitiveArrayCritical(env, color, 0)) : 0;
     glSecondaryColorP3uiv(
@@ -5710,7 +5710,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glSecondaryColorP3uiv__I_3II(JNIEnv* env
 
 // void glTexCoordP1ui(GLenum type, GLuint coords);
 // public static native void glTexCoordP1ui(int type, int coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP1ui(JNIEnv* env, jclass clazz, jint type, jint coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexCoordP1ui(JNIEnv* env, jclass clazz, jint type, jint coords)
 {
     glTexCoordP1ui(
         (GLenum)type,
@@ -5719,7 +5719,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP1ui(JNIEnv* env, jclass clazz
 
 // void glTexCoordP1uiv(GLenum type, GLuint* coords);
 // public static native void glTexCoordP1uiv(int type, IntBuffer coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP1uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexCoordP1uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject coords)
 {
     glTexCoordP1uiv(
         (GLenum)type,
@@ -5728,7 +5728,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP1uiv__ILjava_nio_IntBuffer_2(
 
 // void glTexCoordP1uiv(GLenum type, GLuint* coords);
 // public static native void glTexCoordP1uiv(int type, int[] coords, int coordsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP1uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray coords, jint coordsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexCoordP1uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray coords, jint coordsOffset)
 {
     jint* j_coords = coords ? (jint*)((*env)->GetPrimitiveArrayCritical(env, coords, 0)) : 0;
     glTexCoordP1uiv(
@@ -5739,7 +5739,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP1uiv__I_3II(JNIEnv* env, jcla
 
 // void glTexCoordP2ui(GLenum type, GLuint coords);
 // public static native void glTexCoordP2ui(int type, int coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP2ui(JNIEnv* env, jclass clazz, jint type, jint coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexCoordP2ui(JNIEnv* env, jclass clazz, jint type, jint coords)
 {
     glTexCoordP2ui(
         (GLenum)type,
@@ -5748,7 +5748,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP2ui(JNIEnv* env, jclass clazz
 
 // void glTexCoordP2uiv(GLenum type, GLuint* coords);
 // public static native void glTexCoordP2uiv(int type, IntBuffer coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP2uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexCoordP2uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject coords)
 {
     glTexCoordP2uiv(
         (GLenum)type,
@@ -5757,7 +5757,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP2uiv__ILjava_nio_IntBuffer_2(
 
 // void glTexCoordP2uiv(GLenum type, GLuint* coords);
 // public static native void glTexCoordP2uiv(int type, int[] coords, int coordsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP2uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray coords, jint coordsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexCoordP2uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray coords, jint coordsOffset)
 {
     jint* j_coords = coords ? (jint*)((*env)->GetPrimitiveArrayCritical(env, coords, 0)) : 0;
     glTexCoordP2uiv(
@@ -5768,7 +5768,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP2uiv__I_3II(JNIEnv* env, jcla
 
 // void glTexCoordP3ui(GLenum type, GLuint coords);
 // public static native void glTexCoordP3ui(int type, int coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP3ui(JNIEnv* env, jclass clazz, jint type, jint coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexCoordP3ui(JNIEnv* env, jclass clazz, jint type, jint coords)
 {
     glTexCoordP3ui(
         (GLenum)type,
@@ -5777,7 +5777,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP3ui(JNIEnv* env, jclass clazz
 
 // void glTexCoordP3uiv(GLenum type, GLuint* coords);
 // public static native void glTexCoordP3uiv(int type, IntBuffer coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP3uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexCoordP3uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject coords)
 {
     glTexCoordP3uiv(
         (GLenum)type,
@@ -5786,7 +5786,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP3uiv__ILjava_nio_IntBuffer_2(
 
 // void glTexCoordP3uiv(GLenum type, GLuint* coords);
 // public static native void glTexCoordP3uiv(int type, int[] coords, int coordsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP3uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray coords, jint coordsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexCoordP3uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray coords, jint coordsOffset)
 {
     jint* j_coords = coords ? (jint*)((*env)->GetPrimitiveArrayCritical(env, coords, 0)) : 0;
     glTexCoordP3uiv(
@@ -5797,7 +5797,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP3uiv__I_3II(JNIEnv* env, jcla
 
 // void glTexCoordP4ui(GLenum type, GLuint coords);
 // public static native void glTexCoordP4ui(int type, int coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP4ui(JNIEnv* env, jclass clazz, jint type, jint coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexCoordP4ui(JNIEnv* env, jclass clazz, jint type, jint coords)
 {
     glTexCoordP4ui(
         (GLenum)type,
@@ -5806,7 +5806,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP4ui(JNIEnv* env, jclass clazz
 
 // void glTexCoordP4uiv(GLenum type, GLuint* coords);
 // public static native void glTexCoordP4uiv(int type, IntBuffer coords);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP4uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject coords)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexCoordP4uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject coords)
 {
     glTexCoordP4uiv(
         (GLenum)type,
@@ -5815,7 +5815,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP4uiv__ILjava_nio_IntBuffer_2(
 
 // void glTexCoordP4uiv(GLenum type, GLuint* coords);
 // public static native void glTexCoordP4uiv(int type, int[] coords, int coordsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP4uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray coords, jint coordsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexCoordP4uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray coords, jint coordsOffset)
 {
     jint* j_coords = coords ? (jint*)((*env)->GetPrimitiveArrayCritical(env, coords, 0)) : 0;
     glTexCoordP4uiv(
@@ -5826,7 +5826,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glTexCoordP4uiv__I_3II(JNIEnv* env, jcla
 
 // void glVertexAttribDivisor(GLuint index, GLuint divisor);
 // public static native void glVertexAttribDivisor(int index, int divisor);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribDivisor(JNIEnv* env, jclass clazz, jint index, jint divisor)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribDivisor(JNIEnv* env, jclass clazz, jint index, jint divisor)
 {
     glVertexAttribDivisor(
         (GLuint)index,
@@ -5835,7 +5835,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribDivisor(JNIEnv* env, jclas
 
 // void glVertexAttribP1ui(GLuint index, GLenum type, GLboolean normalized, GLuint value);
 // public static native void glVertexAttribP1ui(int index, int type, boolean normalized, int value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP1ui(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jint value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribP1ui(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jint value)
 {
     glVertexAttribP1ui(
         (GLuint)index,
@@ -5846,7 +5846,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP1ui(JNIEnv* env, jclass c
 
 // void glVertexAttribP1uiv(GLuint index, GLenum type, GLboolean normalized, GLuint* value);
 // public static native void glVertexAttribP1uiv(int index, int type, boolean normalized, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP1uiv__IIZLjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribP1uiv__IIZLjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jobject value)
 {
     glVertexAttribP1uiv(
         (GLuint)index,
@@ -5857,7 +5857,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP1uiv__IIZLjava_nio_IntBuf
 
 // void glVertexAttribP1uiv(GLuint index, GLenum type, GLboolean normalized, GLuint* value);
 // public static native void glVertexAttribP1uiv(int index, int type, boolean normalized, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP1uiv__IIZ_3II(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribP1uiv__IIZ_3II(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glVertexAttribP1uiv(
@@ -5870,7 +5870,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP1uiv__IIZ_3II(JNIEnv* env
 
 // void glVertexAttribP2ui(GLuint index, GLenum type, GLboolean normalized, GLuint value);
 // public static native void glVertexAttribP2ui(int index, int type, boolean normalized, int value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP2ui(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jint value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribP2ui(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jint value)
 {
     glVertexAttribP2ui(
         (GLuint)index,
@@ -5881,7 +5881,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP2ui(JNIEnv* env, jclass c
 
 // void glVertexAttribP2uiv(GLuint index, GLenum type, GLboolean normalized, GLuint* value);
 // public static native void glVertexAttribP2uiv(int index, int type, boolean normalized, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP2uiv__IIZLjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribP2uiv__IIZLjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jobject value)
 {
     glVertexAttribP2uiv(
         (GLuint)index,
@@ -5892,7 +5892,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP2uiv__IIZLjava_nio_IntBuf
 
 // void glVertexAttribP2uiv(GLuint index, GLenum type, GLboolean normalized, GLuint* value);
 // public static native void glVertexAttribP2uiv(int index, int type, boolean normalized, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP2uiv__IIZ_3II(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribP2uiv__IIZ_3II(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glVertexAttribP2uiv(
@@ -5905,7 +5905,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP2uiv__IIZ_3II(JNIEnv* env
 
 // void glVertexAttribP3ui(GLuint index, GLenum type, GLboolean normalized, GLuint value);
 // public static native void glVertexAttribP3ui(int index, int type, boolean normalized, int value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP3ui(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jint value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribP3ui(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jint value)
 {
     glVertexAttribP3ui(
         (GLuint)index,
@@ -5916,7 +5916,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP3ui(JNIEnv* env, jclass c
 
 // void glVertexAttribP3uiv(GLuint index, GLenum type, GLboolean normalized, GLuint* value);
 // public static native void glVertexAttribP3uiv(int index, int type, boolean normalized, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP3uiv__IIZLjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribP3uiv__IIZLjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jobject value)
 {
     glVertexAttribP3uiv(
         (GLuint)index,
@@ -5927,7 +5927,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP3uiv__IIZLjava_nio_IntBuf
 
 // void glVertexAttribP3uiv(GLuint index, GLenum type, GLboolean normalized, GLuint* value);
 // public static native void glVertexAttribP3uiv(int index, int type, boolean normalized, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP3uiv__IIZ_3II(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribP3uiv__IIZ_3II(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glVertexAttribP3uiv(
@@ -5940,7 +5940,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP3uiv__IIZ_3II(JNIEnv* env
 
 // void glVertexAttribP4ui(GLuint index, GLenum type, GLboolean normalized, GLuint value);
 // public static native void glVertexAttribP4ui(int index, int type, boolean normalized, int value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP4ui(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jint value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribP4ui(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jint value)
 {
     glVertexAttribP4ui(
         (GLuint)index,
@@ -5951,7 +5951,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP4ui(JNIEnv* env, jclass c
 
 // void glVertexAttribP4uiv(GLuint index, GLenum type, GLboolean normalized, GLuint* value);
 // public static native void glVertexAttribP4uiv(int index, int type, boolean normalized, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP4uiv__IIZLjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribP4uiv__IIZLjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jobject value)
 {
     glVertexAttribP4uiv(
         (GLuint)index,
@@ -5962,7 +5962,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP4uiv__IIZLjava_nio_IntBuf
 
 // void glVertexAttribP4uiv(GLuint index, GLenum type, GLboolean normalized, GLuint* value);
 // public static native void glVertexAttribP4uiv(int index, int type, boolean normalized, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP4uiv__IIZ_3II(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribP4uiv__IIZ_3II(JNIEnv* env, jclass clazz, jint index, jint type, jboolean normalized, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glVertexAttribP4uiv(
@@ -5975,7 +5975,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribP4uiv__IIZ_3II(JNIEnv* env
 
 // void glVertexP2ui(GLenum type, GLuint value);
 // public static native void glVertexP2ui(int type, int value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP2ui(JNIEnv* env, jclass clazz, jint type, jint value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexP2ui(JNIEnv* env, jclass clazz, jint type, jint value)
 {
     glVertexP2ui(
         (GLenum)type,
@@ -5984,7 +5984,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP2ui(JNIEnv* env, jclass clazz, 
 
 // void glVertexP2uiv(GLenum type, GLuint* value);
 // public static native void glVertexP2uiv(int type, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP2uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexP2uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject value)
 {
     glVertexP2uiv(
         (GLenum)type,
@@ -5993,7 +5993,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP2uiv__ILjava_nio_IntBuffer_2(JN
 
 // void glVertexP2uiv(GLenum type, GLuint* value);
 // public static native void glVertexP2uiv(int type, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP2uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexP2uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glVertexP2uiv(
@@ -6004,7 +6004,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP2uiv__I_3II(JNIEnv* env, jclass
 
 // void glVertexP3ui(GLenum type, GLuint value);
 // public static native void glVertexP3ui(int type, int value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP3ui(JNIEnv* env, jclass clazz, jint type, jint value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexP3ui(JNIEnv* env, jclass clazz, jint type, jint value)
 {
     glVertexP3ui(
         (GLenum)type,
@@ -6013,7 +6013,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP3ui(JNIEnv* env, jclass clazz, 
 
 // void glVertexP3uiv(GLenum type, GLuint* value);
 // public static native void glVertexP3uiv(int type, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP3uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexP3uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject value)
 {
     glVertexP3uiv(
         (GLenum)type,
@@ -6022,7 +6022,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP3uiv__ILjava_nio_IntBuffer_2(JN
 
 // void glVertexP3uiv(GLenum type, GLuint* value);
 // public static native void glVertexP3uiv(int type, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP3uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexP3uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glVertexP3uiv(
@@ -6033,7 +6033,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP3uiv__I_3II(JNIEnv* env, jclass
 
 // void glVertexP4ui(GLenum type, GLuint value);
 // public static native void glVertexP4ui(int type, int value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP4ui(JNIEnv* env, jclass clazz, jint type, jint value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexP4ui(JNIEnv* env, jclass clazz, jint type, jint value)
 {
     glVertexP4ui(
         (GLenum)type,
@@ -6042,7 +6042,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP4ui(JNIEnv* env, jclass clazz, 
 
 // void glVertexP4uiv(GLenum type, GLuint* value);
 // public static native void glVertexP4uiv(int type, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP4uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexP4uiv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint type, jobject value)
 {
     glVertexP4uiv(
         (GLenum)type,
@@ -6051,7 +6051,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP4uiv__ILjava_nio_IntBuffer_2(JN
 
 // void glVertexP4uiv(GLenum type, GLuint* value);
 // public static native void glVertexP4uiv(int type, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP4uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexP4uiv__I_3II(JNIEnv* env, jclass clazz, jint type, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glVertexP4uiv(
@@ -6062,7 +6062,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexP4uiv__I_3II(JNIEnv* env, jclass
 
 // void glBeginQueryIndexed(GLenum target, GLuint index, GLuint id);
 // public static native void glBeginQueryIndexed(int target, int index, int id);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBeginQueryIndexed(JNIEnv* env, jclass clazz, jint target, jint index, jint id)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBeginQueryIndexed(JNIEnv* env, jclass clazz, jint target, jint index, jint id)
 {
     glBeginQueryIndexed(
         (GLenum)target,
@@ -6072,7 +6072,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBeginQueryIndexed(JNIEnv* env, jclass 
 
 // void glBindTransformFeedback(GLenum target, GLuint id);
 // public static native void glBindTransformFeedback(int target, int id);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindTransformFeedback(JNIEnv* env, jclass clazz, jint target, jint id)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBindTransformFeedback(JNIEnv* env, jclass clazz, jint target, jint id)
 {
     glBindTransformFeedback(
         (GLenum)target,
@@ -6081,7 +6081,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindTransformFeedback(JNIEnv* env, jcl
 
 // void glBlendEquationSeparatei(GLuint buf, GLenum modeRGB, GLenum modeAlpha);
 // public static native void glBlendEquationSeparatei(int buf, int modeRGB, int modeAlpha);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendEquationSeparatei(JNIEnv* env, jclass clazz, jint buf, jint modeRGB, jint modeAlpha)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBlendEquationSeparatei(JNIEnv* env, jclass clazz, jint buf, jint modeRGB, jint modeAlpha)
 {
     glBlendEquationSeparatei(
         (GLuint)buf,
@@ -6091,7 +6091,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendEquationSeparatei(JNIEnv* env, jc
 
 // void glBlendEquationi(GLuint buf, GLenum mode);
 // public static native void glBlendEquationi(int buf, int mode);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendEquationi(JNIEnv* env, jclass clazz, jint buf, jint mode)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBlendEquationi(JNIEnv* env, jclass clazz, jint buf, jint mode)
 {
     glBlendEquationi(
         (GLuint)buf,
@@ -6100,7 +6100,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendEquationi(JNIEnv* env, jclass cla
 
 // void glBlendFuncSeparatei(GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha);
 // public static native void glBlendFuncSeparatei(int buf, int srcRGB, int dstRGB, int srcAlpha, int dstAlpha);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendFuncSeparatei(JNIEnv* env, jclass clazz, jint buf, jint srcRGB, jint dstRGB, jint srcAlpha, jint dstAlpha)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBlendFuncSeparatei(JNIEnv* env, jclass clazz, jint buf, jint srcRGB, jint dstRGB, jint srcAlpha, jint dstAlpha)
 {
     glBlendFuncSeparatei(
         (GLuint)buf,
@@ -6112,7 +6112,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendFuncSeparatei(JNIEnv* env, jclass
 
 // void glBlendFunci(GLuint buf, GLenum src, GLenum dst);
 // public static native void glBlendFunci(int buf, int src, int dst);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendFunci(JNIEnv* env, jclass clazz, jint buf, jint src, jint dst)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBlendFunci(JNIEnv* env, jclass clazz, jint buf, jint src, jint dst)
 {
     glBlendFunci(
         (GLuint)buf,
@@ -6122,7 +6122,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBlendFunci(JNIEnv* env, jclass clazz, 
 
 // void glDeleteTransformFeedbacks(GLsizei n, GLuint* ids);
 // public static native void glDeleteTransformFeedbacks(int n, IntBuffer ids);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteTransformFeedbacks__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject ids)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteTransformFeedbacks__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject ids)
 {
     glDeleteTransformFeedbacks(
         (GLsizei)n,
@@ -6131,7 +6131,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteTransformFeedbacks__ILjava_nio_I
 
 // void glDeleteTransformFeedbacks(GLsizei n, GLuint* ids);
 // public static native void glDeleteTransformFeedbacks(int n, int[] ids, int idsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteTransformFeedbacks__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray ids, jint idsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteTransformFeedbacks__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray ids, jint idsOffset)
 {
     jint* j_ids = ids ? (jint*)((*env)->GetPrimitiveArrayCritical(env, ids, 0)) : 0;
     glDeleteTransformFeedbacks(
@@ -6142,7 +6142,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteTransformFeedbacks__I_3II(JNIEnv
 
 // void glDrawArraysIndirect(GLenum mode, GLvoid* indirect);
 // public static native void glDrawArraysIndirect(int mode, Buffer indirect);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawArraysIndirect__ILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint mode, jobject indirect)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawArraysIndirect__ILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint mode, jobject indirect)
 {
     glDrawArraysIndirect(
         (GLenum)mode,
@@ -6151,7 +6151,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawArraysIndirect__ILjava_nio_Buffer_
 
 // void glDrawArraysIndirect(GLenum mode, GLvoid* indirect);
 // public static native void glDrawArraysIndirect(int mode, long indirect);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawArraysIndirect__IJ(JNIEnv* env, jclass clazz, jint mode, jlong indirect)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawArraysIndirect__IJ(JNIEnv* env, jclass clazz, jint mode, jlong indirect)
 {
     glDrawArraysIndirect(
         (GLenum)mode,
@@ -6160,7 +6160,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawArraysIndirect__IJ(JNIEnv* env, jc
 
 // void glDrawElementsIndirect(GLenum mode, GLenum type, GLvoid* indirect);
 // public static native void glDrawElementsIndirect(int mode, int type, Buffer indirect);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElementsIndirect__IILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint mode, jint type, jobject indirect)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawElementsIndirect__IILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint mode, jint type, jobject indirect)
 {
     glDrawElementsIndirect(
         (GLenum)mode,
@@ -6170,7 +6170,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElementsIndirect__IILjava_nio_Buff
 
 // void glDrawElementsIndirect(GLenum mode, GLenum type, GLvoid* indirect);
 // public static native void glDrawElementsIndirect(int mode, int type, long indirect);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElementsIndirect__IIJ(JNIEnv* env, jclass clazz, jint mode, jint type, jlong indirect)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawElementsIndirect__IIJ(JNIEnv* env, jclass clazz, jint mode, jint type, jlong indirect)
 {
     glDrawElementsIndirect(
         (GLenum)mode,
@@ -6180,7 +6180,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawElementsIndirect__IIJ(JNIEnv* env,
 
 // void glDrawTransformFeedback(GLenum mode, GLuint id);
 // public static native void glDrawTransformFeedback(int mode, int id);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawTransformFeedback(JNIEnv* env, jclass clazz, jint mode, jint id)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawTransformFeedback(JNIEnv* env, jclass clazz, jint mode, jint id)
 {
     glDrawTransformFeedback(
         (GLenum)mode,
@@ -6189,7 +6189,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawTransformFeedback(JNIEnv* env, jcl
 
 // void glDrawTransformFeedbackStream(GLenum mode, GLuint id, GLuint stream);
 // public static native void glDrawTransformFeedbackStream(int mode, int id, int stream);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawTransformFeedbackStream(JNIEnv* env, jclass clazz, jint mode, jint id, jint stream)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDrawTransformFeedbackStream(JNIEnv* env, jclass clazz, jint mode, jint id, jint stream)
 {
     glDrawTransformFeedbackStream(
         (GLenum)mode,
@@ -6199,7 +6199,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDrawTransformFeedbackStream(JNIEnv* en
 
 // void glEndQueryIndexed(GLenum target, GLuint index);
 // public static native void glEndQueryIndexed(int target, int index);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glEndQueryIndexed(JNIEnv* env, jclass clazz, jint target, jint index)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glEndQueryIndexed(JNIEnv* env, jclass clazz, jint target, jint index)
 {
     glEndQueryIndexed(
         (GLenum)target,
@@ -6208,7 +6208,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glEndQueryIndexed(JNIEnv* env, jclass cl
 
 // void glGenTransformFeedbacks(GLsizei n, GLuint* ids);
 // public static native void glGenTransformFeedbacks(int n, IntBuffer ids);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenTransformFeedbacks__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject ids)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenTransformFeedbacks__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject ids)
 {
     glGenTransformFeedbacks(
         (GLsizei)n,
@@ -6217,7 +6217,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenTransformFeedbacks__ILjava_nio_IntB
 
 // void glGenTransformFeedbacks(GLsizei n, GLuint* ids);
 // public static native void glGenTransformFeedbacks(int n, int[] ids, int idsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenTransformFeedbacks__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray ids, jint idsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenTransformFeedbacks__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray ids, jint idsOffset)
 {
     jint* j_ids = ids ? (jint*)((*env)->GetPrimitiveArrayCritical(env, ids, 0)) : 0;
     glGenTransformFeedbacks(
@@ -6228,7 +6228,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenTransformFeedbacks__I_3II(JNIEnv* e
 
 // void glGetActiveSubroutineName(GLuint program, GLenum shadertype, GLuint index, GLsizei bufsize, GLsizei* length, GLchar* name);
 // public static native void glGetActiveSubroutineName(int program, int shadertype, int index, int bufsize, IntBuffer length, ByteBuffer name);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveSubroutineName__IIIILjava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint program, jint shadertype, jint index, jint bufsize, jobject length, jobject name)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveSubroutineName__IIIILjava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint program, jint shadertype, jint index, jint bufsize, jobject length, jobject name)
 {
     glGetActiveSubroutineName(
         (GLuint)program,
@@ -6241,7 +6241,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveSubroutineName__IIIILjava_nio
 
 // void glGetActiveSubroutineName(GLuint program, GLenum shadertype, GLuint index, GLsizei bufsize, GLsizei* length, GLchar* name);
 // public static native void glGetActiveSubroutineName(int program, int shadertype, int index, int bufsize, int[] length, int lengthOffset, byte[] name, int nameOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveSubroutineName__IIII_3II_3BI(JNIEnv* env, jclass clazz, jint program, jint shadertype, jint index, jint bufsize, jintArray length, jint lengthOffset, jbyteArray name, jint nameOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveSubroutineName__IIII_3II_3BI(JNIEnv* env, jclass clazz, jint program, jint shadertype, jint index, jint bufsize, jintArray length, jint lengthOffset, jbyteArray name, jint nameOffset)
 {
     jint* j_length = length ? (jint*)((*env)->GetPrimitiveArrayCritical(env, length, 0)) : 0;
     jbyte* j_name = name ? (jbyte*)((*env)->GetPrimitiveArrayCritical(env, name, 0)) : 0;
@@ -6258,7 +6258,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveSubroutineName__IIII_3II_3BI(
 
 // void glGetActiveSubroutineUniformName(GLuint program, GLenum shadertype, GLuint index, GLsizei bufsize, GLsizei* length, GLchar* name);
 // public static native void glGetActiveSubroutineUniformName(int program, int shadertype, int index, int bufsize, IntBuffer length, ByteBuffer name);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveSubroutineUniformName__IIIILjava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint program, jint shadertype, jint index, jint bufsize, jobject length, jobject name)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveSubroutineUniformName__IIIILjava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint program, jint shadertype, jint index, jint bufsize, jobject length, jobject name)
 {
     glGetActiveSubroutineUniformName(
         (GLuint)program,
@@ -6271,7 +6271,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveSubroutineUniformName__IIIILj
 
 // void glGetActiveSubroutineUniformName(GLuint program, GLenum shadertype, GLuint index, GLsizei bufsize, GLsizei* length, GLchar* name);
 // public static native void glGetActiveSubroutineUniformName(int program, int shadertype, int index, int bufsize, int[] length, int lengthOffset, byte[] name, int nameOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveSubroutineUniformName__IIII_3II_3BI(JNIEnv* env, jclass clazz, jint program, jint shadertype, jint index, jint bufsize, jintArray length, jint lengthOffset, jbyteArray name, jint nameOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveSubroutineUniformName__IIII_3II_3BI(JNIEnv* env, jclass clazz, jint program, jint shadertype, jint index, jint bufsize, jintArray length, jint lengthOffset, jbyteArray name, jint nameOffset)
 {
     jint* j_length = length ? (jint*)((*env)->GetPrimitiveArrayCritical(env, length, 0)) : 0;
     jbyte* j_name = name ? (jbyte*)((*env)->GetPrimitiveArrayCritical(env, name, 0)) : 0;
@@ -6288,7 +6288,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveSubroutineUniformName__IIII_3
 
 // void glGetActiveSubroutineUniformiv(GLuint program, GLenum shadertype, GLuint index, GLenum pname, GLint* values);
 // public static native void glGetActiveSubroutineUniformiv(int program, int shadertype, int index, int pname, IntBuffer values);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveSubroutineUniformiv__IIIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint shadertype, jint index, jint pname, jobject values)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveSubroutineUniformiv__IIIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint shadertype, jint index, jint pname, jobject values)
 {
     glGetActiveSubroutineUniformiv(
         (GLuint)program,
@@ -6300,7 +6300,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveSubroutineUniformiv__IIIILjav
 
 // void glGetActiveSubroutineUniformiv(GLuint program, GLenum shadertype, GLuint index, GLenum pname, GLint* values);
 // public static native void glGetActiveSubroutineUniformiv(int program, int shadertype, int index, int pname, int[] values, int valuesOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveSubroutineUniformiv__IIII_3II(JNIEnv* env, jclass clazz, jint program, jint shadertype, jint index, jint pname, jintArray values, jint valuesOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetActiveSubroutineUniformiv__IIII_3II(JNIEnv* env, jclass clazz, jint program, jint shadertype, jint index, jint pname, jintArray values, jint valuesOffset)
 {
     jint* j_values = values ? (jint*)((*env)->GetPrimitiveArrayCritical(env, values, 0)) : 0;
     glGetActiveSubroutineUniformiv(
@@ -6314,7 +6314,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetActiveSubroutineUniformiv__IIII_3II
 
 // void glGetProgramStageiv(GLuint program, GLenum shadertype, GLenum pname, GLint* values);
 // public static native void glGetProgramStageiv(int program, int shadertype, int pname, IntBuffer values);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramStageiv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint shadertype, jint pname, jobject values)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetProgramStageiv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint shadertype, jint pname, jobject values)
 {
     glGetProgramStageiv(
         (GLuint)program,
@@ -6325,7 +6325,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramStageiv__IIILjava_nio_IntBuf
 
 // void glGetProgramStageiv(GLuint program, GLenum shadertype, GLenum pname, GLint* values);
 // public static native void glGetProgramStageiv(int program, int shadertype, int pname, int[] values, int valuesOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramStageiv__III_3II(JNIEnv* env, jclass clazz, jint program, jint shadertype, jint pname, jintArray values, jint valuesOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetProgramStageiv__III_3II(JNIEnv* env, jclass clazz, jint program, jint shadertype, jint pname, jintArray values, jint valuesOffset)
 {
     jint* j_values = values ? (jint*)((*env)->GetPrimitiveArrayCritical(env, values, 0)) : 0;
     glGetProgramStageiv(
@@ -6338,7 +6338,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramStageiv__III_3II(JNIEnv* env
 
 // void glGetQueryIndexediv(GLenum target, GLuint index, GLenum pname, GLint* params);
 // public static native void glGetQueryIndexediv(int target, int index, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryIndexediv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint index, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetQueryIndexediv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint target, jint index, jint pname, jobject params)
 {
     glGetQueryIndexediv(
         (GLenum)target,
@@ -6349,7 +6349,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryIndexediv__IIILjava_nio_IntBuf
 
 // void glGetQueryIndexediv(GLenum target, GLuint index, GLenum pname, GLint* params);
 // public static native void glGetQueryIndexediv(int target, int index, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryIndexediv__III_3II(JNIEnv* env, jclass clazz, jint target, jint index, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetQueryIndexediv__III_3II(JNIEnv* env, jclass clazz, jint target, jint index, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetQueryIndexediv(
@@ -6362,7 +6362,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetQueryIndexediv__III_3II(JNIEnv* env
 
 // GLuint glGetSubroutineIndex(GLuint program, GLenum shadertype, GLchar* name);
 // public static native int glGetSubroutineIndex(int program, int shadertype, String name);
-JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glGetSubroutineIndex(JNIEnv* env, jclass clazz, jint program, jint shadertype, jstring name)
+JNIEXPORT jint JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetSubroutineIndex(JNIEnv* env, jclass clazz, jint program, jint shadertype, jstring name)
 {
     const char* j_name = (*env)->GetStringUTFChars(env, name, 0);
     GLuint ret = (GLuint)
@@ -6376,7 +6376,7 @@ JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glGetSubroutineIndex(JNIEnv* env, jclass
 
 // GLint glGetSubroutineUniformLocation(GLuint program, GLenum shadertype, GLchar* name);
 // public static native int glGetSubroutineUniformLocation(int program, int shadertype, String name);
-JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glGetSubroutineUniformLocation(JNIEnv* env, jclass clazz, jint program, jint shadertype, jstring name)
+JNIEXPORT jint JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetSubroutineUniformLocation(JNIEnv* env, jclass clazz, jint program, jint shadertype, jstring name)
 {
     const char* j_name = (*env)->GetStringUTFChars(env, name, 0);
     GLint ret = (GLint)
@@ -6390,7 +6390,7 @@ JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glGetSubroutineUniformLocation(JNIEnv* e
 
 // void glGetUniformSubroutineuiv(GLenum shadertype, GLint location, GLuint* params);
 // public static native void glGetUniformSubroutineuiv(int shadertype, int location, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformSubroutineuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint shadertype, jint location, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetUniformSubroutineuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint shadertype, jint location, jobject params)
 {
     glGetUniformSubroutineuiv(
         (GLenum)shadertype,
@@ -6400,7 +6400,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformSubroutineuiv__IILjava_nio_I
 
 // void glGetUniformSubroutineuiv(GLenum shadertype, GLint location, GLuint* params);
 // public static native void glGetUniformSubroutineuiv(int shadertype, int location, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformSubroutineuiv__II_3II(JNIEnv* env, jclass clazz, jint shadertype, jint location, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetUniformSubroutineuiv__II_3II(JNIEnv* env, jclass clazz, jint shadertype, jint location, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetUniformSubroutineuiv(
@@ -6412,7 +6412,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformSubroutineuiv__II_3II(JNIEnv
 
 // void glGetUniformdv(GLuint program, GLint location, GLdouble* params);
 // public static native void glGetUniformdv(int program, int location, DoubleBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformdv__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetUniformdv__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jobject params)
 {
     glGetUniformdv(
         (GLuint)program,
@@ -6422,7 +6422,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformdv__IILjava_nio_DoubleBuffer
 
 // void glGetUniformdv(GLuint program, GLint location, GLdouble* params);
 // public static native void glGetUniformdv(int program, int location, double[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformdv__II_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jdoubleArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetUniformdv__II_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jdoubleArray params, jint paramsOffset)
 {
     jdouble* j_params = params ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetUniformdv(
@@ -6434,7 +6434,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetUniformdv__II_3DI(JNIEnv* env, jcla
 
 // GLboolean glIsTransformFeedback(GLuint id);
 // public static native boolean glIsTransformFeedback(int id);
-JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsTransformFeedback(JNIEnv* env, jclass clazz, jint id)
+JNIEXPORT jboolean JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glIsTransformFeedback(JNIEnv* env, jclass clazz, jint id)
 {
     GLboolean ret = (GLboolean)
         glIsTransformFeedback(
@@ -6444,7 +6444,7 @@ JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsTransformFeedback(JNIEnv* env, j
 
 // void glMinSampleShading(GLclampf value);
 // public static native void glMinSampleShading(float value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMinSampleShading(JNIEnv* env, jclass clazz, jfloat value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glMinSampleShading(JNIEnv* env, jclass clazz, jfloat value)
 {
     glMinSampleShading(
         (GLclampf)value);
@@ -6452,7 +6452,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glMinSampleShading(JNIEnv* env, jclass c
 
 // void glPatchParameterfv(GLenum pname, GLfloat* values);
 // public static native void glPatchParameterfv(int pname, FloatBuffer values);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPatchParameterfv__ILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint pname, jobject values)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glPatchParameterfv__ILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint pname, jobject values)
 {
     glPatchParameterfv(
         (GLenum)pname,
@@ -6461,7 +6461,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPatchParameterfv__ILjava_nio_FloatBuff
 
 // void glPatchParameterfv(GLenum pname, GLfloat* values);
 // public static native void glPatchParameterfv(int pname, float[] values, int valuesOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPatchParameterfv__I_3FI(JNIEnv* env, jclass clazz, jint pname, jfloatArray values, jint valuesOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glPatchParameterfv__I_3FI(JNIEnv* env, jclass clazz, jint pname, jfloatArray values, jint valuesOffset)
 {
     jfloat* j_values = values ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, values, 0)) : 0;
     glPatchParameterfv(
@@ -6472,7 +6472,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPatchParameterfv__I_3FI(JNIEnv* env, j
 
 // void glPatchParameteri(GLenum pname, GLint value);
 // public static native void glPatchParameteri(int pname, int value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPatchParameteri(JNIEnv* env, jclass clazz, jint pname, jint value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glPatchParameteri(JNIEnv* env, jclass clazz, jint pname, jint value)
 {
     glPatchParameteri(
         (GLenum)pname,
@@ -6481,21 +6481,21 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPatchParameteri(JNIEnv* env, jclass cl
 
 // void glPauseTransformFeedback();
 // public static native void glPauseTransformFeedback();
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glPauseTransformFeedback(JNIEnv* env, jclass clazz)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glPauseTransformFeedback(JNIEnv* env, jclass clazz)
 {
     glPauseTransformFeedback();
 }
 
 // void glResumeTransformFeedback();
 // public static native void glResumeTransformFeedback();
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glResumeTransformFeedback(JNIEnv* env, jclass clazz)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glResumeTransformFeedback(JNIEnv* env, jclass clazz)
 {
     glResumeTransformFeedback();
 }
 
 // void glUniform1d(GLint location, GLdouble x);
 // public static native void glUniform1d(int location, double x);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1d(JNIEnv* env, jclass clazz, jint location, jdouble x)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform1d(JNIEnv* env, jclass clazz, jint location, jdouble x)
 {
     glUniform1d(
         (GLint)location,
@@ -6504,7 +6504,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1d(JNIEnv* env, jclass clazz, j
 
 // void glUniform1dv(GLint location, GLsizei count, GLdouble* value);
 // public static native void glUniform1dv(int location, int count, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1dv__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform1dv__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
 {
     glUniform1dv(
         (GLint)location,
@@ -6514,7 +6514,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1dv__IILjava_nio_DoubleBuffer_2
 
 // void glUniform1dv(GLint location, GLsizei count, GLdouble* value);
 // public static native void glUniform1dv(int location, int count, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1dv__II_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform1dv__II_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniform1dv(
@@ -6526,7 +6526,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform1dv__II_3DI(JNIEnv* env, jclass
 
 // void glUniform2d(GLint location, GLdouble x, GLdouble y);
 // public static native void glUniform2d(int location, double x, double y);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2d(JNIEnv* env, jclass clazz, jint location, jdouble x, jdouble y)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform2d(JNIEnv* env, jclass clazz, jint location, jdouble x, jdouble y)
 {
     glUniform2d(
         (GLint)location,
@@ -6536,7 +6536,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2d(JNIEnv* env, jclass clazz, j
 
 // void glUniform2dv(GLint location, GLsizei count, GLdouble* value);
 // public static native void glUniform2dv(int location, int count, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2dv__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform2dv__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
 {
     glUniform2dv(
         (GLint)location,
@@ -6546,7 +6546,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2dv__IILjava_nio_DoubleBuffer_2
 
 // void glUniform2dv(GLint location, GLsizei count, GLdouble* value);
 // public static native void glUniform2dv(int location, int count, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2dv__II_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform2dv__II_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniform2dv(
@@ -6558,7 +6558,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform2dv__II_3DI(JNIEnv* env, jclass
 
 // void glUniform3d(GLint location, GLdouble x, GLdouble y, GLdouble z);
 // public static native void glUniform3d(int location, double x, double y, double z);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3d(JNIEnv* env, jclass clazz, jint location, jdouble x, jdouble y, jdouble z)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform3d(JNIEnv* env, jclass clazz, jint location, jdouble x, jdouble y, jdouble z)
 {
     glUniform3d(
         (GLint)location,
@@ -6569,7 +6569,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3d(JNIEnv* env, jclass clazz, j
 
 // void glUniform3dv(GLint location, GLsizei count, GLdouble* value);
 // public static native void glUniform3dv(int location, int count, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3dv__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform3dv__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
 {
     glUniform3dv(
         (GLint)location,
@@ -6579,7 +6579,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3dv__IILjava_nio_DoubleBuffer_2
 
 // void glUniform3dv(GLint location, GLsizei count, GLdouble* value);
 // public static native void glUniform3dv(int location, int count, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3dv__II_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform3dv__II_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniform3dv(
@@ -6591,7 +6591,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform3dv__II_3DI(JNIEnv* env, jclass
 
 // void glUniform4d(GLint location, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
 // public static native void glUniform4d(int location, double x, double y, double z, double w);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4d(JNIEnv* env, jclass clazz, jint location, jdouble x, jdouble y, jdouble z, jdouble w)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform4d(JNIEnv* env, jclass clazz, jint location, jdouble x, jdouble y, jdouble z, jdouble w)
 {
     glUniform4d(
         (GLint)location,
@@ -6603,7 +6603,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4d(JNIEnv* env, jclass clazz, j
 
 // void glUniform4dv(GLint location, GLsizei count, GLdouble* value);
 // public static native void glUniform4dv(int location, int count, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4dv__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform4dv__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jobject value)
 {
     glUniform4dv(
         (GLint)location,
@@ -6613,7 +6613,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4dv__IILjava_nio_DoubleBuffer_2
 
 // void glUniform4dv(GLint location, GLsizei count, GLdouble* value);
 // public static native void glUniform4dv(int location, int count, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4dv__II_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniform4dv__II_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniform4dv(
@@ -6625,7 +6625,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniform4dv__II_3DI(JNIEnv* env, jclass
 
 // void glUniformMatrix2dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix2dv(int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix2dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix2dv(
         (GLint)location,
@@ -6636,7 +6636,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2dv__IIZLjava_nio_DoubleB
 
 // void glUniformMatrix2dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix2dv(int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix2dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix2dv(
@@ -6649,7 +6649,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2dv__IIZ_3DI(JNIEnv* env,
 
 // void glUniformMatrix2x3dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix2x3dv(int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2x3dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix2x3dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix2x3dv(
         (GLint)location,
@@ -6660,7 +6660,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2x3dv__IIZLjava_nio_Doubl
 
 // void glUniformMatrix2x3dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix2x3dv(int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2x3dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix2x3dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix2x3dv(
@@ -6673,7 +6673,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2x3dv__IIZ_3DI(JNIEnv* en
 
 // void glUniformMatrix2x4dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix2x4dv(int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2x4dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix2x4dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix2x4dv(
         (GLint)location,
@@ -6684,7 +6684,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2x4dv__IIZLjava_nio_Doubl
 
 // void glUniformMatrix2x4dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix2x4dv(int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2x4dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix2x4dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix2x4dv(
@@ -6697,7 +6697,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix2x4dv__IIZ_3DI(JNIEnv* en
 
 // void glUniformMatrix3dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix3dv(int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix3dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix3dv(
         (GLint)location,
@@ -6708,7 +6708,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3dv__IIZLjava_nio_DoubleB
 
 // void glUniformMatrix3dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix3dv(int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix3dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix3dv(
@@ -6721,7 +6721,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3dv__IIZ_3DI(JNIEnv* env,
 
 // void glUniformMatrix3x2dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix3x2dv(int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3x2dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix3x2dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix3x2dv(
         (GLint)location,
@@ -6732,7 +6732,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3x2dv__IIZLjava_nio_Doubl
 
 // void glUniformMatrix3x2dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix3x2dv(int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3x2dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix3x2dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix3x2dv(
@@ -6745,7 +6745,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3x2dv__IIZ_3DI(JNIEnv* en
 
 // void glUniformMatrix3x4dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix3x4dv(int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3x4dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix3x4dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix3x4dv(
         (GLint)location,
@@ -6756,7 +6756,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3x4dv__IIZLjava_nio_Doubl
 
 // void glUniformMatrix3x4dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix3x4dv(int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3x4dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix3x4dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix3x4dv(
@@ -6769,7 +6769,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix3x4dv__IIZ_3DI(JNIEnv* en
 
 // void glUniformMatrix4dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix4dv(int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix4dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix4dv(
         (GLint)location,
@@ -6780,7 +6780,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4dv__IIZLjava_nio_DoubleB
 
 // void glUniformMatrix4dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix4dv(int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix4dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix4dv(
@@ -6793,7 +6793,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4dv__IIZ_3DI(JNIEnv* env,
 
 // void glUniformMatrix4x2dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix4x2dv(int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4x2dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix4x2dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix4x2dv(
         (GLint)location,
@@ -6804,7 +6804,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4x2dv__IIZLjava_nio_Doubl
 
 // void glUniformMatrix4x2dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix4x2dv(int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4x2dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix4x2dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix4x2dv(
@@ -6817,7 +6817,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4x2dv__IIZ_3DI(JNIEnv* en
 
 // void glUniformMatrix4x3dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix4x3dv(int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4x3dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix4x3dv__IIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jobject value)
 {
     glUniformMatrix4x3dv(
         (GLint)location,
@@ -6828,7 +6828,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4x3dv__IIZLjava_nio_Doubl
 
 // void glUniformMatrix4x3dv(GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glUniformMatrix4x3dv(int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4x3dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformMatrix4x3dv__IIZ_3DI(JNIEnv* env, jclass clazz, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glUniformMatrix4x3dv(
@@ -6841,7 +6841,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformMatrix4x3dv__IIZ_3DI(JNIEnv* en
 
 // void glUniformSubroutinesuiv(GLenum shadertype, GLsizei count, GLuint* indices);
 // public static native void glUniformSubroutinesuiv(int shadertype, int count, IntBuffer indices);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformSubroutinesuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint shadertype, jint count, jobject indices)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformSubroutinesuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint shadertype, jint count, jobject indices)
 {
     glUniformSubroutinesuiv(
         (GLenum)shadertype,
@@ -6851,7 +6851,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformSubroutinesuiv__IILjava_nio_Int
 
 // void glUniformSubroutinesuiv(GLenum shadertype, GLsizei count, GLuint* indices);
 // public static native void glUniformSubroutinesuiv(int shadertype, int count, int[] indices, int indicesOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformSubroutinesuiv__II_3II(JNIEnv* env, jclass clazz, jint shadertype, jint count, jintArray indices, jint indicesOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUniformSubroutinesuiv__II_3II(JNIEnv* env, jclass clazz, jint shadertype, jint count, jintArray indices, jint indicesOffset)
 {
     jint* j_indices = indices ? (jint*)((*env)->GetPrimitiveArrayCritical(env, indices, 0)) : 0;
     glUniformSubroutinesuiv(
@@ -6863,7 +6863,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUniformSubroutinesuiv__II_3II(JNIEnv* 
 
 // void glActiveShaderProgram(GLuint pipeline, GLuint program);
 // public static native void glActiveShaderProgram(int pipeline, int program);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glActiveShaderProgram(JNIEnv* env, jclass clazz, jint pipeline, jint program)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glActiveShaderProgram(JNIEnv* env, jclass clazz, jint pipeline, jint program)
 {
     glActiveShaderProgram(
         (GLuint)pipeline,
@@ -6872,7 +6872,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glActiveShaderProgram(JNIEnv* env, jclas
 
 // void glBindProgramPipeline(GLuint pipeline);
 // public static native void glBindProgramPipeline(int pipeline);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindProgramPipeline(JNIEnv* env, jclass clazz, jint pipeline)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glBindProgramPipeline(JNIEnv* env, jclass clazz, jint pipeline)
 {
     glBindProgramPipeline(
         (GLuint)pipeline);
@@ -6880,7 +6880,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glBindProgramPipeline(JNIEnv* env, jclas
 
 // void glClearDepthf(GLclampf d);
 // public static native void glClearDepthf(float d);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearDepthf(JNIEnv* env, jclass clazz, jfloat d)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glClearDepthf(JNIEnv* env, jclass clazz, jfloat d)
 {
     glClearDepthf(
         (GLclampf)d);
@@ -6888,7 +6888,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glClearDepthf(JNIEnv* env, jclass clazz,
 
 // GLuint glCreateShaderProgramv(GLenum type, GLsizei count, GLchar** strings);
 // public static native int glCreateShaderProgramv(int type, int count, String[] strings);
-JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glCreateShaderProgramv(JNIEnv* env, jclass clazz, jint type, jint count, jobjectArray strings)
+JNIEXPORT jint JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glCreateShaderProgramv(JNIEnv* env, jclass clazz, jint type, jint count, jobjectArray strings)
 {
     const char** j_strings = newNativeStringArray(env, strings);
     GLuint ret = (GLuint)
@@ -6902,7 +6902,7 @@ JNIEXPORT jint JNICALL Java_njsdl_gl_GL_glCreateShaderProgramv(JNIEnv* env, jcla
 
 // void glDeleteProgramPipelines(GLsizei n, GLuint* pipelines);
 // public static native void glDeleteProgramPipelines(int n, IntBuffer pipelines);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteProgramPipelines__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject pipelines)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteProgramPipelines__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject pipelines)
 {
     glDeleteProgramPipelines(
         (GLsizei)n,
@@ -6911,7 +6911,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteProgramPipelines__ILjava_nio_Int
 
 // void glDeleteProgramPipelines(GLsizei n, GLuint* pipelines);
 // public static native void glDeleteProgramPipelines(int n, int[] pipelines, int pipelinesOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteProgramPipelines__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray pipelines, jint pipelinesOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDeleteProgramPipelines__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray pipelines, jint pipelinesOffset)
 {
     jint* j_pipelines = pipelines ? (jint*)((*env)->GetPrimitiveArrayCritical(env, pipelines, 0)) : 0;
     glDeleteProgramPipelines(
@@ -6922,7 +6922,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDeleteProgramPipelines__I_3II(JNIEnv* 
 
 // void glDepthRangeArrayv(GLuint first, GLsizei count, GLclampd* v);
 // public static native void glDepthRangeArrayv(int first, int count, DoubleBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDepthRangeArrayv__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint first, jint count, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDepthRangeArrayv__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint first, jint count, jobject v)
 {
     glDepthRangeArrayv(
         (GLuint)first,
@@ -6932,7 +6932,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDepthRangeArrayv__IILjava_nio_DoubleBu
 
 // void glDepthRangeArrayv(GLuint first, GLsizei count, GLclampd* v);
 // public static native void glDepthRangeArrayv(int first, int count, double[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDepthRangeArrayv__II_3DI(JNIEnv* env, jclass clazz, jint first, jint count, jdoubleArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDepthRangeArrayv__II_3DI(JNIEnv* env, jclass clazz, jint first, jint count, jdoubleArray v, jint vOffset)
 {
     jdouble* j_v = v ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glDepthRangeArrayv(
@@ -6944,7 +6944,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDepthRangeArrayv__II_3DI(JNIEnv* env, 
 
 // void glDepthRangeIndexed(GLuint index, GLclampd n, GLclampd f);
 // public static native void glDepthRangeIndexed(int index, double n, double f);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDepthRangeIndexed(JNIEnv* env, jclass clazz, jint index, jdouble n, jdouble f)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDepthRangeIndexed(JNIEnv* env, jclass clazz, jint index, jdouble n, jdouble f)
 {
     glDepthRangeIndexed(
         (GLuint)index,
@@ -6954,7 +6954,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDepthRangeIndexed(JNIEnv* env, jclass 
 
 // void glDepthRangef(GLclampf n, GLclampf f);
 // public static native void glDepthRangef(float n, float f);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDepthRangef(JNIEnv* env, jclass clazz, jfloat n, jfloat f)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glDepthRangef(JNIEnv* env, jclass clazz, jfloat n, jfloat f)
 {
     glDepthRangef(
         (GLclampf)n,
@@ -6963,7 +6963,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glDepthRangef(JNIEnv* env, jclass clazz,
 
 // void glGenProgramPipelines(GLsizei n, GLuint* pipelines);
 // public static native void glGenProgramPipelines(int n, IntBuffer pipelines);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenProgramPipelines__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject pipelines)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenProgramPipelines__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint n, jobject pipelines)
 {
     glGenProgramPipelines(
         (GLsizei)n,
@@ -6972,7 +6972,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenProgramPipelines__ILjava_nio_IntBuf
 
 // void glGenProgramPipelines(GLsizei n, GLuint* pipelines);
 // public static native void glGenProgramPipelines(int n, int[] pipelines, int pipelinesOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenProgramPipelines__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray pipelines, jint pipelinesOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGenProgramPipelines__I_3II(JNIEnv* env, jclass clazz, jint n, jintArray pipelines, jint pipelinesOffset)
 {
     jint* j_pipelines = pipelines ? (jint*)((*env)->GetPrimitiveArrayCritical(env, pipelines, 0)) : 0;
     glGenProgramPipelines(
@@ -6983,7 +6983,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGenProgramPipelines__I_3II(JNIEnv* env
 
 // void glGetDoublei_v(GLenum target, GLuint index, GLdouble* data);
 // public static native void glGetDoublei_v(int target, int index, DoubleBuffer data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetDoublei_1v__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint target, jint index, jobject data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetDoublei_1v__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint target, jint index, jobject data)
 {
     glGetDoublei_v(
         (GLenum)target,
@@ -6993,7 +6993,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetDoublei_1v__IILjava_nio_DoubleBuffe
 
 // void glGetDoublei_v(GLenum target, GLuint index, GLdouble* data);
 // public static native void glGetDoublei_v(int target, int index, double[] data, int dataOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetDoublei_1v__II_3DI(JNIEnv* env, jclass clazz, jint target, jint index, jdoubleArray data, jint dataOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetDoublei_1v__II_3DI(JNIEnv* env, jclass clazz, jint target, jint index, jdoubleArray data, jint dataOffset)
 {
     jdouble* j_data = data ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, data, 0)) : 0;
     glGetDoublei_v(
@@ -7005,7 +7005,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetDoublei_1v__II_3DI(JNIEnv* env, jcl
 
 // void glGetFloati_v(GLenum target, GLuint index, GLfloat* data);
 // public static native void glGetFloati_v(int target, int index, FloatBuffer data);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetFloati_1v__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint target, jint index, jobject data)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetFloati_1v__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint target, jint index, jobject data)
 {
     glGetFloati_v(
         (GLenum)target,
@@ -7015,7 +7015,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetFloati_1v__IILjava_nio_FloatBuffer_
 
 // void glGetFloati_v(GLenum target, GLuint index, GLfloat* data);
 // public static native void glGetFloati_v(int target, int index, float[] data, int dataOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetFloati_1v__II_3FI(JNIEnv* env, jclass clazz, jint target, jint index, jfloatArray data, jint dataOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetFloati_1v__II_3FI(JNIEnv* env, jclass clazz, jint target, jint index, jfloatArray data, jint dataOffset)
 {
     jfloat* j_data = data ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, data, 0)) : 0;
     glGetFloati_v(
@@ -7027,7 +7027,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetFloati_1v__II_3FI(JNIEnv* env, jcla
 
 // void glGetProgramBinary(GLuint program, GLsizei bufSize, GLsizei* length, GLenum* binaryFormat, GLvoid* binary);
 // public static native void glGetProgramBinary(int program, int bufSize, IntBuffer length, IntBuffer binaryFormat, Buffer binary);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramBinary__IILjava_nio_IntBuffer_2Ljava_nio_IntBuffer_2Ljava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint program, jint bufSize, jobject length, jobject binaryFormat, jobject binary)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetProgramBinary__IILjava_nio_IntBuffer_2Ljava_nio_IntBuffer_2Ljava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint program, jint bufSize, jobject length, jobject binaryFormat, jobject binary)
 {
     glGetProgramBinary(
         (GLuint)program,
@@ -7039,7 +7039,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramBinary__IILjava_nio_IntBuffe
 
 // void glGetProgramBinary(GLuint program, GLsizei bufSize, GLsizei* length, GLenum* binaryFormat, GLvoid* binary);
 // public static native void glGetProgramBinary(int program, int bufSize, int[] length, int lengthOffset, int[] binaryFormat, int binaryFormatOffset, long binary);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramBinary__II_3II_3IIJ(JNIEnv* env, jclass clazz, jint program, jint bufSize, jintArray length, jint lengthOffset, jintArray binaryFormat, jint binaryFormatOffset, jlong binary)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetProgramBinary__II_3II_3IIJ(JNIEnv* env, jclass clazz, jint program, jint bufSize, jintArray length, jint lengthOffset, jintArray binaryFormat, jint binaryFormatOffset, jlong binary)
 {
     jint* j_length = length ? (jint*)((*env)->GetPrimitiveArrayCritical(env, length, 0)) : 0;
     jint* j_binaryFormat = binaryFormat ? (jint*)((*env)->GetPrimitiveArrayCritical(env, binaryFormat, 0)) : 0;
@@ -7055,7 +7055,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramBinary__II_3II_3IIJ(JNIEnv* 
 
 // void glGetProgramPipelineInfoLog(GLuint pipeline, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
 // public static native void glGetProgramPipelineInfoLog(int pipeline, int bufSize, IntBuffer length, ByteBuffer infoLog);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramPipelineInfoLog__IILjava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint pipeline, jint bufSize, jobject length, jobject infoLog)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetProgramPipelineInfoLog__IILjava_nio_IntBuffer_2Ljava_nio_ByteBuffer_2(JNIEnv* env, jclass clazz, jint pipeline, jint bufSize, jobject length, jobject infoLog)
 {
     glGetProgramPipelineInfoLog(
         (GLuint)pipeline,
@@ -7066,7 +7066,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramPipelineInfoLog__IILjava_nio
 
 // void glGetProgramPipelineInfoLog(GLuint pipeline, GLsizei bufSize, GLsizei* length, GLchar* infoLog);
 // public static native void glGetProgramPipelineInfoLog(int pipeline, int bufSize, int[] length, int lengthOffset, byte[] infoLog, int infoLogOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramPipelineInfoLog__II_3II_3BI(JNIEnv* env, jclass clazz, jint pipeline, jint bufSize, jintArray length, jint lengthOffset, jbyteArray infoLog, jint infoLogOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetProgramPipelineInfoLog__II_3II_3BI(JNIEnv* env, jclass clazz, jint pipeline, jint bufSize, jintArray length, jint lengthOffset, jbyteArray infoLog, jint infoLogOffset)
 {
     jint* j_length = length ? (jint*)((*env)->GetPrimitiveArrayCritical(env, length, 0)) : 0;
     jbyte* j_infoLog = infoLog ? (jbyte*)((*env)->GetPrimitiveArrayCritical(env, infoLog, 0)) : 0;
@@ -7081,7 +7081,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramPipelineInfoLog__II_3II_3BI(
 
 // void glGetProgramPipelineiv(GLuint pipeline, GLenum pname, GLint* params);
 // public static native void glGetProgramPipelineiv(int pipeline, int pname, IntBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramPipelineiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint pipeline, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetProgramPipelineiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint pipeline, jint pname, jobject params)
 {
     glGetProgramPipelineiv(
         (GLuint)pipeline,
@@ -7091,7 +7091,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramPipelineiv__IILjava_nio_IntB
 
 // void glGetProgramPipelineiv(GLuint pipeline, GLenum pname, GLint* params);
 // public static native void glGetProgramPipelineiv(int pipeline, int pname, int[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramPipelineiv__II_3II(JNIEnv* env, jclass clazz, jint pipeline, jint pname, jintArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetProgramPipelineiv__II_3II(JNIEnv* env, jclass clazz, jint pipeline, jint pname, jintArray params, jint paramsOffset)
 {
     jint* j_params = params ? (jint*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetProgramPipelineiv(
@@ -7103,7 +7103,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetProgramPipelineiv__II_3II(JNIEnv* e
 
 // void glGetShaderPrecisionFormat(GLenum shadertype, GLenum precisiontype, GLint* range, GLint* precision);
 // public static native void glGetShaderPrecisionFormat(int shadertype, int precisiontype, IntBuffer range, IntBuffer precision);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetShaderPrecisionFormat__IILjava_nio_IntBuffer_2Ljava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint shadertype, jint precisiontype, jobject range, jobject precision)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetShaderPrecisionFormat__IILjava_nio_IntBuffer_2Ljava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint shadertype, jint precisiontype, jobject range, jobject precision)
 {
     glGetShaderPrecisionFormat(
         (GLenum)shadertype,
@@ -7114,7 +7114,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetShaderPrecisionFormat__IILjava_nio_
 
 // void glGetShaderPrecisionFormat(GLenum shadertype, GLenum precisiontype, GLint* range, GLint* precision);
 // public static native void glGetShaderPrecisionFormat(int shadertype, int precisiontype, int[] range, int rangeOffset, int[] precision, int precisionOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetShaderPrecisionFormat__II_3II_3II(JNIEnv* env, jclass clazz, jint shadertype, jint precisiontype, jintArray range, jint rangeOffset, jintArray precision, jint precisionOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetShaderPrecisionFormat__II_3II_3II(JNIEnv* env, jclass clazz, jint shadertype, jint precisiontype, jintArray range, jint rangeOffset, jintArray precision, jint precisionOffset)
 {
     jint* j_range = range ? (jint*)((*env)->GetPrimitiveArrayCritical(env, range, 0)) : 0;
     jint* j_precision = precision ? (jint*)((*env)->GetPrimitiveArrayCritical(env, precision, 0)) : 0;
@@ -7129,7 +7129,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetShaderPrecisionFormat__II_3II_3II(J
 
 // void glGetVertexAttribLdv(GLuint index, GLenum pname, GLdouble* params);
 // public static native void glGetVertexAttribLdv(int index, int pname, DoubleBuffer params);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribLdv__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jint pname, jobject params)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetVertexAttribLdv__IILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jint pname, jobject params)
 {
     glGetVertexAttribLdv(
         (GLuint)index,
@@ -7139,7 +7139,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribLdv__IILjava_nio_Double
 
 // void glGetVertexAttribLdv(GLuint index, GLenum pname, GLdouble* params);
 // public static native void glGetVertexAttribLdv(int index, int pname, double[] params, int paramsOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribLdv__II_3DI(JNIEnv* env, jclass clazz, jint index, jint pname, jdoubleArray params, jint paramsOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetVertexAttribLdv__II_3DI(JNIEnv* env, jclass clazz, jint index, jint pname, jdoubleArray params, jint paramsOffset)
 {
     jdouble* j_params = params ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, params, 0)) : 0;
     glGetVertexAttribLdv(
@@ -7151,7 +7151,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glGetVertexAttribLdv__II_3DI(JNIEnv* env
 
 // GLboolean glIsProgramPipeline(GLuint pipeline);
 // public static native boolean glIsProgramPipeline(int pipeline);
-JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsProgramPipeline(JNIEnv* env, jclass clazz, jint pipeline)
+JNIEXPORT jboolean JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glIsProgramPipeline(JNIEnv* env, jclass clazz, jint pipeline)
 {
     GLboolean ret = (GLboolean)
         glIsProgramPipeline(
@@ -7161,7 +7161,7 @@ JNIEXPORT jboolean JNICALL Java_njsdl_gl_GL_glIsProgramPipeline(JNIEnv* env, jcl
 
 // void glProgramBinary(GLuint program, GLenum binaryFormat, GLvoid* binary, GLsizei length);
 // public static native void glProgramBinary(int program, int binaryFormat, Buffer binary, int length);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramBinary__IILjava_nio_Buffer_2I(JNIEnv* env, jclass clazz, jint program, jint binaryFormat, jobject binary, jint length)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramBinary__IILjava_nio_Buffer_2I(JNIEnv* env, jclass clazz, jint program, jint binaryFormat, jobject binary, jint length)
 {
     glProgramBinary(
         (GLuint)program,
@@ -7172,7 +7172,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramBinary__IILjava_nio_Buffer_2I(J
 
 // void glProgramBinary(GLuint program, GLenum binaryFormat, GLvoid* binary, GLsizei length);
 // public static native void glProgramBinary(int program, int binaryFormat, long binary, int length);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramBinary__IIJI(JNIEnv* env, jclass clazz, jint program, jint binaryFormat, jlong binary, jint length)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramBinary__IIJI(JNIEnv* env, jclass clazz, jint program, jint binaryFormat, jlong binary, jint length)
 {
     glProgramBinary(
         (GLuint)program,
@@ -7183,7 +7183,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramBinary__IIJI(JNIEnv* env, jclas
 
 // void glProgramParameteri(GLuint program, GLenum pname, GLint value);
 // public static native void glProgramParameteri(int program, int pname, int value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramParameteri(JNIEnv* env, jclass clazz, jint program, jint pname, jint value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramParameteri(JNIEnv* env, jclass clazz, jint program, jint pname, jint value)
 {
     glProgramParameteri(
         (GLuint)program,
@@ -7193,7 +7193,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramParameteri(JNIEnv* env, jclass 
 
 // void glProgramUniform1d(GLuint program, GLint location, GLdouble v0);
 // public static native void glProgramUniform1d(int program, int location, double v0);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1d(JNIEnv* env, jclass clazz, jint program, jint location, jdouble v0)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform1d(JNIEnv* env, jclass clazz, jint program, jint location, jdouble v0)
 {
     glProgramUniform1d(
         (GLuint)program,
@@ -7203,7 +7203,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1d(JNIEnv* env, jclass c
 
 // void glProgramUniform1dv(GLuint program, GLint location, GLsizei count, GLdouble* value);
 // public static native void glProgramUniform1dv(int program, int location, int count, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1dv__IIILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform1dv__IIILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
 {
     glProgramUniform1dv(
         (GLuint)program,
@@ -7214,7 +7214,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1dv__IIILjava_nio_Double
 
 // void glProgramUniform1dv(GLuint program, GLint location, GLsizei count, GLdouble* value);
 // public static native void glProgramUniform1dv(int program, int location, int count, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1dv__III_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform1dv__III_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniform1dv(
@@ -7227,7 +7227,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1dv__III_3DI(JNIEnv* env
 
 // void glProgramUniform1f(GLuint program, GLint location, GLfloat v0);
 // public static native void glProgramUniform1f(int program, int location, float v0);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1f(JNIEnv* env, jclass clazz, jint program, jint location, jfloat v0)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform1f(JNIEnv* env, jclass clazz, jint program, jint location, jfloat v0)
 {
     glProgramUniform1f(
         (GLuint)program,
@@ -7237,7 +7237,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1f(JNIEnv* env, jclass c
 
 // void glProgramUniform1fv(GLuint program, GLint location, GLsizei count, GLfloat* value);
 // public static native void glProgramUniform1fv(int program, int location, int count, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1fv__IIILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform1fv__IIILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
 {
     glProgramUniform1fv(
         (GLuint)program,
@@ -7248,7 +7248,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1fv__IIILjava_nio_FloatB
 
 // void glProgramUniform1fv(GLuint program, GLint location, GLsizei count, GLfloat* value);
 // public static native void glProgramUniform1fv(int program, int location, int count, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1fv__III_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform1fv__III_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniform1fv(
@@ -7261,7 +7261,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1fv__III_3FI(JNIEnv* env
 
 // void glProgramUniform1i(GLuint program, GLint location, GLint v0);
 // public static native void glProgramUniform1i(int program, int location, int v0);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1i(JNIEnv* env, jclass clazz, jint program, jint location, jint v0)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform1i(JNIEnv* env, jclass clazz, jint program, jint location, jint v0)
 {
     glProgramUniform1i(
         (GLuint)program,
@@ -7271,7 +7271,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1i(JNIEnv* env, jclass c
 
 // void glProgramUniform1iv(GLuint program, GLint location, GLsizei count, GLint* value);
 // public static native void glProgramUniform1iv(int program, int location, int count, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1iv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform1iv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
 {
     glProgramUniform1iv(
         (GLuint)program,
@@ -7282,7 +7282,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1iv__IIILjava_nio_IntBuf
 
 // void glProgramUniform1iv(GLuint program, GLint location, GLsizei count, GLint* value);
 // public static native void glProgramUniform1iv(int program, int location, int count, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1iv__III_3II(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform1iv__III_3II(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniform1iv(
@@ -7295,7 +7295,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1iv__III_3II(JNIEnv* env
 
 // void glProgramUniform1ui(GLuint program, GLint location, GLuint v0);
 // public static native void glProgramUniform1ui(int program, int location, int v0);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1ui(JNIEnv* env, jclass clazz, jint program, jint location, jint v0)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform1ui(JNIEnv* env, jclass clazz, jint program, jint location, jint v0)
 {
     glProgramUniform1ui(
         (GLuint)program,
@@ -7305,7 +7305,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1ui(JNIEnv* env, jclass 
 
 // void glProgramUniform1uiv(GLuint program, GLint location, GLsizei count, GLuint* value);
 // public static native void glProgramUniform1uiv(int program, int location, int count, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1uiv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform1uiv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
 {
     glProgramUniform1uiv(
         (GLuint)program,
@@ -7316,7 +7316,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1uiv__IIILjava_nio_IntBu
 
 // void glProgramUniform1uiv(GLuint program, GLint location, GLsizei count, GLuint* value);
 // public static native void glProgramUniform1uiv(int program, int location, int count, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1uiv__III_3II(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform1uiv__III_3II(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniform1uiv(
@@ -7329,7 +7329,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform1uiv__III_3II(JNIEnv* en
 
 // void glProgramUniform2d(GLuint program, GLint location, GLdouble v0, GLdouble v1);
 // public static native void glProgramUniform2d(int program, int location, double v0, double v1);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2d(JNIEnv* env, jclass clazz, jint program, jint location, jdouble v0, jdouble v1)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform2d(JNIEnv* env, jclass clazz, jint program, jint location, jdouble v0, jdouble v1)
 {
     glProgramUniform2d(
         (GLuint)program,
@@ -7340,7 +7340,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2d(JNIEnv* env, jclass c
 
 // void glProgramUniform2dv(GLuint program, GLint location, GLsizei count, GLdouble* value);
 // public static native void glProgramUniform2dv(int program, int location, int count, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2dv__IIILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform2dv__IIILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
 {
     glProgramUniform2dv(
         (GLuint)program,
@@ -7351,7 +7351,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2dv__IIILjava_nio_Double
 
 // void glProgramUniform2dv(GLuint program, GLint location, GLsizei count, GLdouble* value);
 // public static native void glProgramUniform2dv(int program, int location, int count, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2dv__III_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform2dv__III_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniform2dv(
@@ -7364,7 +7364,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2dv__III_3DI(JNIEnv* env
 
 // void glProgramUniform2f(GLuint program, GLint location, GLfloat v0, GLfloat v1);
 // public static native void glProgramUniform2f(int program, int location, float v0, float v1);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2f(JNIEnv* env, jclass clazz, jint program, jint location, jfloat v0, jfloat v1)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform2f(JNIEnv* env, jclass clazz, jint program, jint location, jfloat v0, jfloat v1)
 {
     glProgramUniform2f(
         (GLuint)program,
@@ -7375,7 +7375,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2f(JNIEnv* env, jclass c
 
 // void glProgramUniform2fv(GLuint program, GLint location, GLsizei count, GLfloat* value);
 // public static native void glProgramUniform2fv(int program, int location, int count, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2fv__IIILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform2fv__IIILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
 {
     glProgramUniform2fv(
         (GLuint)program,
@@ -7386,7 +7386,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2fv__IIILjava_nio_FloatB
 
 // void glProgramUniform2fv(GLuint program, GLint location, GLsizei count, GLfloat* value);
 // public static native void glProgramUniform2fv(int program, int location, int count, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2fv__III_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform2fv__III_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniform2fv(
@@ -7399,7 +7399,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2fv__III_3FI(JNIEnv* env
 
 // void glProgramUniform2i(GLuint program, GLint location, GLint v0, GLint v1);
 // public static native void glProgramUniform2i(int program, int location, int v0, int v1);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2i(JNIEnv* env, jclass clazz, jint program, jint location, jint v0, jint v1)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform2i(JNIEnv* env, jclass clazz, jint program, jint location, jint v0, jint v1)
 {
     glProgramUniform2i(
         (GLuint)program,
@@ -7410,7 +7410,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2i(JNIEnv* env, jclass c
 
 // void glProgramUniform2iv(GLuint program, GLint location, GLsizei count, GLint* value);
 // public static native void glProgramUniform2iv(int program, int location, int count, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2iv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform2iv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
 {
     glProgramUniform2iv(
         (GLuint)program,
@@ -7421,7 +7421,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2iv__IIILjava_nio_IntBuf
 
 // void glProgramUniform2iv(GLuint program, GLint location, GLsizei count, GLint* value);
 // public static native void glProgramUniform2iv(int program, int location, int count, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2iv__III_3II(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform2iv__III_3II(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniform2iv(
@@ -7434,7 +7434,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2iv__III_3II(JNIEnv* env
 
 // void glProgramUniform2ui(GLuint program, GLint location, GLuint v0, GLuint v1);
 // public static native void glProgramUniform2ui(int program, int location, int v0, int v1);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2ui(JNIEnv* env, jclass clazz, jint program, jint location, jint v0, jint v1)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform2ui(JNIEnv* env, jclass clazz, jint program, jint location, jint v0, jint v1)
 {
     glProgramUniform2ui(
         (GLuint)program,
@@ -7445,7 +7445,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2ui(JNIEnv* env, jclass 
 
 // void glProgramUniform2uiv(GLuint program, GLint location, GLsizei count, GLuint* value);
 // public static native void glProgramUniform2uiv(int program, int location, int count, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2uiv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform2uiv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
 {
     glProgramUniform2uiv(
         (GLuint)program,
@@ -7456,7 +7456,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2uiv__IIILjava_nio_IntBu
 
 // void glProgramUniform2uiv(GLuint program, GLint location, GLsizei count, GLuint* value);
 // public static native void glProgramUniform2uiv(int program, int location, int count, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2uiv__III_3II(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform2uiv__III_3II(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniform2uiv(
@@ -7469,7 +7469,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform2uiv__III_3II(JNIEnv* en
 
 // void glProgramUniform3d(GLuint program, GLint location, GLdouble v0, GLdouble v1, GLdouble v2);
 // public static native void glProgramUniform3d(int program, int location, double v0, double v1, double v2);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3d(JNIEnv* env, jclass clazz, jint program, jint location, jdouble v0, jdouble v1, jdouble v2)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform3d(JNIEnv* env, jclass clazz, jint program, jint location, jdouble v0, jdouble v1, jdouble v2)
 {
     glProgramUniform3d(
         (GLuint)program,
@@ -7481,7 +7481,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3d(JNIEnv* env, jclass c
 
 // void glProgramUniform3dv(GLuint program, GLint location, GLsizei count, GLdouble* value);
 // public static native void glProgramUniform3dv(int program, int location, int count, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3dv__IIILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform3dv__IIILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
 {
     glProgramUniform3dv(
         (GLuint)program,
@@ -7492,7 +7492,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3dv__IIILjava_nio_Double
 
 // void glProgramUniform3dv(GLuint program, GLint location, GLsizei count, GLdouble* value);
 // public static native void glProgramUniform3dv(int program, int location, int count, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3dv__III_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform3dv__III_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniform3dv(
@@ -7505,7 +7505,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3dv__III_3DI(JNIEnv* env
 
 // void glProgramUniform3f(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2);
 // public static native void glProgramUniform3f(int program, int location, float v0, float v1, float v2);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3f(JNIEnv* env, jclass clazz, jint program, jint location, jfloat v0, jfloat v1, jfloat v2)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform3f(JNIEnv* env, jclass clazz, jint program, jint location, jfloat v0, jfloat v1, jfloat v2)
 {
     glProgramUniform3f(
         (GLuint)program,
@@ -7517,7 +7517,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3f(JNIEnv* env, jclass c
 
 // void glProgramUniform3fv(GLuint program, GLint location, GLsizei count, GLfloat* value);
 // public static native void glProgramUniform3fv(int program, int location, int count, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3fv__IIILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform3fv__IIILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
 {
     glProgramUniform3fv(
         (GLuint)program,
@@ -7528,7 +7528,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3fv__IIILjava_nio_FloatB
 
 // void glProgramUniform3fv(GLuint program, GLint location, GLsizei count, GLfloat* value);
 // public static native void glProgramUniform3fv(int program, int location, int count, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3fv__III_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform3fv__III_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniform3fv(
@@ -7541,7 +7541,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3fv__III_3FI(JNIEnv* env
 
 // void glProgramUniform3i(GLuint program, GLint location, GLint v0, GLint v1, GLint v2);
 // public static native void glProgramUniform3i(int program, int location, int v0, int v1, int v2);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3i(JNIEnv* env, jclass clazz, jint program, jint location, jint v0, jint v1, jint v2)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform3i(JNIEnv* env, jclass clazz, jint program, jint location, jint v0, jint v1, jint v2)
 {
     glProgramUniform3i(
         (GLuint)program,
@@ -7553,7 +7553,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3i(JNIEnv* env, jclass c
 
 // void glProgramUniform3iv(GLuint program, GLint location, GLsizei count, GLint* value);
 // public static native void glProgramUniform3iv(int program, int location, int count, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3iv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform3iv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
 {
     glProgramUniform3iv(
         (GLuint)program,
@@ -7564,7 +7564,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3iv__IIILjava_nio_IntBuf
 
 // void glProgramUniform3iv(GLuint program, GLint location, GLsizei count, GLint* value);
 // public static native void glProgramUniform3iv(int program, int location, int count, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3iv__III_3II(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform3iv__III_3II(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniform3iv(
@@ -7577,7 +7577,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3iv__III_3II(JNIEnv* env
 
 // void glProgramUniform3ui(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2);
 // public static native void glProgramUniform3ui(int program, int location, int v0, int v1, int v2);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3ui(JNIEnv* env, jclass clazz, jint program, jint location, jint v0, jint v1, jint v2)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform3ui(JNIEnv* env, jclass clazz, jint program, jint location, jint v0, jint v1, jint v2)
 {
     glProgramUniform3ui(
         (GLuint)program,
@@ -7589,7 +7589,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3ui(JNIEnv* env, jclass 
 
 // void glProgramUniform3uiv(GLuint program, GLint location, GLsizei count, GLuint* value);
 // public static native void glProgramUniform3uiv(int program, int location, int count, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3uiv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform3uiv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
 {
     glProgramUniform3uiv(
         (GLuint)program,
@@ -7600,7 +7600,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3uiv__IIILjava_nio_IntBu
 
 // void glProgramUniform3uiv(GLuint program, GLint location, GLsizei count, GLuint* value);
 // public static native void glProgramUniform3uiv(int program, int location, int count, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3uiv__III_3II(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform3uiv__III_3II(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniform3uiv(
@@ -7613,7 +7613,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform3uiv__III_3II(JNIEnv* en
 
 // void glProgramUniform4d(GLuint program, GLint location, GLdouble v0, GLdouble v1, GLdouble v2, GLdouble v3);
 // public static native void glProgramUniform4d(int program, int location, double v0, double v1, double v2, double v3);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4d(JNIEnv* env, jclass clazz, jint program, jint location, jdouble v0, jdouble v1, jdouble v2, jdouble v3)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform4d(JNIEnv* env, jclass clazz, jint program, jint location, jdouble v0, jdouble v1, jdouble v2, jdouble v3)
 {
     glProgramUniform4d(
         (GLuint)program,
@@ -7626,7 +7626,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4d(JNIEnv* env, jclass c
 
 // void glProgramUniform4dv(GLuint program, GLint location, GLsizei count, GLdouble* value);
 // public static native void glProgramUniform4dv(int program, int location, int count, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4dv__IIILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform4dv__IIILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
 {
     glProgramUniform4dv(
         (GLuint)program,
@@ -7637,7 +7637,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4dv__IIILjava_nio_Double
 
 // void glProgramUniform4dv(GLuint program, GLint location, GLsizei count, GLdouble* value);
 // public static native void glProgramUniform4dv(int program, int location, int count, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4dv__III_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform4dv__III_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniform4dv(
@@ -7650,7 +7650,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4dv__III_3DI(JNIEnv* env
 
 // void glProgramUniform4f(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3);
 // public static native void glProgramUniform4f(int program, int location, float v0, float v1, float v2, float v3);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4f(JNIEnv* env, jclass clazz, jint program, jint location, jfloat v0, jfloat v1, jfloat v2, jfloat v3)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform4f(JNIEnv* env, jclass clazz, jint program, jint location, jfloat v0, jfloat v1, jfloat v2, jfloat v3)
 {
     glProgramUniform4f(
         (GLuint)program,
@@ -7663,7 +7663,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4f(JNIEnv* env, jclass c
 
 // void glProgramUniform4fv(GLuint program, GLint location, GLsizei count, GLfloat* value);
 // public static native void glProgramUniform4fv(int program, int location, int count, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4fv__IIILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform4fv__IIILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
 {
     glProgramUniform4fv(
         (GLuint)program,
@@ -7674,7 +7674,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4fv__IIILjava_nio_FloatB
 
 // void glProgramUniform4fv(GLuint program, GLint location, GLsizei count, GLfloat* value);
 // public static native void glProgramUniform4fv(int program, int location, int count, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4fv__III_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform4fv__III_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniform4fv(
@@ -7687,7 +7687,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4fv__III_3FI(JNIEnv* env
 
 // void glProgramUniform4i(GLuint program, GLint location, GLint v0, GLint v1, GLint v2, GLint v3);
 // public static native void glProgramUniform4i(int program, int location, int v0, int v1, int v2, int v3);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4i(JNIEnv* env, jclass clazz, jint program, jint location, jint v0, jint v1, jint v2, jint v3)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform4i(JNIEnv* env, jclass clazz, jint program, jint location, jint v0, jint v1, jint v2, jint v3)
 {
     glProgramUniform4i(
         (GLuint)program,
@@ -7700,7 +7700,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4i(JNIEnv* env, jclass c
 
 // void glProgramUniform4iv(GLuint program, GLint location, GLsizei count, GLint* value);
 // public static native void glProgramUniform4iv(int program, int location, int count, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4iv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform4iv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
 {
     glProgramUniform4iv(
         (GLuint)program,
@@ -7711,7 +7711,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4iv__IIILjava_nio_IntBuf
 
 // void glProgramUniform4iv(GLuint program, GLint location, GLsizei count, GLint* value);
 // public static native void glProgramUniform4iv(int program, int location, int count, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4iv__III_3II(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform4iv__III_3II(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniform4iv(
@@ -7724,7 +7724,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4iv__III_3II(JNIEnv* env
 
 // void glProgramUniform4ui(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3);
 // public static native void glProgramUniform4ui(int program, int location, int v0, int v1, int v2, int v3);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4ui(JNIEnv* env, jclass clazz, jint program, jint location, jint v0, jint v1, jint v2, jint v3)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform4ui(JNIEnv* env, jclass clazz, jint program, jint location, jint v0, jint v1, jint v2, jint v3)
 {
     glProgramUniform4ui(
         (GLuint)program,
@@ -7737,7 +7737,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4ui(JNIEnv* env, jclass 
 
 // void glProgramUniform4uiv(GLuint program, GLint location, GLsizei count, GLuint* value);
 // public static native void glProgramUniform4uiv(int program, int location, int count, IntBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4uiv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform4uiv__IIILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jobject value)
 {
     glProgramUniform4uiv(
         (GLuint)program,
@@ -7748,7 +7748,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4uiv__IIILjava_nio_IntBu
 
 // void glProgramUniform4uiv(GLuint program, GLint location, GLsizei count, GLuint* value);
 // public static native void glProgramUniform4uiv(int program, int location, int count, int[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4uiv__III_3II(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jintArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniform4uiv__III_3II(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jintArray value, jint valueOffset)
 {
     jint* j_value = value ? (jint*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniform4uiv(
@@ -7761,7 +7761,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniform4uiv__III_3II(JNIEnv* en
 
 // void glProgramUniformMatrix2dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix2dv(int program, int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix2dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix2dv(
         (GLuint)program,
@@ -7773,7 +7773,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2dv__IIIZLjava_nio
 
 // void glProgramUniformMatrix2dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix2dv(int program, int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix2dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix2dv(
@@ -7787,7 +7787,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2dv__IIIZ_3DI(JNIE
 
 // void glProgramUniformMatrix2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix2fv(int program, int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix2fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix2fv(
         (GLuint)program,
@@ -7799,7 +7799,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2fv__IIIZLjava_nio
 
 // void glProgramUniformMatrix2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix2fv(int program, int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix2fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix2fv(
@@ -7813,7 +7813,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2fv__IIIZ_3FI(JNIE
 
 // void glProgramUniformMatrix2x3dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix2x3dv(int program, int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2x3dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix2x3dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix2x3dv(
         (GLuint)program,
@@ -7825,7 +7825,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2x3dv__IIIZLjava_n
 
 // void glProgramUniformMatrix2x3dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix2x3dv(int program, int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2x3dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix2x3dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix2x3dv(
@@ -7839,7 +7839,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2x3dv__IIIZ_3DI(JN
 
 // void glProgramUniformMatrix2x3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix2x3fv(int program, int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2x3fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix2x3fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix2x3fv(
         (GLuint)program,
@@ -7851,7 +7851,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2x3fv__IIIZLjava_n
 
 // void glProgramUniformMatrix2x3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix2x3fv(int program, int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2x3fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix2x3fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix2x3fv(
@@ -7865,7 +7865,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2x3fv__IIIZ_3FI(JN
 
 // void glProgramUniformMatrix2x4dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix2x4dv(int program, int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2x4dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix2x4dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix2x4dv(
         (GLuint)program,
@@ -7877,7 +7877,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2x4dv__IIIZLjava_n
 
 // void glProgramUniformMatrix2x4dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix2x4dv(int program, int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2x4dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix2x4dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix2x4dv(
@@ -7891,7 +7891,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2x4dv__IIIZ_3DI(JN
 
 // void glProgramUniformMatrix2x4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix2x4fv(int program, int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2x4fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix2x4fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix2x4fv(
         (GLuint)program,
@@ -7903,7 +7903,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2x4fv__IIIZLjava_n
 
 // void glProgramUniformMatrix2x4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix2x4fv(int program, int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2x4fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix2x4fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix2x4fv(
@@ -7917,7 +7917,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix2x4fv__IIIZ_3FI(JN
 
 // void glProgramUniformMatrix3dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix3dv(int program, int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix3dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix3dv(
         (GLuint)program,
@@ -7929,7 +7929,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3dv__IIIZLjava_nio
 
 // void glProgramUniformMatrix3dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix3dv(int program, int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix3dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix3dv(
@@ -7943,7 +7943,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3dv__IIIZ_3DI(JNIE
 
 // void glProgramUniformMatrix3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix3fv(int program, int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix3fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix3fv(
         (GLuint)program,
@@ -7955,7 +7955,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3fv__IIIZLjava_nio
 
 // void glProgramUniformMatrix3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix3fv(int program, int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix3fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix3fv(
@@ -7969,7 +7969,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3fv__IIIZ_3FI(JNIE
 
 // void glProgramUniformMatrix3x2dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix3x2dv(int program, int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3x2dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix3x2dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix3x2dv(
         (GLuint)program,
@@ -7981,7 +7981,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3x2dv__IIIZLjava_n
 
 // void glProgramUniformMatrix3x2dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix3x2dv(int program, int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3x2dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix3x2dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix3x2dv(
@@ -7995,7 +7995,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3x2dv__IIIZ_3DI(JN
 
 // void glProgramUniformMatrix3x2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix3x2fv(int program, int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3x2fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix3x2fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix3x2fv(
         (GLuint)program,
@@ -8007,7 +8007,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3x2fv__IIIZLjava_n
 
 // void glProgramUniformMatrix3x2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix3x2fv(int program, int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3x2fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix3x2fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix3x2fv(
@@ -8021,7 +8021,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3x2fv__IIIZ_3FI(JN
 
 // void glProgramUniformMatrix3x4dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix3x4dv(int program, int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3x4dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix3x4dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix3x4dv(
         (GLuint)program,
@@ -8033,7 +8033,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3x4dv__IIIZLjava_n
 
 // void glProgramUniformMatrix3x4dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix3x4dv(int program, int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3x4dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix3x4dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix3x4dv(
@@ -8047,7 +8047,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3x4dv__IIIZ_3DI(JN
 
 // void glProgramUniformMatrix3x4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix3x4fv(int program, int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3x4fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix3x4fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix3x4fv(
         (GLuint)program,
@@ -8059,7 +8059,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3x4fv__IIIZLjava_n
 
 // void glProgramUniformMatrix3x4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix3x4fv(int program, int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3x4fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix3x4fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix3x4fv(
@@ -8073,7 +8073,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix3x4fv__IIIZ_3FI(JN
 
 // void glProgramUniformMatrix4dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix4dv(int program, int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix4dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix4dv(
         (GLuint)program,
@@ -8085,7 +8085,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4dv__IIIZLjava_nio
 
 // void glProgramUniformMatrix4dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix4dv(int program, int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix4dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix4dv(
@@ -8099,7 +8099,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4dv__IIIZ_3DI(JNIE
 
 // void glProgramUniformMatrix4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix4fv(int program, int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix4fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix4fv(
         (GLuint)program,
@@ -8111,7 +8111,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4fv__IIIZLjava_nio
 
 // void glProgramUniformMatrix4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix4fv(int program, int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix4fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix4fv(
@@ -8125,7 +8125,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4fv__IIIZ_3FI(JNIE
 
 // void glProgramUniformMatrix4x2dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix4x2dv(int program, int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4x2dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix4x2dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix4x2dv(
         (GLuint)program,
@@ -8137,7 +8137,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4x2dv__IIIZLjava_n
 
 // void glProgramUniformMatrix4x2dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix4x2dv(int program, int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4x2dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix4x2dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix4x2dv(
@@ -8151,7 +8151,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4x2dv__IIIZ_3DI(JN
 
 // void glProgramUniformMatrix4x2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix4x2fv(int program, int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4x2fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix4x2fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix4x2fv(
         (GLuint)program,
@@ -8163,7 +8163,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4x2fv__IIIZLjava_n
 
 // void glProgramUniformMatrix4x2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix4x2fv(int program, int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4x2fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix4x2fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix4x2fv(
@@ -8177,7 +8177,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4x2fv__IIIZ_3FI(JN
 
 // void glProgramUniformMatrix4x3dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix4x3dv(int program, int location, int count, boolean transpose, DoubleBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4x3dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix4x3dv__IIIZLjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix4x3dv(
         (GLuint)program,
@@ -8189,7 +8189,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4x3dv__IIIZLjava_n
 
 // void glProgramUniformMatrix4x3dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLdouble* value);
 // public static native void glProgramUniformMatrix4x3dv(int program, int location, int count, boolean transpose, double[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4x3dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix4x3dv__IIIZ_3DI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jdoubleArray value, jint valueOffset)
 {
     jdouble* j_value = value ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix4x3dv(
@@ -8203,7 +8203,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4x3dv__IIIZ_3DI(JN
 
 // void glProgramUniformMatrix4x3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix4x3fv(int program, int location, int count, boolean transpose, FloatBuffer value);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4x3fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix4x3fv__IIIZLjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jobject value)
 {
     glProgramUniformMatrix4x3fv(
         (GLuint)program,
@@ -8215,7 +8215,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4x3fv__IIIZLjava_n
 
 // void glProgramUniformMatrix4x3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, GLfloat* value);
 // public static native void glProgramUniformMatrix4x3fv(int program, int location, int count, boolean transpose, float[] value, int valueOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4x3fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glProgramUniformMatrix4x3fv__IIIZ_3FI(JNIEnv* env, jclass clazz, jint program, jint location, jint count, jboolean transpose, jfloatArray value, jint valueOffset)
 {
     jfloat* j_value = value ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, value, 0)) : 0;
     glProgramUniformMatrix4x3fv(
@@ -8229,14 +8229,14 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glProgramUniformMatrix4x3fv__IIIZ_3FI(JN
 
 // void glReleaseShaderCompiler();
 // public static native void glReleaseShaderCompiler();
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glReleaseShaderCompiler(JNIEnv* env, jclass clazz)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glReleaseShaderCompiler(JNIEnv* env, jclass clazz)
 {
     glReleaseShaderCompiler();
 }
 
 // void glScissorArrayv(GLuint first, GLsizei count, GLint* v);
 // public static native void glScissorArrayv(int first, int count, IntBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glScissorArrayv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint first, jint count, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glScissorArrayv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint first, jint count, jobject v)
 {
     glScissorArrayv(
         (GLuint)first,
@@ -8246,7 +8246,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glScissorArrayv__IILjava_nio_IntBuffer_2
 
 // void glScissorArrayv(GLuint first, GLsizei count, GLint* v);
 // public static native void glScissorArrayv(int first, int count, int[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glScissorArrayv__II_3II(JNIEnv* env, jclass clazz, jint first, jint count, jintArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glScissorArrayv__II_3II(JNIEnv* env, jclass clazz, jint first, jint count, jintArray v, jint vOffset)
 {
     jint* j_v = v ? (jint*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glScissorArrayv(
@@ -8258,7 +8258,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glScissorArrayv__II_3II(JNIEnv* env, jcl
 
 // void glScissorIndexed(GLuint index, GLint left, GLint bottom, GLsizei width, GLsizei height);
 // public static native void glScissorIndexed(int index, int left, int bottom, int width, int height);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glScissorIndexed(JNIEnv* env, jclass clazz, jint index, jint left, jint bottom, jint width, jint height)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glScissorIndexed(JNIEnv* env, jclass clazz, jint index, jint left, jint bottom, jint width, jint height)
 {
     glScissorIndexed(
         (GLuint)index,
@@ -8270,7 +8270,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glScissorIndexed(JNIEnv* env, jclass cla
 
 // void glScissorIndexedv(GLuint index, GLint* v);
 // public static native void glScissorIndexedv(int index, IntBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glScissorIndexedv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glScissorIndexedv__ILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glScissorIndexedv(
         (GLuint)index,
@@ -8279,7 +8279,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glScissorIndexedv__ILjava_nio_IntBuffer_
 
 // void glScissorIndexedv(GLuint index, GLint* v);
 // public static native void glScissorIndexedv(int index, int[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glScissorIndexedv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glScissorIndexedv__I_3II(JNIEnv* env, jclass clazz, jint index, jintArray v, jint vOffset)
 {
     jint* j_v = v ? (jint*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glScissorIndexedv(
@@ -8290,7 +8290,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glScissorIndexedv__I_3II(JNIEnv* env, jc
 
 // void glShaderBinary(GLsizei count, GLuint* shaders, GLenum binaryformat, GLvoid* binary, GLsizei length);
 // public static native void glShaderBinary(int count, IntBuffer shaders, int binaryformat, Buffer binary, int length);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glShaderBinary__ILjava_nio_IntBuffer_2ILjava_nio_Buffer_2I(JNIEnv* env, jclass clazz, jint count, jobject shaders, jint binaryformat, jobject binary, jint length)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glShaderBinary__ILjava_nio_IntBuffer_2ILjava_nio_Buffer_2I(JNIEnv* env, jclass clazz, jint count, jobject shaders, jint binaryformat, jobject binary, jint length)
 {
     glShaderBinary(
         (GLsizei)count,
@@ -8302,7 +8302,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glShaderBinary__ILjava_nio_IntBuffer_2IL
 
 // void glShaderBinary(GLsizei count, GLuint* shaders, GLenum binaryformat, GLvoid* binary, GLsizei length);
 // public static native void glShaderBinary(int count, int[] shaders, int shadersOffset, int binaryformat, long binary, int length);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glShaderBinary__I_3IIIJI(JNIEnv* env, jclass clazz, jint count, jintArray shaders, jint shadersOffset, jint binaryformat, jlong binary, jint length)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glShaderBinary__I_3IIIJI(JNIEnv* env, jclass clazz, jint count, jintArray shaders, jint shadersOffset, jint binaryformat, jlong binary, jint length)
 {
     jint* j_shaders = shaders ? (jint*)((*env)->GetPrimitiveArrayCritical(env, shaders, 0)) : 0;
     glShaderBinary(
@@ -8316,7 +8316,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glShaderBinary__I_3IIIJI(JNIEnv* env, jc
 
 // void glUseProgramStages(GLuint pipeline, GLbitfield stages, GLuint program);
 // public static native void glUseProgramStages(int pipeline, int stages, int program);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUseProgramStages(JNIEnv* env, jclass clazz, jint pipeline, jint stages, jint program)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glUseProgramStages(JNIEnv* env, jclass clazz, jint pipeline, jint stages, jint program)
 {
     glUseProgramStages(
         (GLuint)pipeline,
@@ -8326,7 +8326,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glUseProgramStages(JNIEnv* env, jclass c
 
 // void glValidateProgramPipeline(GLuint pipeline);
 // public static native void glValidateProgramPipeline(int pipeline);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glValidateProgramPipeline(JNIEnv* env, jclass clazz, jint pipeline)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glValidateProgramPipeline(JNIEnv* env, jclass clazz, jint pipeline)
 {
     glValidateProgramPipeline(
         (GLuint)pipeline);
@@ -8334,7 +8334,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glValidateProgramPipeline(JNIEnv* env, j
 
 // void glVertexAttribL1d(GLuint index, GLdouble x);
 // public static native void glVertexAttribL1d(int index, double x);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL1d(JNIEnv* env, jclass clazz, jint index, jdouble x)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribL1d(JNIEnv* env, jclass clazz, jint index, jdouble x)
 {
     glVertexAttribL1d(
         (GLuint)index,
@@ -8343,7 +8343,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL1d(JNIEnv* env, jclass cl
 
 // void glVertexAttribL1dv(GLuint index, GLdouble* v);
 // public static native void glVertexAttribL1dv(int index, DoubleBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL1dv__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribL1dv__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttribL1dv(
         (GLuint)index,
@@ -8352,7 +8352,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL1dv__ILjava_nio_DoubleBuf
 
 // void glVertexAttribL1dv(GLuint index, GLdouble* v);
 // public static native void glVertexAttribL1dv(int index, double[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL1dv__I_3DI(JNIEnv* env, jclass clazz, jint index, jdoubleArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribL1dv__I_3DI(JNIEnv* env, jclass clazz, jint index, jdoubleArray v, jint vOffset)
 {
     jdouble* j_v = v ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttribL1dv(
@@ -8363,7 +8363,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL1dv__I_3DI(JNIEnv* env, j
 
 // void glVertexAttribL2d(GLuint index, GLdouble x, GLdouble y);
 // public static native void glVertexAttribL2d(int index, double x, double y);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL2d(JNIEnv* env, jclass clazz, jint index, jdouble x, jdouble y)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribL2d(JNIEnv* env, jclass clazz, jint index, jdouble x, jdouble y)
 {
     glVertexAttribL2d(
         (GLuint)index,
@@ -8373,7 +8373,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL2d(JNIEnv* env, jclass cl
 
 // void glVertexAttribL2dv(GLuint index, GLdouble* v);
 // public static native void glVertexAttribL2dv(int index, DoubleBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL2dv__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribL2dv__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttribL2dv(
         (GLuint)index,
@@ -8382,7 +8382,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL2dv__ILjava_nio_DoubleBuf
 
 // void glVertexAttribL2dv(GLuint index, GLdouble* v);
 // public static native void glVertexAttribL2dv(int index, double[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL2dv__I_3DI(JNIEnv* env, jclass clazz, jint index, jdoubleArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribL2dv__I_3DI(JNIEnv* env, jclass clazz, jint index, jdoubleArray v, jint vOffset)
 {
     jdouble* j_v = v ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttribL2dv(
@@ -8393,7 +8393,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL2dv__I_3DI(JNIEnv* env, j
 
 // void glVertexAttribL3d(GLuint index, GLdouble x, GLdouble y, GLdouble z);
 // public static native void glVertexAttribL3d(int index, double x, double y, double z);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL3d(JNIEnv* env, jclass clazz, jint index, jdouble x, jdouble y, jdouble z)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribL3d(JNIEnv* env, jclass clazz, jint index, jdouble x, jdouble y, jdouble z)
 {
     glVertexAttribL3d(
         (GLuint)index,
@@ -8404,7 +8404,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL3d(JNIEnv* env, jclass cl
 
 // void glVertexAttribL3dv(GLuint index, GLdouble* v);
 // public static native void glVertexAttribL3dv(int index, DoubleBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL3dv__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribL3dv__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttribL3dv(
         (GLuint)index,
@@ -8413,7 +8413,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL3dv__ILjava_nio_DoubleBuf
 
 // void glVertexAttribL3dv(GLuint index, GLdouble* v);
 // public static native void glVertexAttribL3dv(int index, double[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL3dv__I_3DI(JNIEnv* env, jclass clazz, jint index, jdoubleArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribL3dv__I_3DI(JNIEnv* env, jclass clazz, jint index, jdoubleArray v, jint vOffset)
 {
     jdouble* j_v = v ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttribL3dv(
@@ -8424,7 +8424,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL3dv__I_3DI(JNIEnv* env, j
 
 // void glVertexAttribL4d(GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
 // public static native void glVertexAttribL4d(int index, double x, double y, double z, double w);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL4d(JNIEnv* env, jclass clazz, jint index, jdouble x, jdouble y, jdouble z, jdouble w)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribL4d(JNIEnv* env, jclass clazz, jint index, jdouble x, jdouble y, jdouble z, jdouble w)
 {
     glVertexAttribL4d(
         (GLuint)index,
@@ -8436,7 +8436,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL4d(JNIEnv* env, jclass cl
 
 // void glVertexAttribL4dv(GLuint index, GLdouble* v);
 // public static native void glVertexAttribL4dv(int index, DoubleBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL4dv__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribL4dv__ILjava_nio_DoubleBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glVertexAttribL4dv(
         (GLuint)index,
@@ -8445,7 +8445,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL4dv__ILjava_nio_DoubleBuf
 
 // void glVertexAttribL4dv(GLuint index, GLdouble* v);
 // public static native void glVertexAttribL4dv(int index, double[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL4dv__I_3DI(JNIEnv* env, jclass clazz, jint index, jdoubleArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribL4dv__I_3DI(JNIEnv* env, jclass clazz, jint index, jdoubleArray v, jint vOffset)
 {
     jdouble* j_v = v ? (jdouble*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glVertexAttribL4dv(
@@ -8456,7 +8456,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribL4dv__I_3DI(JNIEnv* env, j
 
 // void glVertexAttribLPointer(GLuint index, GLint size, GLenum type, GLsizei stride, GLvoid* pointer);
 // public static native void glVertexAttribLPointer(int index, int size, int type, int stride, Buffer pointer);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribLPointer__IIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint index, jint size, jint type, jint stride, jobject pointer)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribLPointer__IIIILjava_nio_Buffer_2(JNIEnv* env, jclass clazz, jint index, jint size, jint type, jint stride, jobject pointer)
 {
     glVertexAttribLPointer(
         (GLuint)index,
@@ -8468,7 +8468,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribLPointer__IIIILjava_nio_Bu
 
 // void glVertexAttribLPointer(GLuint index, GLint size, GLenum type, GLsizei stride, GLvoid* pointer);
 // public static native void glVertexAttribLPointer(int index, int size, int type, int stride, long pointer);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribLPointer__IIIIJ(JNIEnv* env, jclass clazz, jint index, jint size, jint type, jint stride, jlong pointer)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribLPointer__IIIIJ(JNIEnv* env, jclass clazz, jint index, jint size, jint type, jint stride, jlong pointer)
 {
     glVertexAttribLPointer(
         (GLuint)index,
@@ -8480,7 +8480,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glVertexAttribLPointer__IIIIJ(JNIEnv* en
 
 // void glViewportArrayv(GLuint first, GLsizei count, GLfloat* v);
 // public static native void glViewportArrayv(int first, int count, FloatBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glViewportArrayv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint first, jint count, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glViewportArrayv__IILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint first, jint count, jobject v)
 {
     glViewportArrayv(
         (GLuint)first,
@@ -8490,7 +8490,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glViewportArrayv__IILjava_nio_FloatBuffe
 
 // void glViewportArrayv(GLuint first, GLsizei count, GLfloat* v);
 // public static native void glViewportArrayv(int first, int count, float[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glViewportArrayv__II_3FI(JNIEnv* env, jclass clazz, jint first, jint count, jfloatArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glViewportArrayv__II_3FI(JNIEnv* env, jclass clazz, jint first, jint count, jfloatArray v, jint vOffset)
 {
     jfloat* j_v = v ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glViewportArrayv(
@@ -8502,7 +8502,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glViewportArrayv__II_3FI(JNIEnv* env, jc
 
 // void glViewportIndexedf(GLuint index, GLfloat x, GLfloat y, GLfloat w, GLfloat h);
 // public static native void glViewportIndexedf(int index, float x, float y, float w, float h);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glViewportIndexedf(JNIEnv* env, jclass clazz, jint index, jfloat x, jfloat y, jfloat w, jfloat h)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glViewportIndexedf(JNIEnv* env, jclass clazz, jint index, jfloat x, jfloat y, jfloat w, jfloat h)
 {
     glViewportIndexedf(
         (GLuint)index,
@@ -8514,7 +8514,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glViewportIndexedf(JNIEnv* env, jclass c
 
 // void glViewportIndexedfv(GLuint index, GLfloat* v);
 // public static native void glViewportIndexedfv(int index, FloatBuffer v);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glViewportIndexedfv__ILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glViewportIndexedfv__ILjava_nio_FloatBuffer_2(JNIEnv* env, jclass clazz, jint index, jobject v)
 {
     glViewportIndexedfv(
         (GLuint)index,
@@ -8523,7 +8523,7 @@ JNIEXPORT void JNICALL Java_njsdl_gl_GL_glViewportIndexedfv__ILjava_nio_FloatBuf
 
 // void glViewportIndexedfv(GLuint index, GLfloat* v);
 // public static native void glViewportIndexedfv(int index, float[] v, int vOffset);
-JNIEXPORT void JNICALL Java_njsdl_gl_GL_glViewportIndexedfv__I_3FI(JNIEnv* env, jclass clazz, jint index, jfloatArray v, jint vOffset)
+JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glViewportIndexedfv__I_3FI(JNIEnv* env, jclass clazz, jint index, jfloatArray v, jint vOffset)
 {
     jfloat* j_v = v ? (jfloat*)((*env)->GetPrimitiveArrayCritical(env, v, 0)) : 0;
     glViewportIndexedfv(
