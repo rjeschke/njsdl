@@ -3,7 +3,11 @@
 * See LICENSE.txt for licensing information.
 */
 #include <jni.h>
+#ifdef MACOS
+#include <stdlib.h>
+#else
 #include <malloc.h>
+#endif
 #include <string.h>
 #include "ngl3.h"
 
@@ -5329,6 +5333,7 @@ JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetSamplerParamete
     if(params) (*env)->ReleasePrimitiveArrayCritical(env, params, j_params, 0);
 }
 
+#ifndef MACOS
 // void glGetSamplerParameterIuiv(GLuint sampler, GLenum pname, GLuint* params);
 // public static native void glGetSamplerParameterIuiv(int sampler, int pname, IntBuffer params);
 JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetSamplerParameterIuiv__IILjava_nio_IntBuffer_2(JNIEnv* env, jclass clazz, jint sampler, jint pname, jobject params)
@@ -5350,6 +5355,7 @@ JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glGetSamplerParamete
         (GLuint*)(j_params + paramsOffset));
     if(params) (*env)->ReleasePrimitiveArrayCritical(env, params, j_params, 0);
 }
+#endif
 
 // void glGetSamplerParameterfv(GLuint sampler, GLenum pname, GLfloat* params);
 // public static native void glGetSamplerParameterfv(int sampler, int pname, FloatBuffer params);
@@ -5824,6 +5830,7 @@ JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glTexCoordP4uiv__I_3
     if(coords) (*env)->ReleasePrimitiveArrayCritical(env, coords, j_coords, 0);
 }
 
+#ifndef MACOS
 // void glVertexAttribDivisor(GLuint index, GLuint divisor);
 // public static native void glVertexAttribDivisor(int index, int divisor);
 JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribDivisor(JNIEnv* env, jclass clazz, jint index, jint divisor)
@@ -5832,6 +5839,7 @@ JNIEXPORT void JNICALL Java_com_github_rjeschke_njsdl_gl_GL_glVertexAttribDiviso
         (GLuint)index,
         (GLuint)divisor);
 }
+#endif
 
 // void glVertexAttribP1ui(GLuint index, GLenum type, GLboolean normalized, GLuint value);
 // public static native void glVertexAttribP1ui(int index, int type, boolean normalized, int value);

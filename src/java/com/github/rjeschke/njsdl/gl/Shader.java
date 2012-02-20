@@ -13,9 +13,6 @@ import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 import java.util.HashMap;
 
-import com.github.rjeschke.njsdl.Buffers;
-
-
 public class Shader
 {
 	private int glProgram = -1;
@@ -226,7 +223,7 @@ public class Shader
 	
 	public void setUniformMat4(final String name, final Mat4 matrix)
 	{
-		GL.glUniformMatrix4fv(this.getUniLoc(name), 1, false, matrix.data);
+		GL.glUniformMatrix4fv(this.getUniLoc(name), 1, false, matrix.data, 0);
 	}
 	
 	public void setUniform1f(final String name, final float v0)
@@ -251,7 +248,7 @@ public class Shader
 
     public void setUniform2f(final String name, final Vec2 v)
     {
-        GL.glUniform2fv(this.getUniLoc(name), 2, v.data);
+        GL.glUniform2fv(this.getUniLoc(name), 2, v.data, 0);
     }
 
     public void setUniform2f(final String name, final float v0, final float v1)
@@ -261,18 +258,18 @@ public class Shader
 
 	public void setUniform2f(final String name, final Vec2[] v)
 	{
-	    final FloatBuffer buffer = Buffers.newFloat(2 * v.length);
+	    final float[] buffer = new float[2 * v.length];
     	for(int i = 0; i < v.length; i++)
     	{
-    	    buffer.put(i * 2 + 0, v[i].data.get(0));
-    	    buffer.put(i * 2 + 1, v[i].data.get(1));
+    	    buffer[i * 2 + 0] = v[i].data[0];
+    	    buffer[i * 2 + 1] = v[i].data[1];
     	}
-    	GL.glUniform2fv(this.getUniLoc(name), v.length, buffer);
+    	GL.glUniform2fv(this.getUniLoc(name), v.length, buffer, 0);
 	}
 
     public void setUniform3f(final String name, final Vec3 v)
     {
-        GL.glUniform3fv(this.getUniLoc(name), 3, v.data);
+        GL.glUniform3fv(this.getUniLoc(name), 3, v.data, 0);
     }
 
 	public void setUniform3f(final String name, final float v0, final float v1, final float v2)
@@ -282,19 +279,19 @@ public class Shader
 
     public void setUniform3fv(final String name, final Vec3[] v)
     {
-        final FloatBuffer buffer = Buffers.newFloat(3 * v.length);
+        final float[] buffer = new float[3 * v.length];
         for(int i = 0; i < v.length; i++)
         {
-            buffer.put(i * 3 + 0, v[i].data.get(0));
-            buffer.put(i * 3 + 1, v[i].data.get(1));
-            buffer.put(i * 3 + 2, v[i].data.get(2));
+            buffer[i * 3 + 0] = v[i].data[0];
+            buffer[i * 3 + 1] = v[i].data[1];
+            buffer[i * 3 + 2] = v[i].data[2];
         }
-        GL.glUniform3fv(this.getUniLoc(name), v.length, buffer);
+        GL.glUniform3fv(this.getUniLoc(name), v.length, buffer, 0);
     }
 
     public void setUniform4f(final String name, final Vec4 v)
     {
-        GL.glUniform4fv(this.getUniLoc(name), 4, v.data);
+        GL.glUniform4fv(this.getUniLoc(name), 4, v.data, 0);
     }
 
     public void setUniform4f(final String name, final Vec3 v, final float w)
@@ -309,15 +306,15 @@ public class Shader
 
     public void setUniform4f(final String name, final Vec4[] v)
     {
-        final FloatBuffer buffer = Buffers.newFloat(4 * v.length);
+        final float[] buffer = new float[4 * v.length];
         for(int i = 0; i < v.length; i++)
         {
-            buffer.put(i * 4 + 0, v[i].data.get(0));
-            buffer.put(i * 4 + 1, v[i].data.get(1));
-            buffer.put(i * 4 + 2, v[i].data.get(2));
-            buffer.put(i * 4 + 3, v[i].data.get(3));
+            buffer[i * 4 + 0] = v[i].data[0];
+            buffer[i * 4 + 1] = v[i].data[1];
+            buffer[i * 4 + 2] = v[i].data[2];
+            buffer[i * 4 + 3] = v[i].data[3];
         }
-        GL.glUniform4fv(this.getUniLoc(name), v.length, buffer);
+        GL.glUniform4fv(this.getUniLoc(name), v.length, buffer, 0);
     }
 
     public void setUniform1i(final String name, final int v0)

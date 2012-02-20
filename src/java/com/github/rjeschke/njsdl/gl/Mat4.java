@@ -4,12 +4,6 @@
 */
 package com.github.rjeschke.njsdl.gl;
 
-import java.nio.FloatBuffer;
-
-import com.github.rjeschke.njsdl.Buffers;
-
-
-
 public class Mat4
 {
 	public final static int M00 = 0 * 4 + 0;
@@ -28,7 +22,7 @@ public class Mat4
 	public final static int M31 = 1 * 4 + 3;
 	public final static int M32 = 2 * 4 + 3;
 	public final static int M33 = 3 * 4 + 3;
-	protected final FloatBuffer data = Buffers.newFloat(16);
+	protected final float[] data = new float[16];
 
 	public final static Mat4 IDENTITY = Mat4.identity();
 	
@@ -45,14 +39,14 @@ public class Mat4
             {
                 for(int x = 0; x < 4; x++)
                 {
-                    this.data.put(y * 4 + x, m[x * 4 + y]);
+                    this.data[y * 4 + x] = m[x * 4 + y];
                 }
             }
 	    }
         else
         {
-            this.data.put(m);
-            this.data.rewind();
+            for(int i = 0; i < 16; i++)
+                this.data[i] = m[i];
         }
 	}
 
@@ -64,111 +58,111 @@ public class Mat4
     private static Mat4 identity()
 	{
 		final Mat4 mat = new Mat4();
-		mat.data.put(M00, 1.0f);
-		mat.data.put(M11, 1.0f);
-		mat.data.put(M22, 1.0f);
-		mat.data.put(M33, 1.0f);
+		mat.data[M00] = 1.0f;
+		mat.data[M11] = 1.0f;
+		mat.data[M22] = 1.0f;
+		mat.data[M33] = 1.0f;
 		return mat;
 	}
 
 	public float determinant()
 	{
-		final float s0 = this.data.get(M00) * this.data.get(M11) - this.data.get(M01) * this.data.get(M10);
-		final float s1 = this.data.get(M00) * this.data.get(M12) - this.data.get(M02) * this.data.get(M10);
-		final float s2 = this.data.get(M00) * this.data.get(M13) - this.data.get(M03) * this.data.get(M10);
-		final float s3 = this.data.get(M01) * this.data.get(M12) - this.data.get(M02) * this.data.get(M13);
-		final float s4 = this.data.get(M01) * this.data.get(M13) - this.data.get(M03) * this.data.get(M11);
-		final float s5 = this.data.get(M02) * this.data.get(M13) - this.data.get(M03) * this.data.get(M12);
+		final float s0 = this.data[M00] * this.data[M11] - this.data[M01] * this.data[M10];
+		final float s1 = this.data[M00] * this.data[M12] - this.data[M02] * this.data[M10];
+		final float s2 = this.data[M00] * this.data[M13] - this.data[M03] * this.data[M10];
+		final float s3 = this.data[M01] * this.data[M12] - this.data[M02] * this.data[M13];
+		final float s4 = this.data[M01] * this.data[M13] - this.data[M03] * this.data[M11];
+		final float s5 = this.data[M02] * this.data[M13] - this.data[M03] * this.data[M12];
 		
-		final float c5 = this.data.get(M22) * this.data.get(M33) - this.data.get(M23) * this.data.get(M32);
-		final float c4 = this.data.get(M21) * this.data.get(M33) - this.data.get(M23) * this.data.get(M31);
-		final float c3 = this.data.get(M21) * this.data.get(M32) - this.data.get(M22) * this.data.get(M31);
-		final float c2 = this.data.get(M20) * this.data.get(M33) - this.data.get(M23) * this.data.get(M30);
-		final float c1 = this.data.get(M20) * this.data.get(M32) - this.data.get(M22) * this.data.get(M30);
-		final float c0 = this.data.get(M20) * this.data.get(M31) - this.data.get(M21) * this.data.get(M30);
+		final float c5 = this.data[M22] * this.data[M33] - this.data[M23] * this.data[M32];
+		final float c4 = this.data[M21] * this.data[M33] - this.data[M23] * this.data[M31];
+		final float c3 = this.data[M21] * this.data[M32] - this.data[M22] * this.data[M31];
+		final float c2 = this.data[M20] * this.data[M33] - this.data[M23] * this.data[M30];
+		final float c1 = this.data[M20] * this.data[M32] - this.data[M22] * this.data[M30];
+		final float c0 = this.data[M20] * this.data[M31] - this.data[M21] * this.data[M30];
 		
 		return s0 * c5 - s1 * c4 + s2 * c3 + s3 * c2 - s4 * c1 + s5 * c0;
 	}
 	
 	public Mat4 adjugate()
 	{
-		final float s0 = this.data.get(M00) * this.data.get(M11) - this.data.get(M01) * this.data.get(M10);
-		final float s1 = this.data.get(M00) * this.data.get(M12) - this.data.get(M02) * this.data.get(M10);
-		final float s2 = this.data.get(M00) * this.data.get(M13) - this.data.get(M03) * this.data.get(M10);
-		final float s3 = this.data.get(M01) * this.data.get(M12) - this.data.get(M02) * this.data.get(M13);
-		final float s4 = this.data.get(M01) * this.data.get(M13) - this.data.get(M03) * this.data.get(M11);
-		final float s5 = this.data.get(M02) * this.data.get(M13) - this.data.get(M03) * this.data.get(M12);
+		final float s0 = this.data[M00] * this.data[M11] - this.data[M01] * this.data[M10];
+		final float s1 = this.data[M00] * this.data[M12] - this.data[M02] * this.data[M10];
+		final float s2 = this.data[M00] * this.data[M13] - this.data[M03] * this.data[M10];
+		final float s3 = this.data[M01] * this.data[M12] - this.data[M02] * this.data[M13];
+		final float s4 = this.data[M01] * this.data[M13] - this.data[M03] * this.data[M11];
+		final float s5 = this.data[M02] * this.data[M13] - this.data[M03] * this.data[M12];
 		
-		final float c5 = this.data.get(M22) * this.data.get(M33) - this.data.get(M23) * this.data.get(M32);
-		final float c4 = this.data.get(M21) * this.data.get(M33) - this.data.get(M23) * this.data.get(M31);
-		final float c3 = this.data.get(M21) * this.data.get(M32) - this.data.get(M22) * this.data.get(M31);
-		final float c2 = this.data.get(M20) * this.data.get(M33) - this.data.get(M23) * this.data.get(M30);
-		final float c1 = this.data.get(M20) * this.data.get(M32) - this.data.get(M22) * this.data.get(M30);
-		final float c0 = this.data.get(M20) * this.data.get(M31) - this.data.get(M21) * this.data.get(M30);
+		final float c5 = this.data[M22] * this.data[M33] - this.data[M23] * this.data[M32];
+		final float c4 = this.data[M21] * this.data[M33] - this.data[M23] * this.data[M31];
+		final float c3 = this.data[M21] * this.data[M32] - this.data[M22] * this.data[M31];
+		final float c2 = this.data[M20] * this.data[M33] - this.data[M23] * this.data[M30];
+		final float c1 = this.data[M20] * this.data[M32] - this.data[M22] * this.data[M30];
+		final float c0 = this.data[M20] * this.data[M31] - this.data[M21] * this.data[M30];
 
 		final Mat4 mat = new Mat4();
 		
-		mat.data.put(M00,  this.data.get(M11) * c5 - this.data.get(M12) * c4 + this.data.get(M13) * c3);
-		mat.data.put(M01, -this.data.get(M01) * c5 + this.data.get(M02) * c4 - this.data.get(M03) * c3);
-		mat.data.put(M02,  this.data.get(M31) * s5 - this.data.get(M32) * s4 + this.data.get(M33) * s3);
-		mat.data.put(M03, -this.data.get(M21) * s5 + this.data.get(M22) * s4 - this.data.get(M23) * s3);
+		mat.data[M00] =  this.data[M11] * c5 - this.data[M12] * c4 + this.data[M13] * c3;
+		mat.data[M01] = -this.data[M01] * c5 + this.data[M02] * c4 - this.data[M03] * c3;
+		mat.data[M02] =  this.data[M31] * s5 - this.data[M32] * s4 + this.data[M33] * s3;
+		mat.data[M03] = -this.data[M21] * s5 + this.data[M22] * s4 - this.data[M23] * s3;
 		
-		mat.data.put(M10, -this.data.get(M10) * c5 + this.data.get(M12) * c2 - this.data.get(M13) * c1);
-		mat.data.put(M11,  this.data.get(M00) * c5 - this.data.get(M02) * c2 + this.data.get(M03) * c1);
-		mat.data.put(M12, -this.data.get(M30) * s5 + this.data.get(M32) * s2 - this.data.get(M33) * s1);
-		mat.data.put(M13,  this.data.get(M20) * s5 - this.data.get(M22) * s2 + this.data.get(M23) * s1);
+		mat.data[M10] = -this.data[M10] * c5 + this.data[M12] * c2 - this.data[M13] * c1;
+		mat.data[M11] =  this.data[M00] * c5 - this.data[M02] * c2 + this.data[M03] * c1;
+		mat.data[M12] = -this.data[M30] * s5 + this.data[M32] * s2 - this.data[M33] * s1;
+		mat.data[M13] =  this.data[M20] * s5 - this.data[M22] * s2 + this.data[M23] * s1;
 
-		mat.data.put(M20,  this.data.get(M10) * c4 - this.data.get(M11) * c2 + this.data.get(M13) * c0);
-		mat.data.put(M21, -this.data.get(M00) * c4 + this.data.get(M01) * c2 - this.data.get(M03) * c0);
-		mat.data.put(M22,  this.data.get(M30) * s4 - this.data.get(M31) * s2 + this.data.get(M33) * s0);
-		mat.data.put(M23, -this.data.get(M20) * s4 + this.data.get(M21) * s2 - this.data.get(M23) * s0);
+		mat.data[M20] =  this.data[M10] * c4 - this.data[M11] * c2 + this.data[M13] * c0;
+		mat.data[M21] = -this.data[M00] * c4 + this.data[M01] * c2 - this.data[M03] * c0;
+		mat.data[M22] =  this.data[M30] * s4 - this.data[M31] * s2 + this.data[M33] * s0;
+		mat.data[M23] = -this.data[M20] * s4 + this.data[M21] * s2 - this.data[M23] * s0;
 
-		mat.data.put(M30, -this.data.get(M10) * c3 + this.data.get(M11) * c1 - this.data.get(M12) * c0);
-		mat.data.put(M31,  this.data.get(M00) * c3 - this.data.get(M01) * c1 + this.data.get(M02) * c0);
-		mat.data.put(M32, -this.data.get(M30) * s3 + this.data.get(M31) * s1 - this.data.get(M32) * s0);
-		mat.data.put(M33,  this.data.get(M20) * s3 - this.data.get(M21) * s1 + this.data.get(M22) * s0);
+		mat.data[M30] = -this.data[M10] * c3 + this.data[M11] * c1 - this.data[M12] * c0;
+		mat.data[M31] =  this.data[M00] * c3 - this.data[M01] * c1 + this.data[M02] * c0;
+		mat.data[M32] = -this.data[M30] * s3 + this.data[M31] * s1 - this.data[M32] * s0;
+		mat.data[M33] =  this.data[M20] * s3 - this.data[M21] * s1 + this.data[M22] * s0;
 
 		return mat;
 	}
 
 	public Mat4 inverse()
 	{
-		final float s0 = this.data.get(M00) * this.data.get(M11) - this.data.get(M01) * this.data.get(M10);
-		final float s1 = this.data.get(M00) * this.data.get(M12) - this.data.get(M02) * this.data.get(M10);
-		final float s2 = this.data.get(M00) * this.data.get(M13) - this.data.get(M03) * this.data.get(M10);
-		final float s3 = this.data.get(M01) * this.data.get(M12) - this.data.get(M02) * this.data.get(M13);
-		final float s4 = this.data.get(M01) * this.data.get(M13) - this.data.get(M03) * this.data.get(M11);
-		final float s5 = this.data.get(M02) * this.data.get(M13) - this.data.get(M03) * this.data.get(M12);
+		final float s0 = this.data[M00] * this.data[M11] - this.data[M01] * this.data[M10];
+		final float s1 = this.data[M00] * this.data[M12] - this.data[M02] * this.data[M10];
+		final float s2 = this.data[M00] * this.data[M13] - this.data[M03] * this.data[M10];
+		final float s3 = this.data[M01] * this.data[M12] - this.data[M02] * this.data[M13];
+		final float s4 = this.data[M01] * this.data[M13] - this.data[M03] * this.data[M11];
+		final float s5 = this.data[M02] * this.data[M13] - this.data[M03] * this.data[M12];
 		
-		final float c5 = this.data.get(M22) * this.data.get(M33) - this.data.get(M23) * this.data.get(M32);
-		final float c4 = this.data.get(M21) * this.data.get(M33) - this.data.get(M23) * this.data.get(M31);
-		final float c3 = this.data.get(M21) * this.data.get(M32) - this.data.get(M22) * this.data.get(M31);
-		final float c2 = this.data.get(M20) * this.data.get(M33) - this.data.get(M23) * this.data.get(M30);
-		final float c1 = this.data.get(M20) * this.data.get(M32) - this.data.get(M22) * this.data.get(M30);
-		final float c0 = this.data.get(M20) * this.data.get(M31) - this.data.get(M21) * this.data.get(M30);
+		final float c5 = this.data[M22] * this.data[M33] - this.data[M23] * this.data[M32];
+		final float c4 = this.data[M21] * this.data[M33] - this.data[M23] * this.data[M31];
+		final float c3 = this.data[M21] * this.data[M32] - this.data[M22] * this.data[M31];
+		final float c2 = this.data[M20] * this.data[M33] - this.data[M23] * this.data[M30];
+		final float c1 = this.data[M20] * this.data[M32] - this.data[M22] * this.data[M30];
+		final float c0 = this.data[M20] * this.data[M31] - this.data[M21] * this.data[M30];
 
 		final Mat4 mat = new Mat4();
 		final float rcpdet = 1.0f / (s0 * c5 - s1 * c4 + s2 * c3 + s3 * c2 - s4 * c1 + s5 * c0);
 		
-		mat.data.put(M00, ( this.data.get(M11) * c5 - this.data.get(M12) * c4 + this.data.get(M13) * c3) * rcpdet);
-		mat.data.put(M01, (-this.data.get(M01) * c5 + this.data.get(M02) * c4 - this.data.get(M03) * c3) * rcpdet);
-		mat.data.put(M02, ( this.data.get(M31) * s5 - this.data.get(M32) * s4 + this.data.get(M33) * s3) * rcpdet);
-		mat.data.put(M03, (-this.data.get(M21) * s5 + this.data.get(M22) * s4 - this.data.get(M23) * s3) * rcpdet);
+		mat.data[M00] = ( this.data[M11] * c5 - this.data[M12] * c4 + this.data[M13] * c3) * rcpdet;
+		mat.data[M01] = (-this.data[M01] * c5 + this.data[M02] * c4 - this.data[M03] * c3) * rcpdet;
+		mat.data[M02] = ( this.data[M31] * s5 - this.data[M32] * s4 + this.data[M33] * s3) * rcpdet;
+		mat.data[M03] = (-this.data[M21] * s5 + this.data[M22] * s4 - this.data[M23] * s3) * rcpdet;
 		
-		mat.data.put(M10, (-this.data.get(M10) * c5 + this.data.get(M12) * c2 - this.data.get(M13) * c1) * rcpdet);
-		mat.data.put(M11, ( this.data.get(M00) * c5 - this.data.get(M02) * c2 + this.data.get(M03) * c1) * rcpdet);
-		mat.data.put(M12, (-this.data.get(M30) * s5 + this.data.get(M32) * s2 - this.data.get(M33) * s1) * rcpdet);
-		mat.data.put(M13, ( this.data.get(M20) * s5 - this.data.get(M22) * s2 + this.data.get(M23) * s1) * rcpdet);
+		mat.data[M10] = (-this.data[M10] * c5 + this.data[M12] * c2 - this.data[M13] * c1) * rcpdet;
+		mat.data[M11] = ( this.data[M00] * c5 - this.data[M02] * c2 + this.data[M03] * c1) * rcpdet;
+		mat.data[M12] = (-this.data[M30] * s5 + this.data[M32] * s2 - this.data[M33] * s1) * rcpdet;
+		mat.data[M13] = ( this.data[M20] * s5 - this.data[M22] * s2 + this.data[M23] * s1) * rcpdet;
 
-		mat.data.put(M20, ( this.data.get(M10) * c4 - this.data.get(M11) * c2 + this.data.get(M13) * c0) * rcpdet);
-		mat.data.put(M21, (-this.data.get(M00) * c4 + this.data.get(M01) * c2 - this.data.get(M03) * c0) * rcpdet);
-		mat.data.put(M22, ( this.data.get(M30) * s4 - this.data.get(M31) * s2 + this.data.get(M33) * s0) * rcpdet);
-		mat.data.put(M23, (-this.data.get(M20) * s4 + this.data.get(M21) * s2 - this.data.get(M23) * s0) * rcpdet);
+		mat.data[M20] = ( this.data[M10] * c4 - this.data[M11] * c2 + this.data[M13] * c0) * rcpdet;
+		mat.data[M21] = (-this.data[M00] * c4 + this.data[M01] * c2 - this.data[M03] * c0) * rcpdet;
+		mat.data[M22] = ( this.data[M30] * s4 - this.data[M31] * s2 + this.data[M33] * s0) * rcpdet;
+		mat.data[M23] = (-this.data[M20] * s4 + this.data[M21] * s2 - this.data[M23] * s0) * rcpdet;
 
-		mat.data.put(M30, (-this.data.get(M10) * c3 + this.data.get(M11) * c1 - this.data.get(M12) * c0) * rcpdet);
-		mat.data.put(M31, ( this.data.get(M00) * c3 - this.data.get(M01) * c1 + this.data.get(M02) * c0) * rcpdet);
-		mat.data.put(M32, (-this.data.get(M30) * s3 + this.data.get(M31) * s1 - this.data.get(M32) * s0) * rcpdet);
-		mat.data.put(M33, ( this.data.get(M20) * s3 - this.data.get(M21) * s1 + this.data.get(M22) * s0) * rcpdet);
+		mat.data[M31] = ( this.data[M00] * c3 - this.data[M01] * c1 + this.data[M02] * c0) * rcpdet;
+		mat.data[M30] = (-this.data[M10] * c3 + this.data[M11] * c1 - this.data[M12] * c0) * rcpdet;
+		mat.data[M33] = ( this.data[M20] * s3 - this.data[M21] * s1 + this.data[M22] * s0) * rcpdet;
+		mat.data[M32] = (-this.data[M30] * s3 + this.data[M31] * s1 - this.data[M32] * s0) * rcpdet;
 
 		return mat;
 	}
@@ -180,7 +174,7 @@ public class Mat4
 		{
 			for(int x = 0; x < 4; x++)
 			{
-				mat.data.put(y * 4 + x, this.data.get(x * 4 + y));
+				mat.data[y * 4 + x] = this.data[x * 4 + y];
 			}
 		}
 		return mat;
@@ -190,25 +184,25 @@ public class Mat4
 	{
 		final Mat4 r = new Mat4();
 		
-		r.data.put(M00, this.data.get(M00) * mat.data.get(M00) + this.data.get(M01) * mat.data.get(M10) + this.data.get(M02) * mat.data.get(M20) + this.data.get(M03) * mat.data.get(M30));
-		r.data.put(M01, this.data.get(M00) * mat.data.get(M01) + this.data.get(M01) * mat.data.get(M11) + this.data.get(M02) * mat.data.get(M21) + this.data.get(M03) * mat.data.get(M31));
-		r.data.put(M02, this.data.get(M00) * mat.data.get(M02) + this.data.get(M01) * mat.data.get(M12) + this.data.get(M02) * mat.data.get(M22) + this.data.get(M03) * mat.data.get(M32));
-		r.data.put(M03, this.data.get(M00) * mat.data.get(M03) + this.data.get(M01) * mat.data.get(M13) + this.data.get(M02) * mat.data.get(M23) + this.data.get(M03) * mat.data.get(M33));
+		r.data[M00] = this.data[M00] * mat.data[M00] + this.data[M01] * mat.data[M10] + this.data[M02] * mat.data[M20] + this.data[M03] * mat.data[M30];
+		r.data[M01] = this.data[M00] * mat.data[M01] + this.data[M01] * mat.data[M11] + this.data[M02] * mat.data[M21] + this.data[M03] * mat.data[M31];
+		r.data[M02] = this.data[M00] * mat.data[M02] + this.data[M01] * mat.data[M12] + this.data[M02] * mat.data[M22] + this.data[M03] * mat.data[M32];
+		r.data[M03] = this.data[M00] * mat.data[M03] + this.data[M01] * mat.data[M13] + this.data[M02] * mat.data[M23] + this.data[M03] * mat.data[M33];
 		
-		r.data.put(M10, this.data.get(M10) * mat.data.get(M00) + this.data.get(M11) * mat.data.get(M10) + this.data.get(M12) * mat.data.get(M20) + this.data.get(M13) * mat.data.get(M30));
-		r.data.put(M11, this.data.get(M10) * mat.data.get(M01) + this.data.get(M11) * mat.data.get(M11) + this.data.get(M12) * mat.data.get(M21) + this.data.get(M13) * mat.data.get(M31));
-		r.data.put(M12, this.data.get(M10) * mat.data.get(M02) + this.data.get(M11) * mat.data.get(M12) + this.data.get(M12) * mat.data.get(M22) + this.data.get(M13) * mat.data.get(M32));
-		r.data.put(M13, this.data.get(M10) * mat.data.get(M03) + this.data.get(M11) * mat.data.get(M13) + this.data.get(M12) * mat.data.get(M23) + this.data.get(M13) * mat.data.get(M33));
+		r.data[M10] = this.data[M10] * mat.data[M00] + this.data[M11] * mat.data[M10] + this.data[M12] * mat.data[M20] + this.data[M13] * mat.data[M30];
+		r.data[M11] = this.data[M10] * mat.data[M01] + this.data[M11] * mat.data[M11] + this.data[M12] * mat.data[M21] + this.data[M13] * mat.data[M31];
+		r.data[M12] = this.data[M10] * mat.data[M02] + this.data[M11] * mat.data[M12] + this.data[M12] * mat.data[M22] + this.data[M13] * mat.data[M32];
+		r.data[M13] = this.data[M10] * mat.data[M03] + this.data[M11] * mat.data[M13] + this.data[M12] * mat.data[M23] + this.data[M13] * mat.data[M33];
 
-		r.data.put(M20, this.data.get(M20) * mat.data.get(M00) + this.data.get(M21) * mat.data.get(M10) + this.data.get(M22) * mat.data.get(M20) + this.data.get(M23) * mat.data.get(M30));
-		r.data.put(M21, this.data.get(M20) * mat.data.get(M01) + this.data.get(M21) * mat.data.get(M11) + this.data.get(M22) * mat.data.get(M21) + this.data.get(M23) * mat.data.get(M31));
-		r.data.put(M22, this.data.get(M20) * mat.data.get(M02) + this.data.get(M21) * mat.data.get(M12) + this.data.get(M22) * mat.data.get(M22) + this.data.get(M23) * mat.data.get(M32));
-		r.data.put(M23, this.data.get(M20) * mat.data.get(M03) + this.data.get(M21) * mat.data.get(M13) + this.data.get(M22) * mat.data.get(M23) + this.data.get(M23) * mat.data.get(M33));
+		r.data[M20] = this.data[M20] * mat.data[M00] + this.data[M21] * mat.data[M10] + this.data[M22] * mat.data[M20] + this.data[M23] * mat.data[M30];
+		r.data[M21] = this.data[M20] * mat.data[M01] + this.data[M21] * mat.data[M11] + this.data[M22] * mat.data[M21] + this.data[M23] * mat.data[M31];
+		r.data[M22] = this.data[M20] * mat.data[M02] + this.data[M21] * mat.data[M12] + this.data[M22] * mat.data[M22] + this.data[M23] * mat.data[M32];
+		r.data[M23] = this.data[M20] * mat.data[M03] + this.data[M21] * mat.data[M13] + this.data[M22] * mat.data[M23] + this.data[M23] * mat.data[M33];
 
-		r.data.put(M30, this.data.get(M30) * mat.data.get(M00) + this.data.get(M31) * mat.data.get(M10) + this.data.get(M32) * mat.data.get(M20) + this.data.get(M33) * mat.data.get(M30));
-		r.data.put(M31, this.data.get(M30) * mat.data.get(M01) + this.data.get(M31) * mat.data.get(M11) + this.data.get(M32) * mat.data.get(M21) + this.data.get(M33) * mat.data.get(M31));
-		r.data.put(M32, this.data.get(M30) * mat.data.get(M02) + this.data.get(M31) * mat.data.get(M12) + this.data.get(M32) * mat.data.get(M22) + this.data.get(M33) * mat.data.get(M32));
-		r.data.put(M33, this.data.get(M30) * mat.data.get(M03) + this.data.get(M31) * mat.data.get(M13) + this.data.get(M32) * mat.data.get(M23) + this.data.get(M33) * mat.data.get(M33));
+		r.data[M30] = this.data[M30] * mat.data[M00] + this.data[M31] * mat.data[M10] + this.data[M32] * mat.data[M20] + this.data[M33] * mat.data[M30];
+		r.data[M31] = this.data[M30] * mat.data[M01] + this.data[M31] * mat.data[M11] + this.data[M32] * mat.data[M21] + this.data[M33] * mat.data[M31];
+		r.data[M32] = this.data[M30] * mat.data[M02] + this.data[M31] * mat.data[M12] + this.data[M32] * mat.data[M22] + this.data[M33] * mat.data[M32];
+		r.data[M33] = this.data[M30] * mat.data[M03] + this.data[M31] * mat.data[M13] + this.data[M32] * mat.data[M23] + this.data[M33] * mat.data[M33];
 
 		return r;
 	}
@@ -223,17 +217,17 @@ public class Mat4
 			{
 				if(x < 3 && y < 3)
 				{
-					ret.data.put(x + y * 4, this.data.get(x + y * 4));
+					ret.data[x + y * 4] = this.data[x + y * 4];
 				}
 				else
 				{
 					if(x == 3 && y == 3)
 					{
-						ret.data.put(x + y * 4, 1);
+						ret.data[x + y * 4] = 1;
 					}
 					else
 					{
-						ret.data.put(x + y * 4,  0);
+						ret.data[x + y * 4] = 0;
 					}
 				}
 			}
@@ -247,11 +241,11 @@ public class Mat4
 		final float x = vec.getX();
 		final float y = vec.getY();
 		final float z = vec.getZ();
-		final float rcpw = 1.0f / (x * this.data.get(M30) + y * this.data.get(M31) + z * this.data.get(M32) + this.data.get(M33));
+		final float rcpw = 1.0f / (x * this.data[M30] + y * this.data[M31] + z * this.data[M32] + this.data[M33]);
 		return new Vec3(
-				(x * this.data.get(M00) + y * this.data.get(M01) + z * this.data.get(M02) + this.data.get(M03)) * rcpw,
-				(x * this.data.get(M10) + y * this.data.get(M11) + z * this.data.get(M12) + this.data.get(M13)) * rcpw,
-				(x * this.data.get(M20) + y * this.data.get(M21) + z * this.data.get(M22) + this.data.get(M23)) * rcpw
+				(x * this.data[M00] + y * this.data[M01] + z * this.data[M02] + this.data[M03]) * rcpw,
+				(x * this.data[M10] + y * this.data[M11] + z * this.data[M12] + this.data[M13]) * rcpw,
+				(x * this.data[M20] + y * this.data[M21] + z * this.data[M22] + this.data[M23]) * rcpw
 				);
 	}
 	
@@ -261,9 +255,9 @@ public class Mat4
 	    final float y = vec.getY();
 	    final float z = vec.getZ();
 		return new Vec3(
-				x * this.data.get(M00) + y * this.data.get(M01) + z * this.data.get(M02),
-				x * this.data.get(M10) + y * this.data.get(M11) + z * this.data.get(M12),
-				x * this.data.get(M20) + y * this.data.get(M21) + z * this.data.get(M22)
+				x * this.data[M00] + y * this.data[M01] + z * this.data[M02],
+				x * this.data[M10] + y * this.data[M11] + z * this.data[M12],
+				x * this.data[M20] + y * this.data[M21] + z * this.data[M22]
 				);
 	}
 
@@ -274,10 +268,10 @@ public class Mat4
 	    final float z = vec.getZ();
 	    final float w = vec.getW();
 		return new Vec4(
-				x * this.data.get(M00) + y * this.data.get(M01) + z * this.data.get(M02) + w * this.data.get(M03),
-				x * this.data.get(M10) + y * this.data.get(M11) + z * this.data.get(M12) + w * this.data.get(M13),
-				x * this.data.get(M20) + y * this.data.get(M21) + z * this.data.get(M22) + w * this.data.get(M23),
-				x * this.data.get(M30) + y * this.data.get(M31) + z * this.data.get(M32) + w * this.data.get(M33)
+				x * this.data[M00] + y * this.data[M01] + z * this.data[M02] + w * this.data[M03],
+				x * this.data[M10] + y * this.data[M11] + z * this.data[M12] + w * this.data[M13],
+				x * this.data[M20] + y * this.data[M21] + z * this.data[M22] + w * this.data[M23],
+				x * this.data[M30] + y * this.data[M31] + z * this.data[M32] + w * this.data[M33]
 				);
 	}
 
@@ -285,9 +279,9 @@ public class Mat4
 	public String toString()
 	{
 		return "{" +
-			this.data.get(M00) + ", " + this.data.get(M01) + ", " + this.data.get(M02) + ", " + this.data.get(M03) + "\n" +
-			this.data.get(M10) + ", " + this.data.get(M11) + ", " + this.data.get(M12) + ", " + this.data.get(M13) + "\n" +
-			this.data.get(M20) + ", " + this.data.get(M21) + ", " + this.data.get(M22) + ", " + this.data.get(M23) + "\n" +
-			this.data.get(M30) + ", " + this.data.get(M31) + ", " + this.data.get(M32) + ", " + this.data.get(M33) + "}";
+			this.data[M00] + ", " + this.data[M01] + ", " + this.data[M02] + ", " + this.data[M03] + "\n" +
+			this.data[M10] + ", " + this.data[M11] + ", " + this.data[M12] + ", " + this.data[M13] + "\n" +
+			this.data[M20] + ", " + this.data[M21] + ", " + this.data[M22] + ", " + this.data[M23] + "\n" +
+			this.data[M30] + ", " + this.data[M31] + ", " + this.data[M32] + ", " + this.data[M33] + "}";
 	}
 }
