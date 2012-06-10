@@ -444,10 +444,4 @@ public final class SDLSurface
     private static native void _free(final long p);
     private static native boolean _fillRect(final long p, final int x, final int y, final int w, final int h, final int color);
     private static native boolean _blit(final long src, final int sx, final int sy, final int sw, final int sh, final long dst, final int dx, final int dy);
-    
-    static
-    {
-        LibraryLoader.loadNative("win", "njsdl", "SDL.dll");
-        LibraryLoader.load("njsdl", "njsdl");
-    }
 }

@@ -116,10 +116,4 @@ public final class SDLJoystick
     private static native int _getHat(final long ptr, final int hat);
     private static native boolean _getButton(final long ptr, final int button);
     private static native void _close(final long ptr);
-
-    static
-    {
-        LibraryLoader.loadNative("win", "njsdl", "SDL.dll");
-        LibraryLoader.load("njsdl", "njsdl");
-    }
 }

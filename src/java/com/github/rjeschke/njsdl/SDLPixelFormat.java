@@ -22,7 +22,7 @@ public class SDLPixelFormat
     public final int alpha;
     
     private final long ptr;
-    
+
     private SDLPixelFormat(final long ptr,
             final int bitspp, final int bytespp, 
             final int rmask, final int gmask, final int bmask, final int amask,
@@ -102,10 +102,4 @@ public class SDLPixelFormat
     private static native int _mapRGBA(final long ptr, final int r, final int g, final int b, final int a);
     private static native int _getRGB(final long ptr, final int pixel);
     private static native int _getRGBA(final long ptr, final int pixel);
-    
-    static
-    {
-        LibraryLoader.loadNative("win", "njsdl", "SDL.dll");
-        LibraryLoader.load("njsdl", "njsdl");
-    }
 }

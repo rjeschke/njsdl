@@ -12,17 +12,8 @@ import java.nio.IntBuffer;
 import java.nio.LongBuffer;
 import java.nio.ShortBuffer;
 
-import com.github.rjeschke.njsdl.LibraryLoader;
-
-
 public class GL
 {
-    static
-    {
-        LibraryLoader.loadNative("win", "njsdl", "SDL.dll");
-        LibraryLoader.load("njsdl", "njsdl");
-    }
-
     private GL() { /* */ }
     
     public final static int GL_ACTIVE_ATTRIBUTES                                 = 0x00008B89;
