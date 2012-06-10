@@ -12,3 +12,6 @@ doc/
 .classpath
 .project
 .cproject
+*~
+target/
+
