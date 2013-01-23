@@ -5,6 +5,8 @@
 #ifndef NGL3_H_
 #define NGL3_H_
 
+#define GL3_PROTOTYPES
+
 #if defined(LINUX) || defined(MACOS)
 //#include <GL/glx.h>
 #else

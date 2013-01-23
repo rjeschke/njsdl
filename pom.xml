@@ -94,6 +94,11 @@
       <artifactId>njsdl-mac64</artifactId>
       <version>${project.version}</version>
     </dependency>
+    <dependency>
+      <groupId>com.github.rjeschke</groupId>
+      <artifactId>libload</artifactId>
+      <version>0.1-SNAPSHOT</version>
+    </dependency>
   </dependencies>
   
 </project>

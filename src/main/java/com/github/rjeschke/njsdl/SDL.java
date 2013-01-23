@@ -7,6 +7,7 @@ package com.github.rjeschke.njsdl;
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
 
+import com.github.rjeschke.libload.LibLoad;
 import com.github.rjeschke.njsdl.event.SDLEvent;
 import com.github.rjeschke.njsdl.event.UserEvent;
 
@@ -833,7 +834,7 @@ public final class SDL
 
     static
     {
-        LibraryLoader.loadNative("win", "com.github.rjeschke.njsdl.native", "SDL.dll");
-        LibraryLoader.load("com.github.rjeschke.njsdl.native", "njsdl");
+        LibLoad.loadNative("win", "com.github.rjeschke.njsdl.native", "SDL.dll");
+        LibLoad.load("com.github.rjeschke.njsdl.native", "njsdl");
     }
 }
