@@ -14,6 +14,18 @@
   
   <repositories>
     <repository>
+      <id>renejeschke-releases</id>
+      <url>http://maven.renejeschke.de</url>
+      <layout>default</layout>
+    </repository>
+
+	<repository>
+	  <id>renejeschke-snapshots</id>
+	  <url>http://maven.renejeschke.de/snapshots</url>
+      <layout>default</layout>
+	</repository>
+
+    <repository>
       <id>renejeschke-native-releases</id>
       <url>http://maven.renejeschke.de/native</url>
       <layout>default</layout>
@@ -92,6 +104,11 @@
     <dependency>
       <groupId>com.github.rjeschke</groupId>
       <artifactId>njsdl-mac64</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.rjeschke</groupId>
+      <artifactId>njsdl-linux64</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>

@@ -7,8 +7,8 @@
 
 #define GL3_PROTOTYPES
 
-#if defined(LINUX) || defined(MACOS)
-//#include <GL/glx.h>
+#if defined(LINUX)
+#   include <GL/glx.h>
 #else
 #define WIN32_LEAN_AND_MEAN
 #define WIN32_EXTRA_LEAN
