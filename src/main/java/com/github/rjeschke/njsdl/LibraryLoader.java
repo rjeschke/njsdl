@@ -91,7 +91,7 @@ public final class LibraryLoader
 			// Ignore
 		}
 		
-		final String osLib = isNative ? libname : System.mapLibraryName(libname);
+		final String osLib = isNative ? libname : mapLibraryName(libname);
 		final File f = new File(TEMP_DIR, osLib);
 		if(tryOverwrite)
 		{
@@ -113,6 +113,19 @@ public final class LibraryLoader
 		}
 	}
 	
+    public final static double getJavaVersion()
+    {
+        return Double.parseDouble(System.getProperty("java.specification.version"));
+    }
+
+    private final static String mapLibraryName(final String name)
+    {
+        final String lib = System.mapLibraryName(name);
+        if(getJavaVersion() >= 1.7 && lib.endsWith(".dylib"))
+            return lib.substring(0, lib.length() - 5) + "jnilib";
+        return lib;
+    }
+    
 	private final static void fileCopy(final InputStream src, final File dest)
 	{
 		final byte[] buffer = new byte[8192];
@@ -185,7 +198,7 @@ public final class LibraryLoader
 		if(os.startsWith("linux"))
 			return "linux";
 		if(os.startsWith("mac"))
-			return "macos";
+			return "mac";
 
 		throw new RuntimeException("Unsupported OS version:" + System.getProperty("os.name"));
 	}

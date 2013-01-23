@@ -6,7 +6,7 @@
 #define NGL3_H_
 
 #if defined(LINUX) || defined(MACOS)
-#include <GL/glx.h>
+//#include <GL/glx.h>
 #else
 #define WIN32_LEAN_AND_MEAN
 #define WIN32_EXTRA_LEAN

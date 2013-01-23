@@ -833,7 +833,7 @@ public final class SDL
 
     static
     {
-        LibraryLoader.loadNative("win", "com.github.rjeschke.njsdl", "SDL.dll");
-        LibraryLoader.load("com.github.rjeschke.njsdl", "njsdl");
+        LibraryLoader.loadNative("win", "com.github.rjeschke.njsdl.native", "SDL.dll");
+        LibraryLoader.load("com.github.rjeschke.njsdl.native", "njsdl");
     }
 }

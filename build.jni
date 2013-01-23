@@ -1,0 +1,13 @@
+# njsdl JNI build file
+
+mac.cppflags       += `sdl-config --cflags` -DMACOS
+mac.ldflags        += `sdl-config --libs` -lGL -mmacosx-version-min=10.6
+mac.include_paths  += /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/X11/include
+mac.lib_paths      += /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries
+linux.cppflags     += `sdl-config --cflags` -DLINUX
+linux.ldflags      += `sdl-config --libs` -lGL
+
+project.package     = com.github.rjeschke.njsdl.native
+project.name        = njsdl
+project.sources     = jni_gl.c ngl3.c njsdl.c
+
