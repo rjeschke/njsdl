@@ -521,6 +521,7 @@ public class GL
     public final static int GL_POINT_SIZE                                        = 0x00000B11;
     public final static int GL_POINT_SIZE_GRANULARITY                            = 0x00000B13;
     public final static int GL_POINT_SIZE_RANGE                                  = 0x00000B12;
+    public final static int GL_POINT_SPRITE                                      = 0x00008861;
     public final static int GL_POINT_SPRITE_COORD_ORIGIN                         = 0x00008CA0;
     public final static int GL_POLYGON_OFFSET_FACTOR                             = 0x00008038;
     public final static int GL_POLYGON_OFFSET_FILL                               = 0x00008037;
