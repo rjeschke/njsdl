@@ -49,7 +49,7 @@ public class FSQ
 	
 	public static void render()
 	{
-	    GL.glDrawArrays(GL.GL_TRIANGLES, 0, 12);
+	    GL.glDrawArrays(GL.GL_TRIANGLES, 0, 6);
 	}
 	
 	public static void unbind()
